@@ -228,6 +228,9 @@
   doi = {10.1111/j.1467-9280.1991.tb00174.x},
   abstract = {Availability of human memories for specific items shows reliable relationships to frequency, recency, and pattern of prior exposures to the item. These relationships have defied a systematic theoretical treatment. A number of environmental sources (New York Times, parental speech, electronic mail) are examined to show that the probability that a memory will be needed also shows reliable relationships to frequency, recency, and pattern of prior exposures. Moreover, the environmental relationships are the same as the memory relationships. It is argued that human memory has the form it does because it is adapted to these environmental relationships. Models for both the environment and human memory are described. Among the memory phenomena addressed are the practice function, the retention function, the effect of spacing of practice, and the relationship between degree of practice and retention.},
   langid = {english},
+  note = {Looks at relationship between time delay and memory retention. Empirically looks like power function, not exponential decay. ~[Note this is a reason to use recall odds, rather than recall probability as a measure of memory performance, as this measure has no upper bound, which is more natural for fitting to a power law, which goes to infinity as time delay goes to zero (Anderson and Schooler, 1991, p. 398) . Similarly, note ACT-R uses log odds rather than probability.]
+\par
+If recall follows power law, my question is why/how.},
   file = {/Users/j/Zotero/storage/GH4QBXIU/Anderson and Schooler (1991) Reflections of the Environment in Memory.pdf}
 }
 
@@ -256,6 +259,9 @@
   isbn = {978-1-315-80569-6},
   langid = {english},
   annotation = {OCLC: 872682504},
+  note = {``Because the logarithmic transformation converts multiplication into addition, we think of activation as reflecting log odds.'' (Anderson and Lebiere, 1998, p. 122)
+\par
+They give two ``ways to conceive of the mechanism behind the latency function.'' The Rational Analysis Model, which assumes that memories are searched in order, and derives the exponential form for the latency function assuming: ~\textbullet{} Zipfian needs odds, \textbullet{} constant time to inspect each item before the accepted one},
   file = {/Users/j/Zotero/storage/NZLCSGS6/Anderson and Lebiere (1998) The atomic components of thought.pdf}
 }
 
@@ -433,7 +439,8 @@
   abstract = {This paper explores two related factors which influence variation in duration, prosodic structure and redundancy in spontaneous speech. We argue that the constraint of producing robust communication while efficiently expending articulatory effort leads to an inverse relationship between language redundancy and duration. The inverse relationship improves communication robustness by spreading information more evenly across the speech signal, yielding a smoother signal redundancy profile.We argue that prosodic prominence is a linguistic means of achieving smooth signal redundancy. Prosodic prominence increases syllable duration and coincides to a large extent with unpredictable sections of speech, and thus leads to a smoother signal redundancy.The results of linear regressions carried out between measures of redundancy, syllable duration and prosodic structure in a large corpus of spontaneous speech confirm: (1) an inverse relationship between language redundancy and duration, and (2) a strong relationship between prosodic prominence and duration.The fact that a large proportion of the variance predicted by language redundancy and prosodic prominence is nonunique suggests that, in English, prosodic prominence structure is the means with which constraints caused by a robust signal requirement are expressed in spontaneous speech.},
   date-added = {2022-04-27 12:19:58 -0400},
   date-modified = {2022-04-27 12:20:19 -0400},
-  keywords = {noisy channel coding}
+  keywords = {noisy channel coding},
+  note = {PMID: 15298329}
 }
 
 @phdthesis{bachrach.a:2008phd,
@@ -449,7 +456,8 @@
 @unpublished{bachrach.a:2009,
   title = {Incremental Prediction in Naturalistic Language Processing: {{An fMRI}} Study},
   author = {Bachrach, Asaf and Roark, Brian and Marantz, Alex and {Whitfield-Gabrieli}, Susan and Cardenas, Carlos and Gabrieli, John},
-  year = {2009}
+  year = {2009},
+  note = {Unpublished manuscript}
 }
 
 @misc{bahdanau.d:2016,
@@ -466,6 +474,7 @@
   abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
+  note = {Comment: Accepted at ICLR 2015 as oral presentation},
   file = {/Users/j/Zotero/storage/S444U3WU/Bahdanau et al. - 2016 - Neural Machine Translation by Jointly Learning to .pdf}
 }
 
@@ -733,6 +742,9 @@
   year = {2006},
   series = {Information {{Science}} and {{Statistics}}},
   edition = {First},
+  publisher = {{Springer}},
+  address = {{New York}},
+  isbn = {978-0-387-31073-2},
   langid = {english}
 }
 
@@ -966,6 +978,11 @@
   langid = {english},
   keywords = {ACT-R Based Left-corner Parser,bic Book Industry Communication::C Language::CF linguistics::CFA Philosophy of language,bic Book Industry Communication::C Language::CF linguistics::CFD Psycholinguistics,bic Book Industry Communication::C Language::CF linguistics::CFG Semantics,Cataphoric Presupposition Resolution,Cognitive Aspects of Processing Semantic Representations,discourse analysis,Enriched Semantics,etc,Incremental Dynamic Predicate Logic,Language Interpretation Processes,Linguistics,Meaning Representations in Formal Semantics,Natural Language Processing,Open Access,Philosophy of language,Philosophy of Language,Processing Enriched Logical Forms,Processing of Lexical Semantic and Syntactic Representations,Psycholinguistics,Psycholinguistics and Cognitive Lingusitics,Psycholinguistics on Incremental Interpretation,Real-time Construction of Syntactic Representations,Real-time Semantic Interpretation,Semantics,Semantics and Processing,stylistics},
   annotation = {Accepted: 2020-06-15T15:07:27Z},
+  note = {``memory performance (forgetting) is not a negative exponential function of time. Instead, plot (c) in Fig. 6.1 shows that performance is a power function of time.'' (Brasoveanu and Dotla\v{c}il, 2020, p. 113)
+\par
+This reviews a conclusion from (Anderson and Schooler, 1991).
+\par
+Basic relationship: ``the retrieval latency for chunk i is inversely proportional to the need-odds of i.'' (Brasoveanu and Dotla\v{c}il, 2020, p. 128)},
   file = {/Users/j/Zotero/storage/BR4RVBDJ/Brasoveanu and Dotlačil (2020) Computational Cognitive Modeling and Linguistic Th.pdf}
 }
 
@@ -1068,7 +1085,8 @@
   year = {2015},
   date-added = {2021-02-05 12:03:58 -0500},
   date-modified = {2021-02-05 12:03:58 -0500},
-  readinglist = {Idioms}
+  readinglist = {Idioms},
+  note = {Unpublished manuscript}
 }
 
 @article{buckley.c:2017,
@@ -1115,6 +1133,7 @@
   abstract = {The variational autoencoder (VAE; Kingma, Welling (2014)) is a recently proposed generative model pairing a top-down generative network with a bottom-up recognition network which approximates posterior inference. It typically makes strong assumptions about posterior inference, for instance that the posterior distribution is approximately factorial, and that its parameters can be approximated with nonlinear regression from the observations. As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder (IWAE), a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions. We show empirically that IWAEs learn richer latent space representations than VAEs, leading to improved test log-likelihood on density estimation benchmarks.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  note = {Comment: Submitted to ICLR 2015},
   file = {/Users/j/Zotero/storage/KYZW47BL/Burda et al. - 2016 - Importance Weighted Autoencoders.pdf}
 }
 
@@ -1384,7 +1403,8 @@
   date-added = {2021-02-05 12:03:58 -0500},
   date-modified = {2021-02-05 12:03:58 -0500},
   project = {syntactic embedding},
-  keywords = {information theory,syntactic information,syntax}
+  keywords = {information theory,syntactic information,syntax},
+  note = {Unpublished}
 }
 
 @book{chomsky.n:1957,
@@ -1454,6 +1474,7 @@
   bdsk-url-2 = {https://doi.org/10.1515/9783110218329},
   date-added = {2021-09-24 08:27:37 -0400},
   date-modified = {2021-09-24 08:30:27 -0400},
+  note = {First published in 1957},
   file = {/Users/j/Zotero/storage/R93E8RMP/Chomsky - 2002 - Syntactic structures.pdf}
 }
 
@@ -1651,7 +1672,8 @@
   date-added = {2019-06-14 09:19:24 -0400},
   date-modified = {2020-02-26 09:53:56 -0500},
   project = {Icelandic gluttony},
-  keywords = {hierarchy effects,phi features,quirky case}
+  keywords = {hierarchy effects,phi features,quirky case},
+  note = {Ms. McGill, USC}
 }
 
 @misc{coon.j:2019,
@@ -1661,7 +1683,8 @@
   date-added = {2020-06-16 10:17:01 -0400},
   date-modified = {2020-06-16 10:17:01 -0400},
   project = {Icelandic gluttony},
-  keywords = {hierarchy effects,phi features,quirky case}
+  keywords = {hierarchy effects,phi features,quirky case},
+  note = {ms. McGill, USC}
 }
 
 @article{coon.j:2020,
@@ -2140,6 +2163,7 @@
   doi = {10.5214/ans.0972.7531.200408},
   abstract = {The language of life as well as of science in attributing a memory to the mind attempts to point out the facts and their interpretation somewhat as follows: Mental states of every kind, -- sensations, feelings, ideas, -- which were at one time present in consciousness and then have disappeared from it, have not with their disappearance absolutely ceased to exist. Although the inwardly-turned look may no longer be able to find them, nevertheless they have not been utterly destroyed and annulled, but in a certain manner they continue to exist, stored up, so to speak, in the memory. We cannot, of course, directly observe their present existence, but it is revealed by the effects which come to our knowledge with a certainty like that with which we infer the existence of the stars below the horizon. These effects are of different kinds.},
   langid = {english},
+  note = {Written 1885; translated 1913; reprinted 2013},
   file = {/Users/j/Zotero/storage/5EM4LARF/Ebbinghaus - 2013 - Memory A Contribution to Experimental Psychology.pdf}
 }
 
@@ -2319,7 +2343,8 @@
   date-added = {2022-04-30 11:52:57 -0400},
   date-modified = {2022-04-30 11:55:11 -0400},
   organization = {{University of California Press}},
-  keywords = {diffusion processes}
+  keywords = {diffusion processes},
+  note = {Kolmogorov forward and backward equations are described in this article. They show that forward diffusion processes often have a reverse diffusion process with the same functional form.}
 }
 
 @article{fenk.a:1980,
@@ -2803,6 +2828,7 @@
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Information Theory,Statistics - Machine Learning},
   annotation = {note: Presented at the NIPS 2013 Workshop on Planning with Information Constraints},
+  note = {Comment: Presented at the NIPS 2013 Workshop on Planning with Information Constraints},
   file = {/Users/j/Zotero/storage/EY79F5ND/Genewein and Braun - 2013 - Abstraction in decision-makers with limited inform.pdf}
 }
 
@@ -3140,6 +3166,7 @@
   date-added = {2022-03-31 12:27:57 -0400},
   date-modified = {2022-04-09 00:57:41 -0400},
   keywords = {energy networks,masked language models,metropolis hastings},
+  note = {Are MLM outputs interpretable as prabability distributions?},
   file = {/Users/j/Zotero/storage/JY2YPR3J/Goyal et al. - 2021 - Exposing the implicit energy networks behind maske.pdf}
 }
 
@@ -3259,7 +3286,8 @@
   date-added = {2019-06-11 14:15:47 -0400},
   date-modified = {2019-06-17 21:56:11 -0400},
   project = {syntactic embedding},
-  keywords = {rate-distortion theory,variational inference}
+  keywords = {rate-distortion theory,variational inference},
+  note = {Unpublished}
 }
 
 @misc{hahn.m:2022,
@@ -3725,6 +3753,7 @@
   archiveprefix = {arXiv},
   copyright = {All rights reserved},
   keywords = {Computer Science - Computation and Language,Computer Science - Information Theory},
+  note = {EMNLP2021},
   file = {/Users/j/Zotero/storage/UXJMS7PY/Hoover et al. - 2021 - Linguistic Dependencies and Statistical Dependence.pdf}
 }
 
@@ -3878,6 +3907,7 @@
   bdsk-url-2 = {https://doi.org/10.1109/tpami.2022.3157042},
   date-added = {2022-04-10 19:20:21 -0400},
   date-modified = {2022-04-10 19:26:14 -0400},
+  note = {Nice proof of Gumbel-Max trick in Appendix A. This is surprisingly hard to find elsewhere.},
   file = {/Users/j/Zotero/storage/PGXVRCZU/Huijben et al. - 2022 - A review of the gumbel-max trick and its extension.pdf}
 }
 
@@ -4142,6 +4172,7 @@
   abstract = {Incremental processing allows interactive systems to respond based on partial inputs, which is a desirable property e.g. in dialogue agents. The currently popular Transformer architecture inherently processes sequences as a whole, abstracting away the notion of time. Recent work attempts to apply Transformers incrementally via restart-incrementality by repeatedly feeding, to an unchanged model, increasingly longer input prefixes to produce partial outputs. However, this approach is computationally costly and does not scale efficiently for long sequences. In parallel, we witness efforts to make Transformers more efficient, e.g. the Linear Transformer (LT) with a recurrence mechanism. In this work, we examine the feasibility of LT for incremental NLU in English. Our results show that the recurrent LT model has better incremental performance and faster inference speed compared to the standard Transformer and LT with restart-incrementality, at the cost of part of the non-incremental (full sequence) quality. We show that the performance drop can be mitigated by training the model to wait for right context before committing to an output and that training with input prefixes is beneficial for delivering correct partial outputs.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computation and Language},
+  note = {Comment: Accepted at EMNLP 2021},
   file = {/Users/j/Zotero/storage/5JDRJ39Y/Kahardipraja et al. - 2021 - Towards Incremental Transformers An Empirical Ana.pdf}
 }
 
@@ -4632,7 +4663,8 @@
   pages = {32--59},
   publisher = {{Routledge}},
   doi = {10.1080/23273798.2015.1102299},
-  date-modified = {2021-06-05 22:29:28 -0400}
+  date-modified = {2021-06-05 22:29:28 -0400},
+  note = {PMID: 27135040}
 }
 
 @inproceedings{kuribayashi.t:2021,
@@ -5056,6 +5088,7 @@
   publisher = {{Psychology Press}},
   date-added = {2021-02-05 12:03:58 -0500},
   date-modified = {2022-05-03 14:37:38 -0400},
+  note = {Corrected version of 4 October 2015},
   file = {/Users/j/Zotero/storage/6LQVKMGP/Levy - 2013 - Memory and surprisal in human sentence comprehensi.pdf}
 }
 
@@ -5433,7 +5466,8 @@
   chapter = {5.1},
   date-added = {2022-04-14 23:38:02 -0400},
   date-modified = {2022-04-14 23:51:56 -0400},
-  keywords = {entropy reduction}
+  keywords = {entropy reduction},
+  note = {Reprinted by Indiana University Press. 1965. Accessed online.}
 }
 
 @inproceedings{lueckmann.j:2021,
@@ -5691,6 +5725,7 @@
   project = {syntactic embedding},
   school = {Charles University},
   keywords = {dependency parsing,unsupervised parsing},
+  note = {PhD Thesis},
   file = {/Users/j/Zotero/storage/32CIN6HJ/Mareček - 2012 - Unsupervised dependency parsing.pdf}
 }
 
@@ -5885,6 +5920,7 @@
   date-added = {2022-05-11 11:20:30 -0400},
   date-modified = {2022-05-11 11:26:42 -0400},
   keywords = {kanien'keha},
+  note = {While working with the Mohawk language teachers on the Ahkwesahsne Reservation several years ago, one of the goals we set for ourselves was to produce relevant Mohawk language materials for use in the schools. After overcoming some major hurdles, significant progress was made after agreement was reached on a basic standardized spelling system. This Mohawk Spelling Dictionary is a result of the effortd of those teachers to build their program upon a firm foundation.},
   file = {/Users/j/Zotero/storage/C5Q2JARF/McDonald et al. - 1977 - Iontenwennaweienstahkhwa' mohawk spelling dictiona.pdf}
 }
 
@@ -5981,7 +6017,8 @@
   doi = {10.18653/v1/2020.emnlp-main.170},
   bdsk-url-2 = {https://doi.org/10.18653/v1/2020.emnlp-main.170},
   date-modified = {2022-03-31 09:40:23 -0400},
-  keywords = {beam search,parsing}
+  keywords = {beam search,parsing},
+  note = {Beam search has been used in parsing because exact inference/optimization over the large space of possible parses is intractable. It was not originally introduced as an optimal method, but as a heuristic, which has been, happily, largely useful. Given that it seems to work, this paper asks what objective beam search can be seen as optimizing.}
 }
 
 @article{meister.c:2020tacl,
@@ -5997,6 +6034,7 @@
   date-added = {2022-03-31 09:48:44 -0400},
   date-modified = {2022-03-31 09:55:48 -0400},
   keywords = {beam search,memory,parsing,space-complexity,time-complexity},
+  note = {ArXiv version may be more recent. https://arxiv.org/abs/2007.03909},
   file = {/Users/j/Zotero/storage/CBY2CCF3/Meister et al. - 2020 - Best-first beam search.pdf}
 }
 
@@ -6251,7 +6289,8 @@
   author = {Narayanan, Srini and Jurafsky, Daniel},
   year = {2004},
   date-added = {2021-03-09 22:52:28 -0500},
-  date-modified = {2021-03-10 12:32:00 -0500}
+  date-modified = {2021-03-10 12:32:00 -0500},
+  note = {Unpublished manuscript}
 }
 
 @inproceedings{naseem.t:2012,
@@ -6430,7 +6469,8 @@
   copyright = {Licence Universal Dependencies v2.0},
   date-added = {2021-04-30 13:00:05 -0400},
   date-modified = {2021-04-30 13:02:24 -0400},
-  keywords = {dependency parsing,dependency structures,universal dependencies}
+  keywords = {dependency parsing,dependency structures,universal dependencies},
+  note = {LINDAT/CLARIAH-CZ digital library at the Institute of Formal and Applied Linguistics (\'UFAL), Faculty of Mathematics and Physics, Charles University}
 }
 
 @inproceedings{nivre.j:2020,
@@ -6846,7 +6886,8 @@
   date-added = {2021-03-18 11:13:22 -0400},
   date-modified = {2021-03-18 17:40:38 -0400},
   howpublished = {PsyArXiv},
-  keywords = {processing,reading time,self-paced reading}
+  keywords = {processing,reading time,self-paced reading},
+  note = {Version 4 (2020.2.21)}
 }
 
 @misc{prasad.g:2019readingNPS-NPZ,
@@ -7121,7 +7162,8 @@
   year = {2016},
   date-added = {2021-03-21 13:51:16 -0400},
   date-modified = {2021-03-21 14:01:49 -0400},
-  keywords = {breton,impersonals,phi features}
+  keywords = {breton,impersonals,phi features},
+  note = {Book ms. Submitted to the SNLLT book series}
 }
 
 @book{riehl.e:2017,
@@ -7672,7 +7714,8 @@
   date-added = {2020-07-27 17:34:08 -0400},
   date-modified = {2022-04-27 12:41:34 -0400},
   project = {information-entropy},
-  keywords = {asymptotic equipartition property,information theory}
+  keywords = {asymptotic equipartition property,information theory},
+  note = {Reprinted by Curtis T. McMullen}
 }
 
 @techreport{sheldon.d:2013,
@@ -8012,7 +8055,8 @@
   doi = {10.1016/j.jml.2015.02.004},
   abstract = {In research on the role of lexical predictability in language comprehension, predictability is generally defined as the probability that a word is provided as a sentence continuation in the cloze task (Taylor, 1953), in which subjects are asked to guess the next word of a sentence. The present experiments investigate the process by which subjects generate a cloze response, by measuring the latency to initiate a response in a version of the task in which subjects produce a spoken continuation to a visually presented sentence fragment. Higher probability responses were produced faster than lower probability responses. The latency to produce a response was also influenced by item constraint: A response at a given level of probability was issued faster when the context was more constraining, i.e., a single response was elicited with high probability. We show that these patterns are naturally produced by an activation-based race model in which potential responses independently race towards a response threshold. Implications for the interpretation of cloze probability as a measure of lexical predictability are discussed.},
   langid = {english},
-  keywords = {Cloze task,Language processing,Prediction,Response time}
+  keywords = {Cloze task,Language processing,Prediction,Response time},
+  note = {Mentioned to me by Huanhuan Yi at AMLaP poster session}
 }
 
 @misc{steedman.m:2000,
@@ -8391,6 +8435,7 @@
   publisher = {{Routledge}},
   abstract = {The broadest and most critical arena of investigation and contention with regard to these two matters has always been consciousness itself. Broadbent unveiled a theoretical structure that allowed collation of a substantial body of experimental literature and that was seminal in its influence on later developments. Hybrid models have been of limited current theoretical interest, probably due in part to the difficulty in testing them experimentally. As remarked earlier, the quite special case of seriality versus parallelism is difficult enough to discriminate experimentally. Among such hybrid models are those that represent processing as being serial part of the time and partially parallel within trials. There are many occasions in perceptual and memorial experiments where the information sufficient to make a correct response is embedded in only part of the total stimulus pattern presented to the subject. A finding of independence of total completion times, for instance, although perhaps more intuitively associated with parallel models, can be predicted by serial models.},
   isbn = {978-1-00-317668-8},
+  note = {the tldr is that he argues that parallel and serial mechanisms can always simulate one another. townsend has a lot more on distinguishing these two types of mechanism},
   file = {/Users/j/Zotero/storage/EXDXLUI2/Townsend - 1974 - Issues and Models Concerning the Processing of a F.pdf}
 }
 
@@ -8543,7 +8588,8 @@
   year = {2022},
   month = sep,
   address = {{York, England}},
-  annotation = {poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-daa834276886.pdf}
+  annotation = {poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-daa834276886.pdf},
+  note = {I talked to Marjolein, presenting this poster at AMLaP, thurs 8 Sept 2022. ~This seems a straightforward confirmation of the predictions of a noisy channel account, extending (Gibson et al., 2013) to study acoustic noise rather than insertion deletion noise. Items likely to be confused due to noise are comprehended as their more lower-surprisal edit-distance\textendash neighbors. ~Bable noise affects vowels, white noise affects fricatives.}
 }
 
 @article{vasishth.s:2006,
@@ -9065,6 +9111,7 @@
   abstract = {Probabilistic programs provide an expressive representation language for generative models. Given a probabilistic program, we are interested in the task of posterior inference: estimating a latent variable given a set of observed variables. Existing techniques for inference in probabilistic programs often require choosing many hyper-parameters, are computationally expensive, and/or only work for restricted classes of programs. Here we formulate inference as masked language modeling: given a program, we generate a supervised dataset of variables and assignments, and randomly mask a subset of the assignments. We then train a neural network to unmask the random values, defining an approximate posterior distribution. By optimizing a single neural network across a range of programs we amortize the cost of training, yielding a ``foundation'' posterior able to do zero-shot inference for new programs. The foundation posterior can also be fine-tuned for a particular program and dataset by optimizing a variational inference objective. We show the efficacy of the approach, zero-shot and fine-tuned, on a benchmark of STAN programs.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Machine Learning,inference,probabilistic programming,Statistics - Machine Learning},
+  note = {Comment: 9 pages without appendix},
   file = {/Users/j/Zotero/storage/HC3WUQXV/Wu and Goodman - 2022 - Foundation Posteriors for Approximate Probabilisti.pdf}
 }
 
