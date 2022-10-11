@@ -1,23 +1,20 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[style=apa,citestyle=apa,natbib]{biblatex}
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+\usepackage{biblatex}
 \addbibresource{all-biblatex.bib}
-\title{Example}\author{}\date{}
 \begin{document}
-\maketitle
+% \maketitle
 
-Here is an example using \texttt{all.bib} with Bib\LaTeX{}.
+Here is an example using \texttt{all-biblatex.bib} with Bib\LaTeX{}.
 
-Some example citations: classics like \citet{chomsky.n:1957, kolmogorov.a:1968,
-tesniere.l:1959, estes.w:1959}, and newer works like \citet{lew.a:2022RAVI,
-tay.y:2022}.
+Some example citations: classics like \textcite{chomsky.n:1957, kolmogorov.a:1968,
+tesniere.l:1959, estes.w:1959}, a document with DOI and URL: \textcite{earley.j:1970},
+and an arXiv document like \textcite{tay.y:2022}.
 
-\emph{Note: I also have \emph{\texttt{all-biblatex.bib}}, which complies with
-  the format recommendations for Bib\LaTeX. I'll update that periodically.
-  But I'll use the file \emph{\texttt{all.bib}} as the default,
-  which is in old Bib\TeX{} format (for compatibility).
-  In practice, this means it has \emph{year} instead of \emph{date} fields, and
-  uses no Unicode characters, etc.}
+Note: \texttt{all-biblatex.bib} complies with
+the format recommendations for Bib\LaTeX, whereas \texttt{all.bib} uses those for Bib\TeX. 
+They both are generated from the same underlying database.
+I would like to just use the Bib\LaTeX version, as it is a more modern format, but depending on the use-case, the Bib\TeX version may be required, so I'll keep generating both for now. In practice, the difference mostly means \texttt{all-biblatex.bib} has \emph{date} fields and may use Unicode characters, where \texttt{all.bib} has \emph{year}, \emph{month}, and \emph{day} fields, and uses no Unicode characters, etc.
 
 \printbibliography
 \end{document}
