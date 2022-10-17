@@ -1083,7 +1083,8 @@
   url = {https://proceedings.neurips.cc/paper/2009/file/e515df0d202ae52fcebb14295743063b-Paper.pdf},
   date-added = {2022-03-31 10:05:14 -0400},
   date-modified = {2022-03-31 22:30:35 -0400},
-  keywords = {markov chain monte carlo,pruning}
+  keywords = {markov chain monte carlo,pruning},
+  file = {/Users/j/Zotero/storage/YX8NDKT7/Bouchard-Côté et al. (2009) Randomized pruning Efficiently calculating expect.pdf}
 }
 
 @misc{boyce.v:2020amlap,
@@ -1824,6 +1825,38 @@
   bdsk-url-2 = {https://doi.org/10.1037/0003-066x.49.12.997},
   date-added = {2021-08-08 11:16:17 -0400},
   date-modified = {2021-08-08 20:26:36 -0400}
+}
+
+@phdthesis{collins.m:,
+  title = {Head-Driven Statistical Models for Natural Language Parsing},
+  author = {Collins, Michael John},
+  address = {{United States -- Pennsylvania}},
+  url = {https://www.proquest.com/docview/304536592/abstract/20DAD4A135504E28PQ/1},
+  urldate = {2022-10-16},
+  abstract = {Statistical models for parsing natural language have recently shown considerable success in broad-coverage domains. Ambiguity often leads to an input sentence having many possible parse trees; statistical approaches assign a probability to each tree, thereby ranking competing trees in order of plausibility. The probability for each candidate tree is calculated as a product of terms, each term corresponding to some sub-structure within the tree. The choice of parameterization is the choice of how to break down the tree. There are two critical questions regarding the parameterization of the problem: (1) What linguistic objects (e.g., context-free rules, parse moves) should the model's parameters be associated with? I.e., How should trees be decomposed into smaller fragments? (2) How can this choice be instantiated in a sound probabilistic model? This thesis argues that the locality of a lexical head's influence in a tree should motivate modeling choices in the parsing problem. In the final parsing models a parse tree is represented as the sequence of decisions corresponding to a head-centered, top-down derivation of the tree. Independence assumptions then follow naturally, leading to parameters that encode the X-bar schema, subcategorization, ordering of complements, placement of adjuncts, lexical dependencies, wh-movement, and preferences for close attachment. All of these preferences are expressed by probabilities conditioned on lexical heads. The goals of the work are two-fold. First, we aim to advance the state of the art. We report tests on Wall Street Journal text showing that the models give improved accuracy over other methods in the literature. The models recover richer representations than previous approaches, adding the complement/adjunct distinction and information regarding wh-movement. Second, we aim to increase understanding of statistical parsing models. Each parameter type is motivated through tree examples where it provides discriminative information. An empirical study of prepositional phrase attachment ambiguity is used to investigate the effectiveness of dependency parameters for ambiguity resolution. A number of parsing models are tested, and we give a breakdown of their performance on different types of construction. Finally, we give a detailed comparison of the models to others in the literature.},
+  copyright = {Database copyright ProQuest LLC; ProQuest does not claim copyright in the individual underlying works.},
+  isbn = {9780599258747},
+  langid = {english},
+  school = {University of Pennsylvania},
+  keywords = {Applied sciences,Head-driven,Natural language,Parameterization,Parsing,Statistical models},
+  file = {/Users/j/Zotero/storage/PAPH6B6F/Collins (Head-driven statistical models for natural languag.pdf}
+}
+
+@article{collins.m:2003,
+  title = {Head-{{Driven Statistical Models}} for {{Natural Language Parsing}}},
+  author = {Collins, Michael},
+  year = {2003},
+  month = dec,
+  journal = {Computational Linguistics},
+  volume = {29},
+  number = {4},
+  pages = {589--637},
+  issn = {0891-2017},
+  doi = {10.1162/089120103322753356},
+  url = {https://doi.org/10.1162/089120103322753356},
+  urldate = {2022-10-16},
+  abstract = {This article describes three statistical models for natural language parsing. The models extend methods from probabilistic context-free grammars to lexicalized grammars, leading to approaches in which a parse tree is represented as the sequence of decisions corresponding to a head-centered, top-down derivation of the tree. Independence assumptions then lead to parameters that encode the X-bar schema, subcategorization, ordering of complements, placement of adjuncts, bigram lexical dependencies, wh-movement, and preferences for close attachment. All of these preferences are expressed by probabilities conditioned on lexical heads. The models are evaluated on the Penn Wall Street Journal Treebank, showing that their accuracy is competitive with other models in the literature. To gain a better understanding of the models, we also give results on different constituent types, as well as a breakdown of precision/recall results in recovering various types of dependencies. We analyze various characteristics of the models through experiments on parsing accuracy, by collecting frequencies of various structures in the treebank, and through linguistically motivated examples. Finally, we compare the models to others that have been applied to parsing the treebank, aiming to give some explanation of the difference in performance of the various models.},
+  file = {/Users/j/Zotero/storage/CXY9YP6H/Collins (2003) Head-Driven Statistical Models for Natural Languag.pdf}
 }
 
 @inproceedings{collins.m:2004,
@@ -2822,6 +2855,19 @@
   date-modified = {2019-06-17 21:57:08 -0400},
   project = {syntactic embedding},
   keywords = {DL minimization,memory}
+}
+
+@inproceedings{finkel.j:2008,
+  title = {Efficient, Feature-Based, Conditional Random Field Parsing},
+  booktitle = {Proceedings of {{ACL-08}}: {{HLT}}},
+  author = {Finkel, Jenny Rose and Kleeman, Alex and Manning, Christopher D.},
+  year = {2008},
+  month = jun,
+  pages = {959--967},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Columbus, Ohio}},
+  url = {https://aclanthology.org/P08-1109},
+  keywords = {pruning}
 }
 
 @article{floridi.l:2020,
@@ -7745,6 +7791,20 @@
   doi = {10.18653/v1/D18-1179},
   url = {https://www.aclweb.org/anthology/D18-1179},
   bdsk-url-2 = {https://doi.org/10.18653/v1/D18-1179}
+}
+
+@inproceedings{petrov.s:2007,
+  title = {Discriminative {{Log-Linear Grammars}} with {{Latent Variables}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Petrov, Slav and Klein, Dan},
+  year = {2007},
+  volume = {20},
+  publisher = {{Curran Associates, Inc.}},
+  url = {https://proceedings.neurips.cc/paper/2007/hash/9cc138f8dc04cbf16240daa92d8d50e2-Abstract.html},
+  urldate = {2022-10-16},
+  abstract = {We demonstrate that log-linear grammars with latent variables can be practically trained using discriminative methods. Central to efficient discriminative training is a hierarchical pruning procedure which allows feature expectations to be effi- ciently approximated in a gradient-based procedure. We compare L1 and L2 reg- ularization and show that L1 regularization is superior, requiring fewer iterations to converge, and yielding sparser solutions. On full-scale treebank parsing exper- iments, the discriminative latent models outperform both the comparable genera- tive latent models as well as the discriminative non-latent baselines.},
+  keywords = {pruning},
+  file = {/Users/j/Zotero/storage/PJW4YGA3/Petrov and Klein (2007) Discriminative Log-Linear Grammars with Latent Var.pdf}
 }
 
 @article{piantadosi.s:2011,
