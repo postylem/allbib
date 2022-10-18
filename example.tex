@@ -1,15 +1,16 @@
+%! TeX program = xelatex
 \documentclass{article}
 \usepackage[colorlinks,citecolor=blue]{hyperref}
-\usepackage{biblatex}
+\usepackage[natbib, sorting=none]{biblatex}
 \addbibresource{all-biblatex.bib}
 \begin{document}
 % \maketitle
-
 Here is an example using \texttt{all-biblatex.bib} with Bib\LaTeX{}.
-
-Some example citations: classics like \textcite{chomsky.n:1957, kolmogorov.a:1968,
-tesniere.l:1959, estes.w:1959}, a document with DOI and URL: \textcite{earley.j:1970},
-and an arXiv document like \textcite{tay.y:2022}. And, one that is unpublished: \textcite{narayanan.s:2004}.
+First, some classics like \citet{chomsky.n:1957, kolmogorov.a:1968,tesniere.l:1959, estes.w:1959}, 
+and a document with DOI and URL: \citet{earley.j:1970}.
+Also, preprints like
+\citet{tay.y:2022,wu.m:2022,schijndel.m:2020psyarxiv}.
+And, one document that is unpublished: \citet{narayanan.s:2004}.
 
 Note: \texttt{all-biblatex.bib} complies with
 the format recommendations for Bib\LaTeX, whereas \texttt{all.bib} uses those for Bib\TeX. 
