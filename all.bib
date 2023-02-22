@@ -371,6 +371,29 @@
   date-modified = {2022-04-21 09:33:18 -0400}
 }
 
+@inproceedings{arehalli.s:2022CoNLL,
+  title = {Syntactic Surprisal from Neural Models Predicts, but Underestimates, Human Processing Difficulty from Syntactic Ambiguities},
+  booktitle = {Proceedings of the 26th Conference on Computational Natural Language Learning ({{CoNLL}})},
+  author = {Arehalli, Suhas and Dillon, Brian and Linzen, Tal},
+  year = {2022},
+  month = dec,
+  pages = {301--313},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Abu Dhabi, United Arab Emirates (Hybrid)}},
+  url = {https://aclanthology.org/2022.conll-1.20},
+  abstract = {Humans exhibit garden path effects: When reading sentences that are temporarily structurally ambiguous, they slow down when the structure is disambiguated in favor of the less preferred alternative. Surprisal theory (Hale, 2001; Levy, 2008), a prominent explanation of this finding, proposes that these slowdowns are due to the unpredictability of each of the words that occur in these sentences. Challenging this hypothesis, van Schijndel and Linzen (2021) find that estimates of the cost of word predictability derived from language models severely underestimate the magnitude of human garden path effects. In this work, we consider whether this underestimation is due to the fact that humans weight syntactic factors in their predictions more highly than language models do. We propose a method for estimating syntactic predictability from a language model, allowing us to weigh the cost of lexical and syntactic predictability independently. We find that treating syntactic predictability independently from lexical predictability indeed results in larger estimates of garden path. At the same time, even when syntactic predictability is independently weighted, surprisal still greatly underestimate the magnitude of human garden path effects. Our results support the hypothesis that predictability is not the only factor responsible for the processing cost associated with garden path sentences.}
+}
+
+@misc{arehalli.s:2022long,
+  title = {Neural {{Networks}} as {{Cognitive Models}} of the {{Processing}} of {{Syntactic Constraints}}},
+  author = {Arehalli, Suhas and Linzen, Tal},
+  year = {2022},
+  month = oct,
+  abstract = {Languages are governed by syntactic constraints \textemdash{} structural rules that determine which sentences are grammatical in the language. In English, one such constraint is subject-verb agreement, which dictates that the number of a verb must match the number of its corresponding subject: ``the dogs run'', but ``the dog runs''. While this constraint appears to be simple, in practice speakers make a substantial number of agreement errors, especially if a noun phrase near the verb differs in number from the subject (for example, a speaker might produce the ungrammatical sentence ``the key to the cabinets are rusty''). This phenomenon, referred to as agreement attraction, is sensitive to a wide range of properties of the sentence; no single existing model is able to generate predictions for the wide variety of materials studied in the human experimental literature. We explore the viability of neural network language models\textemdash broad-coverage systems trained to predict the next word in a corpus\textemdash as a framework for addressing this limitation. We analyze the agreement errors made by Long Short-Term Memory (LSTM) networks and compare them to those of humans. The models successfully simulate certain results, such as the so-called number asymmetry and the difference between attraction strength in grammatical and ungrammatical sentences, but failed to simulate others, such as the effect of syntactic distance or notional (conceptual) number. We further evaluate networks trained with explicit syntactic supervision, and find that this form of supervision does not always lead to more human-like syntactic behavior. Finally, we show that the corpus used to train a network significantly affects the pattern of agreement errors produced by the network, and discuss the strengths and limitations of neural networks as a tool for understanding human syntactic processing.},
+  langid = {english},
+  file = {/Users/j/Zotero/storage/AYRJGQHI/Arehalli and Linzen (Neural Networks as Cognitive Models of the Process.pdf}
+}
+
 @misc{armengol-estape.j:2021,
   title = {On the Multilingual Capabilities of Very Large-Scale English Language Models},
   author = {{Armengol-Estap{\'e}}, Jordi and {de Gibert Bonet}, Ona and Melero, Maite},
@@ -1611,6 +1634,24 @@
   doi = {10.1214/17-aap1326},
   url = {https://doi.org/10.1214%2F17-aap1326},
   file = {/Users/j/Zotero/storage/VMZ3QKKH/Chatterjee and Diaconis - 2018 - The sample size required in importance sampling.pdf}
+}
+
+@misc{chen.c:2023,
+  title = {Accelerating {{Large Language Model Decoding}} with {{Speculative Sampling}}},
+  author = {Chen, Charlie and Borgeaud, Sebastian and Irving, Geoffrey and Lespiau, Jean-Baptiste and Sifre, Laurent and Jumper, John},
+  year = {2023},
+  month = feb,
+  number = {arXiv:2302.01318},
+  eprint = {2302.01318},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  url = {http://arxiv.org/abs/2302.01318},
+  urldate = {2023-02-15},
+  abstract = {We present speculative sampling, an algorithm for accelerating transformer decoding by enabling the generation of multiple tokens from each transformer call. Our algorithm relies on the observation that the latency of parallel scoring of short continuations, generated by a faster but less powerful draft model, is comparable to that of sampling a single token from the larger target model. This is combined with a novel modified rejection sampling scheme which preserves the distribution of the target model within hardware numerics. We benchmark speculative sampling with Chinchilla, a 70 billion parameter language model, achieving a 2-2.5x decoding speedup in a distributed setup, without compromising the sample quality or making modifications to the model itself.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,language model decoding,rejection sampling,speculative sampling},
+  file = {/Users/j/Zotero/storage/IHLM5UPW/Chen et al. (2023) Accelerating Large Language Model Decoding with Sp.pdf}
 }
 
 @inproceedings{chen.d:2014,
@@ -3132,6 +3173,21 @@
   bdsk-url-2 = {https://doi.org/10.1007/s11023-020-09548-1},
   date-added = {2021-06-05 22:29:51 -0400},
   date-modified = {2021-06-05 22:29:53 -0400}
+}
+
+@article{fodor.j:1978,
+  title = {Parsing {{Strategies}} and {{Constraints}} on {{Transformations}}},
+  author = {Fodor, Janet Dean},
+  year = {1978},
+  journal = {Linguistic Inquiry},
+  volume = {9},
+  number = {3},
+  pages = {427--473},
+  publisher = {{The MIT Press}},
+  issn = {0024-3892},
+  url = {https://www.jstor.org/stable/4178071},
+  urldate = {2023-02-22},
+  file = {/Users/j/Zotero/storage/DLVKPXHK/Fodor (1978) Parsing Strategies and Constraints on Transformati.pdf}
 }
 
 @book{folland.g:1999,
@@ -4897,6 +4953,16 @@
   file = {/Users/j/Zotero/storage/25BH7NUL/Huang et al. - 2021 - A variational perspective on diffusion-based gener.pdf}
 }
 
+@misc{huang.k:2022HSP,
+  type = {Talk},
+  title = {{{SPR}} Mega-Benchmark Shows Surprisal Tracks Construction- but Not Item-Level Difficulty},
+  author = {Huang, Kuan-Jung and Arehalli, Suhas and Kugemoto, Mari and Muxica, Christian and Prasad, Grusha and Dillon, Brian and Linzen, Tal},
+  year = {2022},
+  address = {{Santa Cruz, California, USA}},
+  keywords = {eye-tracking,surprisal},
+  file = {/Users/j/Zotero/storage/EJF69NL4/Huang et al. (2022) SPR mega-benchmark shows surprisal tracks construc.pdf;/Users/j/Zotero/storage/HQ2EBQ6S/Huang et al. (2022) SPR mega-benchmark shows surprisal tracks construc.pdf}
+}
+
 @phdthesis{huang.l:2008phd,
   title = {Forest-Based Algorithms in Natural Language Processing},
   author = {Huang, Liang},
@@ -5427,6 +5493,23 @@
   abstract = {In this paper we describe preliminary work on Kawenn\'on:nis, a verb conjugator for Kanyen'k\'eha (Ohsweken dialect). The project is the result of a collaboration between Onkwawenna Kentyohkwa Kanyen'k\'eha immersion school and the Canadian National Research Council's Indigenous Language Technology lab. The purpose of Kawenn\'on:nis is to build on the educational successes of the Onkwawenna Kentyohkwa school and develop a tool that assists students in learning how to conjugate verbs in Kanyen'k\'eha; a skill that is essential to mastering the language. Kawenn\'on:nis is implemented with both web and mobile front-ends that communicate with an application programming interface that in turn communicates with a symbolic language model implemented as a finite state transducer. Eventually, it will serve as a foundation for several other applications for both Kanyen'k\'eha and other Iroquoian languages.},
   keywords = {computational revitalization,iroquoian},
   file = {/Users/j/Zotero/storage/CDLZ5N9N/Kazantseva et al. - 2018 - Kawennónnis the Wordmaker for Kanyen'kéha.pdf}
+}
+
+@phdthesis{kelley.p:2018,
+  title = {More {{People Understand Eschers}} than the {{Linguist Does}}: {{The Causes}} and {{Effects}} of {{Grammatical Illusions}}},
+  shorttitle = {More {{People Understand Eschers}} than the {{Linguist Does}}},
+  author = {Kelley, Patrick},
+  year = {2018},
+  address = {{East Lansing, Michigan}},
+  url = {https://www.proquest.com/docview/2041968142/abstract/42208A941C8E47AFPQ/1},
+  urldate = {2023-02-22},
+  abstract = {A grammatical illusion can be defined as a sentence that seems acceptable, but structurally, the sentence is ungrammatical. Grammatical illusions provide a challenge for linguists to understand why we do not immediately reject illusions like we do for most ungrammatical sentences. One type of illusion that has stirred several ongoing debates is the Escher Sentence. This dissertation focuses on the source of the illusory effect, or the reason why people fail to consistently reject these sentences. This dissertation explores the properties of Escher Sentences, the reason why they are illusory in nature, and what this contributes to our understanding of the parser. Six Experiments were designed to test the acceptability judgments, interpretations, and neurophysiological responses to these sentences. I conclude that Escher Sentences are recognized by the parser as ungrammatical, but because of the structure of these sentences, the parser is tricked into using a coercive operation to force Escher Sentences to have an acceptable interpretation. Escher Sentences gives us potential insight into the constraints of the parser in processing language while at the same time highlighting the parser's strategies in resolving computations that are ungrammatical.},
+  copyright = {Database copyright ProQuest LLC; ProQuest does not claim copyright in the individual underlying works.},
+  isbn = {9780355930733},
+  langid = {english},
+  school = {Michigan State University},
+  keywords = {Escher,grammatical illusions,Illusion,Language,literature and linguistics,Parser,Processing,Psychology},
+  file = {/Users/j/Zotero/storage/TFD7EIVN/Kelley (More People Understand Eschers than the Linguist D.pdf}
 }
 
 @inproceedings{kennedy.a:2003,
@@ -6422,6 +6505,16 @@
   date-modified = {2022-05-05 09:12:32 -0400},
   keywords = {monte carlo,recursive auxiliary-variable inference,variational inference},
   file = {/Users/j/Zotero/storage/UHYKBG9B/Lew et al. - 2022 - Recursive monte carlo and variational inference wi.pdf}
+}
+
+@misc{lew.a:2023SMCP3,
+  title = {{{SMCP3}}: {{SMC}} with {{Probabilistic Program Proposals}}},
+  shorttitle = {{{SMCP3}}},
+  author = {Lew, Alexander K. and Matheos, George and Ghavamizadeh, Matin and Gothoskar, Nishad and Russell, Stuart and Mansinghka, Vikash K.},
+  year = {2023},
+  url = {https://george.matheos.com/publication/23-smcp3/},
+  abstract = {There is a widespread need for sound, flexible frameworks for Monte Carlo inference. This paper introduces SMCP3, a sequential Monte Carlo framework that broadens the class of strategies practitioners can employ to update particles from iteration to iteration, relative to existing frameworks like resample-move SMC (Gilks \& Berzuini, 2001) and SMC samplers (Del Moral et al., 2006). In SMCP3, proposal kernels can be general probabilistic programs, which differ from traditional proposal densities in that they may sample many auxiliary variables, and may apply deterministic post-processing to calculate a proposed update. We have implemented our framework in the Gen probabilistic programming platform: given probabilistic programs that specify target distributions, forward kernels, and reverse kernels, our implementation fully automates the sound computation of incremental importance weights. To illustrate the effectiveness of SMCP3 algorithms, we apply our framework in two domains. First, we use it for online state-estimation, using proposal programs based on Langevin ascent to reduce the bias in log marginal likelihood estimates relative to resample-move SMC with Langevin rejuvenation. Second, we demonstrate an SMCP3 algorithm that yields more robust online clustering in Dirichlet process mixture models than strong SMC baselines.},
+  file = {/Users/j/Zotero/storage/MLRWLMF3/Lew et al. (2023) SMCP3 SMC with Probabilistic Program Proposals.pdf}
 }
 
 @article{lewis.m:2014,
@@ -7799,6 +7892,24 @@
   date-modified = {2022-04-04 12:17:01 -0400}
 }
 
+@incollection{muller.h:2020,
+  title = {Negative {{Polarity Illusions}}},
+  booktitle = {The {{Oxford Handbook}} of {{Negation}}},
+  author = {Muller, Hanna and Phillips, Colin},
+  editor = {D{\'e}prez, Viviane and Espinal, M. Teresa},
+  year = {2020},
+  month = mar,
+  pages = {0},
+  publisher = {{Oxford University Press}},
+  doi = {10.1093/oxfordhb/9780198830528.013.42},
+  url = {https://doi.org/10.1093/oxfordhb/9780198830528.013.42},
+  urldate = {2023-02-22},
+  abstract = {Although decades of research have illuminated the licensing requirements, both syntactic and semantic, of negative polarity items, the matter of how these licensing requirements are satisfied in real time, as a sentence is being processed, remains an ill-understood problem. Grammatical illusions\textemdash cases where native speakers, as they comprehend an ungrammatical sentence, experience a fleeting perception of acceptability\textemdash offer a window into online computations like NPI licensing. This chapter reviews the findings on negative polarity illusions, their parallels (and, in some cases, the lack of parallels) with other grammaticality illusions, and the implications of this line of research for understanding the incremental processing of negative sentences as well as negative polarity phenomena more broadly.},
+  isbn = {978-0-19-883052-8},
+  keywords = {grammaticality illusions,negative polarity illusions},
+  file = {/Users/j/Zotero/storage/MJXGRLS6/Muller and Phillips (2020) Negative Polarity Illusions.pdf}
+}
+
 @article{murray.w:2004,
   title = {Serial Mechanisms in Lexical Access: The Rank Hypothesis.},
   author = {Murray, Wayne S and Forster, Kenneth I},
@@ -8282,6 +8393,23 @@
   date-modified = {2022-04-11 23:09:27 -0400}
 }
 
+@article{parker.d:2016,
+  title = {Negative Polarity Illusions and the Format of Hierarchical Encodings in Memory},
+  author = {Parker, Dan and Phillips, Colin},
+  year = {2016},
+  month = dec,
+  journal = {Cognition},
+  volume = {157},
+  pages = {321--339},
+  issn = {0010-0277},
+  doi = {10.1016/j.cognition.2016.08.016},
+  url = {https://www.sciencedirect.com/science/article/pii/S0010027716302062},
+  urldate = {2023-02-22},
+  abstract = {Linguistic illusions have provided valuable insights into how we mentally navigate complex representations in memory during language comprehension. Two notable cases involve illusory licensing of agreement and negative polarity items (NPIs), where comprehenders fleetingly accept sentences with unlicensed agreement or an unlicensed NPI, but judge those same sentences as unacceptable after more reflection. Existing accounts have argued that illusions are a consequence of faulty memory access processes, and make the additional assumption that the encoding of the sentence remains fixed over time. This paper challenges the predictions made by these accounts, which assume that illusions should generalize to a broader set of structural environments and a wider range of syntactic and semantic phenomena. We show across seven reading-time and acceptability judgment experiments that NPI illusions can be reliably switched ``on'' and ``off'', depending on the amount of time from when the potential licensor is processed until the NPI is encountered. But we also find that the same profile does not extend to agreement illusions. This contrast suggests that the mechanisms responsible for switching the NPI illusion on and off are not shared across all illusions. We argue that the contrast reflects changes over time in the encoding of the semantic/pragmatic representations that can license NPIs. Just as optical illusions have been informative about the visual system, selective linguistic illusions are informative not only about the nature of the access mechanisms, but also about the nature of the encoding mechanisms.},
+  langid = {english},
+  keywords = {Agreement,Binding,Linguistic illusions,Memory,Negative polarity,Representation,Sentence processing}
+}
+
 @article{partee.b:1990,
   title = {Mathematical Methods in Linguistics},
   author = {Manaster Ramer, Alexis},
@@ -8626,6 +8754,22 @@
   publisher = {{Association for Computational Linguistics}},
   address = {{Santa Fe, New Mexico, USA}},
   url = {https://www.aclweb.org/anthology/C18-1324}
+}
+
+@inproceedings{qian.p:2022,
+  title = {Flexible {{Generation}} from {{Fragmentary Linguistic Input}}},
+  booktitle = {Proceedings of the 60th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{Volume}} 1: {{Long Papers}})},
+  author = {Qian, Peng and Levy, Roger},
+  year = {2022},
+  month = may,
+  pages = {8176--8196},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Dublin, Ireland}},
+  doi = {10.18653/v1/2022.acl-long.563},
+  url = {https://aclanthology.org/2022.acl-long.563},
+  urldate = {2023-02-09},
+  abstract = {The dominant paradigm for high-performance models in novel NLP tasks today is direct specialization for the task via training from scratch or fine-tuning large pre-trained models. But does direct specialization capture how humans approach novel language tasks? We hypothesize that human performance is better characterized by flexible inference through composition of basic computational motifs available to the human language user. To test this hypothesis, we formulate a set of novel fragmentary text completion tasks, and compare the behavior of three direct-specialization models against a new model we introduce, GibbsComplete, which composes two basic computational motifs central to contemporary models: masked and autoregressive word prediction. We conduct three types of evaluation: human judgments of completion quality, satisfaction of syntactic constraints imposed by the input fragment, and similarity to human behavior in the structural statistics of the completions. With no task-specific parameter tuning, GibbsComplete performs comparably to direct-specialization models in the first two evaluations, and outperforms all direct-specialization models in the third evaluation. These results support our hypothesis that human behavior in novel language tasks and environments may be better characterized by flexible composition of basic computational motifs rather than by direct specialization.},
+  file = {/Users/j/Zotero/storage/3XXMXCYH/Qian and Levy (2022) Flexible Generation from Fragmentary Linguistic In.pdf}
 }
 
 @manual{r.coreteam:2021,
@@ -10693,7 +10837,7 @@
   issn = {1557-9654},
   doi = {10.1109/TIT.2014.2320500},
   abstract = {R\'enyi divergence is related to R\'enyi entropy much like Kullback-Leibler divergence is related to Shannon's entropy, and comes up in many settings. It was introduced by R\'enyi as a measure of information that satisfies almost the same axioms as Kullback-Leibler divergence, and depends on a parameter that is called its order. In particular, the R\'enyi divergence of order 1 equals the Kullback-Leibler divergence. We review and extend the most important properties of R\'enyi divergence and Kullback-Leibler divergence, including convexity, continuity, limits of \textbackslash (\textbackslash sigma \textbackslash ) -algebras, and the relation of the special order 0 to the Gaussian dichotomy and contiguity. We also show how to generalize the Pythagorean inequality to orders different from 1, and we extend the known equivalence between channel capacity and minimax redundancy to continuous channel inputs (for all orders) and present several other minimax results.},
-  keywords = {\\(\\alpha\\) -divergence,Bhattacharyya distance,Convergence,Data processing,Entropy,information divergence,Kullback-Leibler divergence,Markov processes,Pythagorean inequality,Q measurement,Rényi divergence,Testing},
+  keywords = {alpha-divergence,Bhattacharyya distance,Convergence,Data processing,Entropy,information divergence,Kullback-Leibler divergence,Markov processes,Pythagorean inequality,Q measurement,Rényi divergence},
   file = {/Users/j/Zotero/storage/C56T2S9J/van Erven and Harremos (2014) Rényi Divergence and Kullback-Leibler Divergence.pdf}
 }
 
@@ -10812,7 +10956,7 @@
 
 @inproceedings{vaswani.a:2017,
   title = {Attention Is All You Need},
-  booktitle = {Advances in Neural Information Processing Systems 30: {{Annual}} Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, {{CA}}, {{USA}}},
+  booktitle = {Advances in Neural Information Processing Systems 30: {{Annual}} Conference on Neural Information Processing Systems 2017, {{December}} 4-9, 2017, {{Long Beach}}, {{CA}}, {{USA}}},
   author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
   editor = {Guyon, Isabelle and {von Luxburg}, Ulrike and Bengio, Samy and Wallach, Hanna M. and Fergus, Rob and Vishwanathan, S. V. N. and Garnett, Roman},
   year = {2017},
