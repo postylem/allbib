@@ -459,7 +459,7 @@
 
 @inproceedings{aurnhammer.c:2019cogsci,
   title = {Comparing Gated and Simple Recurrent Neural Network Architectures as Models of Human Sentence Processing},
-  booktitle = {Proceedings of the 41st Annual Conference of the Cognitive Science Society},
+  booktitle = {Proceedings of the 41st {{Annual Conference}} of the {{Cognitive Science Society}}},
   author = {Aurnhammer, Christoph and Frank, Stefan L.},
   date = {2019},
   pages = {112--118},
@@ -846,6 +846,22 @@
   keywords = {mutual information,synergy}
 }
 
+@online{belrose.n:2023,
+  title = {Eliciting {{Latent Predictions}} from {{Transformers}} with the {{Tuned Lens}}},
+  author = {Belrose, Nora and Furman, Zach and Smith, Logan and Halawi, Danny and Ostrovsky, Igor and McKinney, Lev and Biderman, Stella and Steinhardt, Jacob},
+  date = {2023-03-14},
+  number = {arXiv:2303.08112},
+  eprint = {arXiv:2303.08112},
+  eprinttype = {arxiv},
+  doi = {10.48550/arXiv.2303.08112},
+  url = {http://arxiv.org/abs/2303.08112},
+  urldate = {2023-03-16},
+  abstract = {We analyze transformers from the perspective of iterative inference, seeking to understand how model predictions are refined layer by layer. To do so, we train an affine probe for each block in a frozen pretrained model, making it possible to decode every hidden state into a distribution over the vocabulary. Our method, the \textbackslash emph\{tuned lens\}, is a refinement of the earlier ``logit lens'' technique, which yielded useful insights but is often brittle. We test our method on various autoregressive language models with up to 20B parameters, showing it to be more predictive, reliable and unbiased than the logit lens. With causal experiments, we show the tuned lens uses similar features to the model itself. We also find the trajectory of latent predictions can be used to detect malicious inputs with high accuracy. All code needed to reproduce our results can be found at https://github.com/AlignmentResearch/tuned-lens.},
+  pubstate = {preprint},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/j/Zotero/storage/6G8VD5HA/Belrose et al. (2023) Eliciting Latent Predictions from Transformers wit.pdf}
+}
+
 @inproceedings{bender.e:2021,
   title = {On the {{Dangers}} of {{Stochastic Parrots}}: {{Can Language Models Be Too Big}}? 🦜},
   shorttitle = {On the {{Dangers}} of {{Stochastic Parrots}}},
@@ -910,7 +926,7 @@
 
 @inproceedings{bicknell.k:2010,
   title = {A Rational Model of Eye Movement Control in Reading},
-  booktitle = {Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics},
+  booktitle = {Proceedings of the 48th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}}},
   author = {Bicknell, Klinton and Levy, Roger},
   date = {2010},
   pages = {1168--1178},
@@ -3919,7 +3935,7 @@
 
 @inproceedings{goodkind.a:2018,
   title = {Predictive Power of Word Surprisal for Reading Times Is a Linear Function of Language Model Quality},
-  booktitle = {Proceedings of the 8th Workshop on Cognitive Modeling and Computational Linguistics ({{CMCL}} 2018)},
+  booktitle = {Proceedings of the 8th {{Workshop}} on {{Cognitive Modeling}} and {{Computational Linguistics}} ({{CMCL}} 2018)},
   author = {Goodkind, Adam and Bicknell, Klinton},
   date = {2018},
   publisher = {{Association for Computational Linguistics}},
@@ -6547,7 +6563,7 @@
   url = {https://george.matheos.com/publication/23-smcp3/},
   abstract = {There is a widespread need for sound, flexible frameworks for Monte Carlo inference. This paper introduces SMCP3, a sequential Monte Carlo framework that broadens the class of strategies practitioners can employ to update particles from iteration to iteration, relative to existing frameworks like resample-move SMC (Gilks \& Berzuini, 2001) and SMC samplers (Del Moral et al., 2006). In SMCP3, proposal kernels can be general probabilistic programs, which differ from traditional proposal densities in that they may sample many auxiliary variables, and may apply deterministic post-processing to calculate a proposed update. We have implemented our framework in the Gen probabilistic programming platform: given probabilistic programs that specify target distributions, forward kernels, and reverse kernels, our implementation fully automates the sound computation of incremental importance weights. To illustrate the effectiveness of SMCP3 algorithms, we apply our framework in two domains. First, we use it for online state-estimation, using proposal programs based on Langevin ascent to reduce the bias in log marginal likelihood estimates relative to resample-move SMC with Langevin rejuvenation. Second, we demonstrate an SMCP3 algorithm that yields more robust online clustering in Dirichlet process mixture models than strong SMC baselines.},
   pubstate = {preprint},
-  file = {/Users/j/Zotero/storage/MLRWLMF3/Lew et al. (2023) SMCP3 SMC with Probabilistic Program Proposals.pdf}
+  file = {/Users/j/Zotero/storage/K5JTMIMS/SMCP3.pdf;/Users/j/Zotero/storage/MLRWLMF3/Lew et al. (2023) SMCP3 SMC with Probabilistic Program Proposals.pdf}
 }
 
 @article{lewis.m:2014,
@@ -8308,6 +8324,27 @@
   date-modified = {2019-07-05 11:08:29 -0400},
   project = {syntactic embedding},
   keywords = {mutual information,representation learning}
+}
+
+@report{openai: 2023GPT4techreport,
+  type = {Technical report},
+  title = {{{GPT-4 Technical Report}}},
+  author = {OpenAI},
+  date = {2023-03-14},
+  institution = {{OpenAI}},
+  url = {https://cdn.openai.com/papers/gpt-4.pdf},
+  urldate = {2023-03-15},
+  file = {/Users/j/Zotero/storage/2HU7VBAT/gpt-4.pdf}
+}
+
+@online{openai:2023GPT4-post,
+  title = {{{GPT-4}}},
+  author = {OpenAI},
+  date = {2023-03-14},
+  url = {https://openai.com/research/gpt-4},
+  urldate = {2023-03-15},
+  abstract = {We’ve created GPT-4, the latest milestone in OpenAI’s effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks.},
+  langid = {american}
 }
 
 @article{ortega.p:2013,
@@ -10999,7 +11036,7 @@
   title = {Using the {{Interpolated Maze Task}} to {{Assess Incremental Processing}} in {{English Relative Clauses}}},
   author = {Vani, Pranali and Wilcox, Ethan Gotlieb and Levy, Roger},
   date = {2021},
-  journaltitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+  journaltitle = {Proceedings of the 43rd Annual Meeting of the Cognitive Science Society},
   url = {https://escholarship.org/uc/item/3x34x7dz},
   urldate = {2023-03-09},
   abstract = {In English, Subject Relative Clauses are processed more quickly than Object Relative Clauses, but open questions remain about where in the clause slowdown occurs. The surprisal theory of incremental processing, under which processing difficulty corresponds to probabilistic expectations about upcoming material, predicts that slowdown should occur immediately on material that disambiguates the subject from object relative clause. However, evidence from eye tracking and self-paced reading studies suggests that slowdown occurs downstream of RC-disambiguating material, on the relative clause verb. These methods, however, suffer from well-known spillover effects which makes their results difficult to interpret. To address these issues, we introduce and deploy a novel variant of the Maze task for reading times (Forster, Guerrera, \&amp; Elliot, 2009), called the Interpolated Maze in two English web-based experiments. In Experiment 1, we find that the locus of reading-time differences between SRCs and ORCs falls on immediate disambiguating definite determiner. Experiment 2 provides a control, showing that ORCs are read more slowly than lexically-matching, non-anomalous material. These results provide new evidence for the locus of processing difficulty in relative clauses and support the surprisal theory of incremental processing.},

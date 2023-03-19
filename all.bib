@@ -461,7 +461,7 @@
 
 @inproceedings{aurnhammer.c:2019cogsci,
   title = {Comparing Gated and Simple Recurrent Neural Network Architectures as Models of Human Sentence Processing},
-  booktitle = {Proceedings of the 41st Annual Conference of the Cognitive Science Society},
+  booktitle = {Proceedings of the 41st {{Annual Conference}} of the {{Cognitive Science Society}}},
   author = {Aurnhammer, Christoph and Frank, Stefan L.},
   year = {2019},
   pages = {112--118},
@@ -853,6 +853,23 @@
   keywords = {mutual information,synergy}
 }
 
+@misc{belrose.n:2023,
+  title = {Eliciting {{Latent Predictions}} from {{Transformers}} with the {{Tuned Lens}}},
+  author = {Belrose, Nora and Furman, Zach and Smith, Logan and Halawi, Danny and Ostrovsky, Igor and McKinney, Lev and Biderman, Stella and Steinhardt, Jacob},
+  year = {2023},
+  month = mar,
+  number = {arXiv:2303.08112},
+  eprint = {arXiv:2303.08112},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2303.08112},
+  url = {http://arxiv.org/abs/2303.08112},
+  urldate = {2023-03-16},
+  abstract = {We analyze transformers from the perspective of iterative inference, seeking to understand how model predictions are refined layer by layer. To do so, we train an affine probe for each block in a frozen pretrained model, making it possible to decode every hidden state into a distribution over the vocabulary. Our method, the \textbackslash emph\{tuned lens\}, is a refinement of the earlier ``logit lens'' technique, which yielded useful insights but is often brittle. We test our method on various autoregressive language models with up to 20B parameters, showing it to be more predictive, reliable and unbiased than the logit lens. With causal experiments, we show the tuned lens uses similar features to the model itself. We also find the trajectory of latent predictions can be used to detect malicious inputs with high accuracy. All code needed to reproduce our results can be found at https://github.com/AlignmentResearch/tuned-lens.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning},
+  file = {/Users/j/Zotero/storage/6G8VD5HA/Belrose et al. (2023) Eliciting Latent Predictions from Transformers wit.pdf}
+}
+
 @inproceedings{bender.e:2021,
   title = {On the {{Dangers}} of {{Stochastic Parrots}}: {{Can Language Models Be Too Big}}? 🦜},
   shorttitle = {On the {{Dangers}} of {{Stochastic Parrots}}},
@@ -919,7 +936,7 @@
 
 @inproceedings{bicknell.k:2010,
   title = {A Rational Model of Eye Movement Control in Reading},
-  booktitle = {Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics},
+  booktitle = {Proceedings of the 48th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}}},
   author = {Bicknell, Klinton and Levy, Roger},
   year = {2010},
   pages = {1168--1178},
@@ -3949,7 +3966,7 @@
 
 @inproceedings{goodkind.a:2018,
   title = {Predictive Power of Word Surprisal for Reading Times Is a Linear Function of Language Model Quality},
-  booktitle = {Proceedings of the 8th Workshop on Cognitive Modeling and Computational Linguistics ({{CMCL}} 2018)},
+  booktitle = {Proceedings of the 8th {{Workshop}} on {{Cognitive Modeling}} and {{Computational Linguistics}} ({{CMCL}} 2018)},
   author = {Goodkind, Adam and Bicknell, Klinton},
   year = {2018},
   publisher = {{Association for Computational Linguistics}},
@@ -6592,7 +6609,7 @@
   year = {2023},
   url = {https://george.matheos.com/publication/23-smcp3/},
   abstract = {There is a widespread need for sound, flexible frameworks for Monte Carlo inference. This paper introduces SMCP3, a sequential Monte Carlo framework that broadens the class of strategies practitioners can employ to update particles from iteration to iteration, relative to existing frameworks like resample-move SMC (Gilks \& Berzuini, 2001) and SMC samplers (Del Moral et al., 2006). In SMCP3, proposal kernels can be general probabilistic programs, which differ from traditional proposal densities in that they may sample many auxiliary variables, and may apply deterministic post-processing to calculate a proposed update. We have implemented our framework in the Gen probabilistic programming platform: given probabilistic programs that specify target distributions, forward kernels, and reverse kernels, our implementation fully automates the sound computation of incremental importance weights. To illustrate the effectiveness of SMCP3 algorithms, we apply our framework in two domains. First, we use it for online state-estimation, using proposal programs based on Langevin ascent to reduce the bias in log marginal likelihood estimates relative to resample-move SMC with Langevin rejuvenation. Second, we demonstrate an SMCP3 algorithm that yields more robust online clustering in Dirichlet process mixture models than strong SMC baselines.},
-  file = {/Users/j/Zotero/storage/MLRWLMF3/Lew et al. (2023) SMCP3 SMC with Probabilistic Program Proposals.pdf}
+  file = {/Users/j/Zotero/storage/K5JTMIMS/SMCP3.pdf;/Users/j/Zotero/storage/MLRWLMF3/Lew et al. (2023) SMCP3 SMC with Probabilistic Program Proposals.pdf}
 }
 
 @article{lewis.m:2014,
@@ -8081,6 +8098,7 @@
   publisher = {{Institute of Mathematical Statistics}},
   issn = {0090-5364, 2168-8966},
   doi = {10.1214/aos/1056562461},
+  urldate = {2022-06-10},
   abstract = {Markov chain sampling methods that adapt to characteristics of the distribution being sampled can be constructed using the principle that one can ample from a distribution by sampling uniformly from the region under the plot of its density function. A Markov chain that converges to this uniform distribution can be constructed by alternating uniform sampling in the vertical direction with uniform sampling from the horizontal "slice" defined by the current vertical position, or more generally, with some update that leaves the uniform distribution over this slice invariant. Such "slice sampling" methods are easily implemented for univariate distributions, and can be used to sample from a multivariate distribution by updating each variable in turn. This approach is often easier to implement than Gibbs sampling and more efficient than simple Metropolis updates, due to the ability of slice sampling to adaptively choose the magnitude of changes made. It is therefore attractive for routine and automated use. Slice sampling methods that update all variables simultaneously are also possible. These methods can adaptively choose the magnitudes of changes made to each variable, based on the local properties of the density function. More ambitiously, such methods could potentially adapt to the dependencies between variables by constructing local quadratic approximations. Another approach is to improve sampling efficiency by suppressing random walks. This can be done for univariate slice sampling by "overrelaxation," and for multivariate slice sampling by "reflection" from the edges of the slice.},
   keywords = {65C05,65C60,Adaptive methods,auxiliary variables,dynamical methods,Gibbs sampling,Markov chain Monte Carlo,Metropolis algorithm,overrelaxation,rejection sampling,sampling,slice sampling},
   file = {/Users/j/Zotero/storage/XAHUUUPG/Neal - 2003 - Slice sampling.pdf}
@@ -8365,6 +8383,29 @@
   date-modified = {2019-07-05 11:08:29 -0400},
   project = {syntactic embedding},
   keywords = {mutual information,representation learning}
+}
+
+@techreport{openai: 2023GPT4techreport,
+  type = {Technical Report},
+  title = {{{GPT-4 Technical Report}}},
+  author = {OpenAI},
+  year = {2023},
+  month = mar,
+  institution = {{OpenAI}},
+  url = {https://cdn.openai.com/papers/gpt-4.pdf},
+  urldate = {2023-03-15},
+  file = {/Users/j/Zotero/storage/2HU7VBAT/gpt-4.pdf}
+}
+
+@misc{openai:2023GPT4-post,
+  title = {{{GPT-4}}},
+  author = {OpenAI},
+  year = {2023},
+  month = mar,
+  url = {https://openai.com/research/gpt-4},
+  urldate = {2023-03-15},
+  abstract = {We've created GPT-4, the latest milestone in OpenAI's effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks.},
+  langid = {american}
 }
 
 @article{ortega.p:2013,
@@ -9689,6 +9730,7 @@
   pages = {e12988},
   issn = {1551-6709},
   doi = {10.1111/cogs.12988},
+  urldate = {2022-10-11},
   abstract = {The disambiguation of a syntactically ambiguous sentence in favor of a less preferred parse can lead to slower reading at the disambiguation point. This phenomenon, referred to as a garden-path effect, has motivated models in which readers initially maintain only a subset of the possible parses of the sentence, and subsequently require time-consuming reanalysis to reconstruct a discarded parse. A more recent proposal argues that the garden-path effect can be reduced to surprisal arising in a fully parallel parser: words consistent with the initially dispreferred but ultimately correct parse are simply less predictable than those consistent with the incorrect parse. Since predictability has pervasive effects in reading far beyond garden-path sentences, this account, which dispenses with reanalysis mechanisms, is more parsimonious. Crucially, it predicts a linear effect of surprisal: the garden-path effect is expected to be proportional to the difference in word surprisal between the ultimately correct and ultimately incorrect interpretations. To test this prediction, we used recurrent neural network language models to estimate word-by-word surprisal for three temporarily ambiguous constructions. We then estimated the slowdown attributed to each bit of surprisal from human self-paced reading times, and used that quantity to predict syntactic disambiguation difficulty. Surprisal successfully predicted the existence of garden-path effects, but drastically underpredicted their magnitude, and failed to predict their relative severity across constructions. We conclude that a full explanation of syntactic disambiguation difficulty may require recovery mechanisms beyond predictability.},
   langid = {english},
   keywords = {Garden paths,Information theory,Neural networks,Self-paced reading,Surprisal},
