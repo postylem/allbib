@@ -10571,6 +10571,23 @@
   keywords = {Psychology / General}
 }
 
+@article{newton.m:1994,
+  title = {Approximate {{Bayesian Inference}} with the {{Weighted Likelihood Bootstrap}}},
+  author = {Newton, Michael A. and Raftery, Adrian E.},
+  year = {1994},
+  journal = {Journal of the Royal Statistical Society: Series B (Methodological)},
+  volume = {56},
+  number = {1},
+  pages = {3--26},
+  issn = {2517-6161},
+  doi = {10.1111/j.2517-6161.1994.tb01956.x},
+  urldate = {2024-06-25},
+  abstract = {We introduce the weighted likelihood bootstrap (WLB) as a way to simulate approximately from a posterior distribution. This method is often easy to implement, requiring only an algorithm for calculating the maximum likelihood estimator, such as iteratively reweighted least squares. In the generic weighting scheme, the WLB is first order correct under quite general conditions. Inaccuracies can be removed by using the WLB as a source of samples in the sampling-importance resampling (SIR) algorithm, which also allows incorporation of particular prior information. The SIR-adjusted WLB can be a competitive alternative to other integration methods in certain models. Asymptotic expansions elucidate the second-order properties of the WLB, which is a generalization of Rubin's Bayesian bootstrap. The calculation of approximate Bayes factors for model comparison is also considered. We note that, given a sample simulated from the posterior distribution, the required marginal likelihood may be simulation consistently estimated by the harmonic mean of the associated likelihood values; a modification of this estimator that avoids instability is also noted. These methods provide simple ways of calculating approximate Bayes factors and posterior model probabilities for a very wide class of models.},
+  copyright = {{\copyright} 1994 Royal Statistical Society},
+  langid = {english},
+  keywords = {bayes factor,bayesian inference,dirichlet weights,monte carlo methods}
+}
+
 @inproceedings{nguyen.l:2012,
   title = {Accurate Unbounded Dependency Recovery Using Generalized Categorial Grammars},
   booktitle = {Proceedings of {{COLING}} 2012},
@@ -11140,6 +11157,23 @@
   date-added = {2021-02-05 12:03:58 -0500},
   date-modified = {2021-02-05 12:03:58 -0500},
   project = {syntactic embedding}
+}
+
+@misc{park.k:2024arxiv,
+  title = {Grammar-{{Aligned Decoding}}},
+  author = {Park, Kanghee and Wang, Jiayu and {Berg-Kirkpatrick}, Taylor and Polikarpova, Nadia and D'Antoni, Loris},
+  year = {2024},
+  month = may,
+  number = {arXiv:2405.21047},
+  eprint = {2405.21047},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2405.21047},
+  urldate = {2024-06-25},
+  abstract = {Large Language Models (LLMs) struggle with reliably generating highly structured outputs, such as program code, mathematical formulas, or well-formed markup. Constrained decoding approaches mitigate this problem by greedily restricting what tokens an LLM can output at each step to guarantee that the output matches a given constraint. Specifically, in grammar-constrained decoding (GCD), the LLM's output must follow a given grammar. In this paper we demonstrate that GCD techniques (and in general constrained decoding techniques) can distort the LLM's distribution, leading to outputs that are grammatical but appear with likelihoods that are not proportional to the ones given by the LLM, and so ultimately are low-quality. We call the problem of aligning sampling with a grammar constraint, grammar-aligned decoding (GAD), and propose adaptive sampling with approximate expected futures (ASAp), a decoding algorithm that guarantees the output to be grammatical while provably producing outputs that match the conditional probability of the LLM's distribution conditioned on the given grammar constraint. Our algorithm uses prior sample outputs to soundly overapproximate the future grammaticality of different output prefixes. Our evaluation on code generation and structured NLP tasks shows how ASAp often produces outputs with higher likelihood (according to the LLM's distribution) than existing GCD techniques, while still enforcing the desired grammatical constraints.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/Users/j/Zotfiles/park.k2024arxiv Grammar-Aligned Decoding.pdf}
 }
 
 @inproceedings{park.y:2009,

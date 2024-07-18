@@ -175,7 +175,7 @@
   url = {http://arxiv.org/abs/1503.05571},
   urldate = {2023-12-27},
   abstract = {We introduce a novel training principle for probabilistic models that is an alternative to maximum likelihood. The proposed Generative Stochastic Networks (GSN) framework is based on learning the transition operator of a Markov chain whose stationary distribution estimates the data distribution. Because the transition distribution is a conditional distribution generally involving a small move, it has fewer dominant modes, being unimodal in the limit of small moves. Thus, it is easier to learn, more like learning to perform supervised function approximation, with gradients that can be obtained by back-propagation. The theorems provided here generalize recent work on the probabilistic interpretation of denoising auto-encoders and provide an interesting justification for dependency networks and generalized pseudolikelihood (along with defining an appropriate joint distribution and sampling mechanism, even when the conditionals are not consistent). We study how GSNs can be used with missing inputs and can be used to sample subsets of variables given the rest. Successful experiments are conducted, validating these theoretical results, on two image datasets and with a particular architecture that mimics the Deep Boltzmann Machine Gibbs sampler but allows training to proceed with backprop, without the need for layerwise pretraining.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning},
   file = {/Users/j/Zotfiles/alain.g:2015arxiv GSNs : generative stochastic networks.pdf}
 }
@@ -504,7 +504,7 @@
   date = {2022-10-02},
   abstract = {Languages are governed by syntactic constraints — structural rules that determine which sentences are grammatical in the language. In English, one such constraint is subject-verb agreement, which dictates that the number of a verb must match the number of its corresponding subject: “the dogs run”, but “the dog runs”. While this constraint appears to be simple, in practice speakers make a substantial number of agreement errors, especially if a noun phrase near the verb differs in number from the subject (for example, a speaker might produce the ungrammatical sentence “the key to the cabinets are rusty”). This phenomenon, referred to as agreement attraction, is sensitive to a wide range of properties of the sentence; no single existing model is able to generate predictions for the wide variety of materials studied in the human experimental literature. We explore the viability of neural network language models—broad-coverage systems trained to predict the next word in a corpus—as a framework for addressing this limitation. We analyze the agreement errors made by Long Short-Term Memory (LSTM) networks and compare them to those of humans. The models successfully simulate certain results, such as the so-called number asymmetry and the difference between attraction strength in grammatical and ungrammatical sentences, but failed to simulate others, such as the effect of syntactic distance or notional (conceptual) number. We further evaluate networks trained with explicit syntactic supervision, and find that this form of supervision does not always lead to more human-like syntactic behavior. Finally, we show that the corpus used to train a network significantly affects the pattern of agreement errors produced by the network, and discuss the strengths and limitations of neural networks as a tool for understanding human syntactic processing.},
   langid = {english},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   file = {/Users/j/Zotfiles/arehalli.s:2022long Neural networks as cognitive models of t.pdf}
 }
 
@@ -539,7 +539,7 @@
   url = {http://arxiv.org/abs/2302.06784},
   urldate = {2023-04-05},
   abstract = {State-of-the-art language generation models can degenerate when applied to open-ended generation problems such as text completion, story generation, or dialog modeling. This degeneration usually shows up in the form of incoherence, lack of vocabulary diversity, and self-repetition or copying from the context. In this paper, we postulate that ``human-like'' generations usually lie in a narrow and nearly flat entropy band, and violation of these entropy bounds correlates with degenerate behavior. Our experiments show that this stable narrow entropy zone exists across models, tasks, and domains and confirm the hypothesis that violations of this zone correlate with degeneration. We then use this insight to propose an entropy-aware decoding algorithm that respects these entropy bounds resulting in less degenerate, more contextual, and "human-like" language generation in open-ended text generation settings.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/arora.k:2023 The stable entropy hypothesis and entrop.pdf}
 }
@@ -854,7 +854,7 @@
   url = {http://arxiv.org/abs/2002.12804},
   urldate = {2023-05-24},
   abstract = {We propose to pre-train a unified language model for both autoencoding and partially autoregressive language modeling tasks using a novel training procedure, referred to as a pseudo-masked language model (PMLM). Given an input text with masked tokens, we rely on conventional masks to learn inter-relations between corrupted tokens and context via autoencoding, and pseudo masks to learn intra-relations between masked spans via partially autoregressive modeling. With well-designed position embeddings and self-attention masks, the context encodings are reused to avoid redundant computation. Moreover, conventional masks used for autoencoding provide global masking information, so that all the position embeddings are accessible in partially autoregressive language modeling. In addition, the two tasks pre-train a unified language model as a bidirectional encoder and a sequence-to-sequence decoder, respectively. Our experiments show that the unified language models pre-trained using PMLM achieve new state-of-the-art results on a wide range of natural language understanding and generation tasks across several widely used benchmarks.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,unified LM},
   file = {/Users/j/Zotfiles/bao.h:2020 UniLMv2: Pseudo-masked language models f.pdf}
 }
@@ -1158,7 +1158,7 @@
   url = {http://arxiv.org/abs/2303.08112},
   urldate = {2023-03-16},
   abstract = {We analyze transformers from the perspective of iterative inference, seeking to understand how model predictions are refined layer by layer. To do so, we train an affine probe for each block in a frozen pretrained model, making it possible to decode every hidden state into a distribution over the vocabulary. Our method, the \textbackslash emph\{tuned lens\}, is a refinement of the earlier ``logit lens'' technique, which yielded useful insights but is often brittle. We test our method on various autoregressive language models with up to 20B parameters, showing it to be more predictive, reliable and unbiased than the logit lens. With causal experiments, we show the tuned lens uses similar features to the model itself. We also find the trajectory of latent predictions can be used to detect malicious inputs with high accuracy. All code needed to reproduce our results can be found at https://github.com/AlignmentResearch/tuned-lens.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning}
 }
 
@@ -1598,7 +1598,7 @@
   url = {http://arxiv.org/abs/2108.07258},
   urldate = {2024-05-23},
   abstract = {AI is undergoing a paradigm shift with the rise of models (e.g., BERT, DALL-E, GPT-3) that are trained on broad data at scale and are adaptable to a wide range of downstream tasks. We call these models foundation models to underscore their critically central yet incomplete character. This report provides a thorough account of the opportunities and risks of foundation models, ranging from their capabilities (e.g., language, vision, robotics, reasoning, human interaction) and technical principles(e.g., model architectures, training procedures, data, systems, security, evaluation, theory) to their applications (e.g., law, healthcare, education) and societal impact (e.g., inequity, misuse, economic and environmental impact, legal and ethical considerations). Though foundation models are based on standard deep learning and transfer learning, their scale results in new emergent capabilities,and their effectiveness across so many tasks incentivizes homogenization. Homogenization provides powerful leverage but demands caution, as the defects of the foundation model are inherited by all the adapted models downstream. Despite the impending widespread deployment of foundation models, we currently lack a clear understanding of how they work, when they fail, and what they are even capable of due to their emergent properties. To tackle these questions, we believe much of the critical research on foundation models will require deep interdisciplinary collaboration commensurate with their fundamentally sociotechnical nature.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computers and Society,Computer Science - Machine Learning},
   annotation = {Note: Authored by the Center for Research on Foundation Models (CRFM) at the Stanford Institute for Human-Centered Artificial Intelligence (HAI)},
   file = {/Users/j/Zotfiles/bommasani.r:2022arxiv On the Opportunities and Risks of Founda.pdf}
@@ -1729,7 +1729,7 @@
   urldate = {2023-03-01},
   abstract = {Behavioral measures of word-by-word reading time provide experimental evidence to test theories of language processing. A-maze is a recent method for measuring incremental sentence processing that can localize slowdowns related to syntactic ambiguities in individual sentences. We adapted A-maze for use on longer passages and tested it on the Natural Stories corpus. Participants were able to comprehend these longer text passages that they read via the Maze task. Moreover, the Maze task yielded useable reaction time data with word predictability effects that were linearly related to surprisal, the same pattern found with other incremental methods. Crucially, Maze reaction times show a tight relationship with properties of the current word, with little spillover of effects from previous words. This superior localization is an advantage of Maze compared with other methods. Overall, we expanded the scope of experimental materials, and thus theoretical questions, that can be studied with the Maze task.},
   langid = {american},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {A-Maze,incremental processing,Linguistics,naturalistic text,Psycholinguistics and Neurolinguistics,self-paced reading,Social and Behavioral Sciences,surprisal}
 }
 
@@ -1885,7 +1885,7 @@
   url = {http://arxiv.org/abs/2303.12712},
   urldate = {2024-05-23},
   abstract = {Artificial intelligence (AI) researchers have been developing and refining large language models (LLMs) that exhibit remarkable capabilities across a variety of domains and tasks, challenging our understanding of learning and cognition. The latest model developed by OpenAI, GPT-4, was trained using an unprecedented scale of compute and data. In this paper, we report on our investigation of an early version of GPT-4, when it was still in active development by OpenAI. We contend that (this early version of) GPT-4 is part of a new cohort of LLMs (along with ChatGPT and Google's PaLM for example) that exhibit more general intelligence than previous AI models. We discuss the rising capabilities and implications of these models. We demonstrate that, beyond its mastery of language, GPT-4 can solve novel and difficult tasks that span mathematics, coding, vision, medicine, law, psychology and more, without needing any special prompting. Moreover, in all of these tasks, GPT-4's performance is strikingly close to human-level performance, and often vastly surpasses prior models such as ChatGPT. Given the breadth and depth of GPT-4's capabilities, we believe that it could reasonably be viewed as an early (yet still incomplete) version of an artificial general intelligence (AGI) system. In our exploration of GPT-4, we put special emphasis on discovering its limitations, and we discuss the challenges ahead for advancing towards deeper and more comprehensive versions of AGI, including the possible need for pursuing a new paradigm that moves beyond next-word prediction. We conclude with reflections on societal influences of the recent technological leap and future research directions.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/bubeck.s:2023arxiv Sparks of Artificial General Intelligenc.pdf}
 }
@@ -2069,7 +2069,7 @@
   url = {http://arxiv.org/abs/2311.18805},
   urldate = {2023-12-07},
   abstract = {While Large Language Models (LLMs) have achieved remarkable performance in many tasks, much about their inner workings remains unclear. In this study, we present novel experimental insights into the resilience of LLMs, particularly GPT-4, when subjected to extensive character-level permutations. To investigate this, we first propose the Scrambled Bench, a suite designed to measure the capacity of LLMs to handle scrambled input, in terms of both recovering scrambled sentences and answering questions given scrambled context. The experimental results indicate that most powerful LLMs demonstrate the capability akin to typoglycemia, a phenomenon where humans can understand the meaning of words even when the letters within those words are scrambled, as long as the first and last letters remain in place. More surprisingly, we found that only GPT-4 nearly flawlessly processes inputs with unnatural errors, even under the extreme condition, a task that poses significant challenges for other LLMs and often even for humans. Specifically, GPT-4 can almost perfectly reconstruct the original sentences from scrambled ones, decreasing the edit distance by 95\%, even when all letters within each word are entirely scrambled. It is counter-intuitive that LLMs can exhibit such resilience despite severe disruption to input tokenization caused by scrambled text.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/cao.q:2023 Unnatural Error Correction: GPT-4 Can Al.pdf}
 }
@@ -2378,7 +2378,7 @@
   url = {http://arxiv.org/abs/2302.01318},
   urldate = {2023-02-15},
   abstract = {We present speculative sampling, an algorithm for accelerating transformer decoding by enabling the generation of multiple tokens from each transformer call. Our algorithm relies on the observation that the latency of parallel scoring of short continuations, generated by a faster but less powerful draft model, is comparable to that of sampling a single token from the larger target model. This is combined with a novel modified rejection sampling scheme which preserves the distribution of the target model within hardware numerics. We benchmark speculative sampling with Chinchilla, a 70 billion parameter language model, achieving a 2-2.5x decoding speedup in a distributed setup, without compromising the sample quality or making modifications to the model itself.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,language model decoding,rejection sampling,speculative sampling},
   file = {/Users/j/Zotfiles/chen.c:2023 Accelerating large language model decodi.pdf}
 }
@@ -3521,7 +3521,7 @@
   url = {http://arxiv.org/abs/2207.02098},
   urldate = {2022-10-11},
   abstract = {Reliable generalization lies at the heart of safe ML and AI. However, understanding when and how neural networks generalize remains one of the most important unsolved problems in the field. In this work, we conduct an extensive empirical study (10250 models, 15 tasks) to investigate whether insights from the theory of computation can predict the limits of neural network generalization in practice. We demonstrate that grouping tasks according to the Chomsky hierarchy allows us to forecast whether certain architectures will be able to generalize to out-of-distribution inputs. This includes negative results where even extensive amounts of data and training time never lead to any non-trivial generalization, despite models having sufficient capacity to fit the training data perfectly. Our results show that, for our subset of tasks, RNNs and Transformers fail to generalize on non-regular tasks, LSTMs can solve regular and counter-language tasks, and only networks augmented with structured memory (such as a stack or memory tape) can successfully generalize on context-free and context-sensitive tasks.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Formal Languages and Automata Theory,Computer Science - Machine Learning},
   file = {/Users/j/Zotfiles/deletang.g:2022 Neural networks and the Chomsky hierarch.pdf}
 }
@@ -3717,7 +3717,7 @@
   url = {http://arxiv.org/abs/1905.03197},
   urldate = {2023-05-24},
   abstract = {This paper presents a new Unified pre-trained Language Model (UniLM) that can be fine-tuned for both natural language understanding and generation tasks. The model is pre-trained using three types of language modeling tasks: unidirectional, bidirectional, and sequence-to-sequence prediction. The unified modeling is achieved by employing a shared Transformer network and utilizing specific self-attention masks to control what context the prediction conditions on. UniLM compares favorably with BERT on the GLUE benchmark, and the SQuAD 2.0 and CoQA question answering tasks. Moreover, UniLM achieves new state-of-the-art results on five natural language generation datasets, including improving the CNN/DailyMail abstractive summarization ROUGE-L to 40.51 (2.04 absolute improvement), the Gigaword abstractive summarization ROUGE-L to 35.75 (0.86 absolute improvement), the CoQA generative question answering F1 score to 82.5 (37.1 absolute improvement), the SQuAD question generation BLEU-4 to 22.12 (3.75 absolute improvement), and the DSTC7 document-grounded dialog response generation NIST-4 to 2.67 (human performance is 2.65). The code and pre-trained models are available at https://github.com/microsoft/unilm.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,unified LM},
   file = {/Users/j/Zotfiles/dong.l:2019UniLM Unified language model pre-training for.pdf}
 }
@@ -4211,7 +4211,7 @@
   date-added = {2019-07-05 11:04:57 -0400},
   date-modified = {2019-07-05 11:06:04 -0400},
   project = {syntactic embedding},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {gradient attribution priors}
 }
 
@@ -4506,7 +4506,7 @@
   url = {http://arxiv.org/abs/1703.08244},
   urldate = {2023-09-28},
   abstract = {We present a dataset that contains every instance of all tokens (\textasciitilde{} words) ever written in undeleted, non-redirect English Wikipedia articles until October 2016, in total 13,545,349,787 instances. Each token is annotated with (i) the article revision it was originally created in, and (ii) lists with all the revisions in which the token was ever deleted and (potentially) re-added and re-deleted from its article, enabling a complete and straightforward tracking of its history. This data would be exceedingly hard to create by an average potential user as it is (i) very expensive to compute and as (ii) accurately tracking the history of each token in revisioned documents is a non-trivial task. Adapting a state-of-the-art algorithm, we have produced a dataset that allows for a range of analyses and metrics, already popular in research and going beyond, to be generated on complete-Wikipedia scale; ensuring quality and allowing researchers to forego expensive text-comparison computation, which so far has hindered scalable usage. We show how this data enables, on token-level, computation of provenance, measuring survival of content over time, very detailed conflict metrics, and fine-grained interactions of editors like partial reverts, re-additions and other metrics, in the process gaining several novel insights.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/flock.f:2017arxiv TokTrack: A Complete Token Provenance an.pdf}
 }
@@ -4876,7 +4876,7 @@
   url = {http://arxiv.org/abs/2304.04052},
   urldate = {2023-05-25},
   abstract = {The sequence-to-sequence (seq2seq) task aims at generating the target sequence based on the given input source sequence. Traditionally, most of the seq2seq task is resolved by the Encoder-Decoder framework which requires an encoder to encode the source sequence and a decoder to generate the target text. Recently, a bunch of new approaches have emerged that apply decoder-only language models directly to the seq2seq task. Despite the significant advancements in applying language models to the seq2seq task, there is still a lack of thorough analysis on the effectiveness of the decoder-only language model architecture. This paper aims to address this gap by conducting a detailed comparison between the encoder-decoder architecture and the decoder-only language model framework through the analysis of a regularized encoder-decoder structure. This structure is designed to replicate all behaviors in the classical decoder-only language model but has an encoder and a decoder making it easier to be compared with the classical encoder-decoder structure. Based on the analysis, we unveil the attention degeneration problem in the language model, namely, as the generation step number grows, less and less attention is focused on the source sequence. To give a quantitative understanding of this problem, we conduct a theoretical sensitivity analysis of the attention output with respect to the source input. Grounded on our analysis, we propose a novel partial attention language model to solve the attention degeneration problem. Experimental results on machine translation, summarization, and data-to-text generation tasks support our analysis and demonstrate the effectiveness of our proposed model.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/Users/j/Zotfiles/fu.z:2023 Decoder-only or encoder-decoder? Interpr.pdf}
 }
@@ -5736,7 +5736,7 @@
   url = {http://arxiv.org/abs/2402.00838},
   urldate = {2024-05-15},
   abstract = {Language models (LMs) have become ubiquitous in both NLP research and in commercial product offerings. As their commercial importance has surged, the most powerful models have become closed off, gated behind proprietary interfaces, with important details of their training data, architectures, and development undisclosed. Given the importance of these details in scientifically studying these models, including their biases and potential risks, we believe it is essential for the research community to have access to powerful, truly open LMs. To this end, this technical report details the first release of OLMo, a state-of-the-art, truly Open Language Model and its framework to build and study the science of language modeling. Unlike most prior efforts that have only released model weights and inference code, we release OLMo and the whole framework, including training data and training and evaluation code. We hope this release will empower and strengthen the open research community and inspire a new wave of innovation.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language}
 }
 
@@ -5957,7 +5957,7 @@
   url = {http://arxiv.org/abs/2303.07971},
   urldate = {2023-03-23},
   abstract = {Scaling large language models (LLMs) leads to an emergent capacity to learn in-context from example demonstrations. Despite progress, theoretical understanding of this phenomenon remains limited. We argue that in-context learning relies on recombination of compositional operations found in natural language data. We derive an information-theoretic bound showing how in-context learning abilities arise from generic next-token prediction when the pretraining distribution has sufficient amounts of compositional structure, under linguistically motivated assumptions. A second bound provides a theoretical justification for the empirical success of prompting LLMs to output intermediate steps towards an answer. To validate theoretical predictions, we introduce a controlled setup for inducing in-context learning; unlike previous approaches, it accounts for the compositional nature of language. Trained transformers can perform in-context learning for a range of tasks, in a manner consistent with the theoretical results. Mirroring real-world LLMs in a miniature setup, in-context learning emerges when scaling parameters and data, and models perform better when prompted to output intermediate steps. Probing shows that in-context learning is supported by a representation of the input's compositional structure. Taken together, these results provide a step towards theoretical understanding of emergent behavior in large language models.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning}
 }
 
@@ -6753,7 +6753,7 @@
   abstract = {Words that are more surprising given context take longer to process. However, no incremental parsing algorithm has been shown to directly predict this phenomenon. In this work, we focus on a class of algorithms whose runtime does naturally scale in surprisal—those that involve repeatedly sampling from the prior. Our first contribution is to show that simple examples of such algorithms predict runtime to increase superlinearly with surprisal, and also predict variance in runtime to increase. These two predictions stand in contrast with literature on surprisal theory (Hale, 2001; Levy, 2008), which assumes that the expected processing cost increases linearly with surprisal, and makes no prediction about variance. In the second part of this paper, we conduct an empirical study of the relationship between surprisal and reading time, using a collection of modern language models to estimate surprisal. We find that with better language models, reading time increases superlinearly in surprisal, and also that variance increases. These results are consistent with the predictions of sampling-based algorithms.},
   langid = {american},
   peerreview = {db},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Linguistics,parsing algorithms,sampling,sentence processing,Social and Behavioral Sciences,surprisal},
   note = {To appear in Open Mind: Discoveries in Cognitive Science (2023)},
   file = {/Users/j/Zotfiles/hoover.j:2022psyarxiv The plausibility of sampling as an algor.pdf}
@@ -6847,7 +6847,7 @@
   url = {http://arxiv.org/abs/1911.12246},
   urldate = {2024-05-05},
   abstract = {We investigate the extent to which individual attention heads in pretrained transformer language models, such as BERT and RoBERTa, implicitly capture syntactic dependency relations. We employ two methods---taking the maximum attention weight and computing the maximum spanning tree---to extract implicit dependency relations from the attention weights of each layer/head, and compare them to the ground-truth Universal Dependency (UD) trees. We show that, for some UD relation types, there exist heads that can recover the dependency type significantly better than baselines on parsed English text, suggesting that some self-attention heads act as a proxy for syntactic structure. We also analyze BERT fine-tuned on two datasets---the syntax-oriented CoLA and the semantics-oriented MNLI---to investigate whether fine-tuning affects the patterns of their self-attention, but we do not observe substantial differences in the overall dependency relations extracted using our methods. Our results suggest that these models have some specialist attention heads that track individual dependency types, but no generalist head that performs holistic parsing significantly better than a trivial baseline, and that analyzing attention weights directly may not reveal much of the syntactic knowledge that BERT-style models are known to learn.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/htut.p:2019arxiv Do Attention Heads in BERT Track Syntact.pdf}
 }
@@ -6892,7 +6892,7 @@
   url = {http://arxiv.org/abs/2304.04758},
   urldate = {2023-04-28},
   abstract = {Scalar inferences (SI) are a signature example of how humans interpret language based on unspoken alternatives. While empirical studies have demonstrated that human SI rates are highly variable -- both within instances of a single scale, and across different scales -- there have been few proposals that quantitatively explain both cross- and within-scale variation. Furthermore, while it is generally assumed that SIs arise through reasoning about unspoken alternatives, it remains debated whether humans reason about alternatives as linguistic forms, or at the level of concepts. Here, we test a shared mechanism explaining SI rates within and across scales: context-driven expectations about the unspoken alternatives. Using neural language models to approximate human predictive distributions, we find that SI rates are captured by the expectedness of the strong scalemate as an alternative. Crucially, however, expectedness robustly predicts cross-scale variation only under a meaning-based view of alternatives. Our results suggest that pragmatic inferences arise from context-driven expectations over alternatives, and these expectations operate at the level of concepts.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/hu.j:2023arxiv Expectations over unspoken alternatives.pdf}
 }
@@ -6943,7 +6943,7 @@
   url = {http://arxiv.org/abs/2203.00281},
   urldate = {2024-05-15},
   abstract = {Recently CKY-based models show great potential in unsupervised grammar induction thanks to their human-like encoding paradigm, which runs recursively and hierarchically, but requires \$O(n\textasciicircum 3)\$ time-complexity. Recursive Transformer based on Differentiable Trees (R2D2) makes it possible to scale to large language model pre-training even with complex tree encoder by introducing a heuristic pruning method. However, the rule-based pruning approach suffers from local optimum and slow inference issues. In this paper, we fix those issues in a unified method. We propose to use a top-down parser as a model-based pruning method, which also enables parallel encoding during inference. Typically, our parser casts parsing as a split point scoring task, which first scores all split points for a given sentence, and then recursively splits a span into two by picking a split point with the highest score in the current span. The reverse order of the splits is considered as the order of pruning in R2D2 encoder. Beside the bi-directional language model loss, we also optimize the parser by minimizing the KL distance between tree probabilities from parser and R2D2. Our experiments show that our Fast-R2D2 improves performance significantly in grammar induction and achieves competitive results in downstream classification tasks.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/hu.x:2022arxiv Fast-R2D2: A Pretrained Recursive Neural.pdf}
 }
@@ -6999,7 +6999,7 @@
   urldate = {2023-04-22},
   abstract = {Prediction has been proposed as an overarching principle that explains human information processing in language and beyond. To what degree can processing difficulty in syntactically complex sentences - one of the major concerns of psycholinguistics - be explained by predictability, as estimated using computational language models? A precise, quantitative test of this question requires a much larger scale data collection effort than has been done in the past. We present the Syntactic Ambiguity Processing Benchmark, a dataset of self-paced reading times from 2000 participants, who read a diverse set of complex English sentences. This dataset makes it possible to measure processing difficulty associated with individual syntactic constructions, and even individual sentences, precisely enough to rigorously test the predictions of computational models of language comprehension. We find that the predictions of language models with two different architectures sharply diverge from the reading time data, dramatically underpredicting processing difficulty, failing to predict relative difficulty among different syntactic ambiguous constructions, and only partially explaining item-wise variability. These findings suggest that prediction is most likely insufficient on its own to explain human syntactic processing.},
   langid = {american},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Language models,Linguistics,Prediction,Psycholinguistics and Neurolinguistics,Sentence processing,Social and Behavioral Sciences,Surprisal},
   file = {/Users/j/Zotfiles/huang.k:2023psyarxiv Surprisal does not explain syntactic dis.pdf}
 }
@@ -7354,7 +7354,7 @@
   url = {http://arxiv.org/abs/2310.06825},
   urldate = {2024-02-01},
   abstract = {We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and code generation. Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost. We also provide a model fine-tuned to follow instructions, Mistral 7B -- Instruct, that surpasses the Llama 2 13B -- Chat model both on human and automated benchmarks. Our models are released under the Apache 2.0 license.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning}
 }
 
@@ -7369,7 +7369,7 @@
   url = {http://arxiv.org/abs/2401.04088},
   urldate = {2024-02-01},
   abstract = {We introduce Mixtral 8x7B, a Sparse Mixture of Experts (SMoE) language model. Mixtral has the same architecture as Mistral 7B, with the difference that each layer is composed of 8 feedforward blocks (i.e. experts). For every token, at each layer, a router network selects two experts to process the current state and combine their outputs. Even though each token only sees two experts, the selected experts can be different at each timestep. As a result, each token has access to 47B parameters, but only uses 13B active parameters during inference. Mixtral was trained with a context size of 32k tokens and it outperforms or matches Llama 2 70B and GPT-3.5 across all evaluated benchmarks. In particular, Mixtral vastly outperforms Llama 2 70B on mathematics, code generation, and multilingual benchmarks. We also provide a model fine-tuned to follow instructions, Mixtral 8x7B - Instruct, that surpasses GPT-3.5 Turbo, Claude-2.1, Gemini Pro, and Llama 2 70B - chat model on human benchmarks. Both the base and instruct models are released under the Apache 2.0 license.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning}
 }
 
@@ -9015,7 +9015,7 @@
   url = {http://arxiv.org/abs/2306.03081},
   urldate = {2023-06-08},
   abstract = {Even after fine-tuning and reinforcement learning, large language models (LLMs) can be difficult, if not impossible, to control reliably with prompts alone. We propose a new inference-time approach to enforcing syntactic and semantic constraints on the outputs of LLMs, called sequential Monte Carlo (SMC) steering. The key idea is to specify language generation tasks as posterior inference problems in a class of discrete probabilistic sequence models, and replace standard decoding with sequential Monte Carlo inference. For a computational cost similar to that of beam search, SMC can steer LLMs to solve diverse tasks, including infilling, generation under syntactic constraints, and prompt intersection. To facilitate experimentation with SMC steering, we present a probabilistic programming library, LLaMPPL (https://github.com/probcomp/LLaMPPL), for concisely specifying new generation tasks as language model probabilistic programs, and automating steering of LLaMA-family Transformers.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Programming Languages,Statistics - Computation},
   file = {/Users/j/Zotfiles/lew.a\:2023LLaMPPL Sequential Monte Carlo steering of large 2.pdf;/Users/j/Zotfiles/lew.a\:2023LLaMPPL Sequential Monte Carlo steering of large.pdf}
 }
@@ -9027,7 +9027,7 @@
   date = {2023},
   url = {https://george.matheos.com/publication/23-smcp3/},
   abstract = {There is a widespread need for sound, flexible frameworks for Monte Carlo inference. This paper introduces SMCP3, a sequential Monte Carlo framework that broadens the class of strategies practitioners can employ to update particles from iteration to iteration, relative to existing frameworks like resample-move SMC (Gilks \& Berzuini, 2001) and SMC samplers (Del Moral et al., 2006). In SMCP3, proposal kernels can be general probabilistic programs, which differ from traditional proposal densities in that they may sample many auxiliary variables, and may apply deterministic post-processing to calculate a proposed update. We have implemented our framework in the Gen probabilistic programming platform: given probabilistic programs that specify target distributions, forward kernels, and reverse kernels, our implementation fully automates the sound computation of incremental importance weights. To illustrate the effectiveness of SMCP3 algorithms, we apply our framework in two domains. First, we use it for online state-estimation, using proposal programs based on Langevin ascent to reduce the bias in log marginal likelihood estimates relative to resample-move SMC with Langevin rejuvenation. Second, we demonstrate an SMCP3 algorithm that yields more robust online clustering in Dirichlet process mixture models than strong SMC baselines.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   file = {/Users/j/Zotfiles/lew.a\:2023SMCP3 SMCP3\: SMC with probabilistic program pr.pdf;/Users/j/Zotfiles/lew.a2023SMCP3 SMCP3 Sequential Monte Carlo.pdf}
 }
 
@@ -9212,7 +9212,7 @@
   url = {http://arxiv.org/abs/2405.08223},
   urldate = {2024-06-16},
   abstract = {A large body of work in psycholinguistics has focused on the idea that online language comprehension can be shallow or `good enough': given constraints on time or available computation, comprehenders may form interpretations of their input that are plausible but inaccurate. However, this idea has not yet been linked with formal theories of computation under resource constraints. Here we use information theory to formulate a model of language comprehension as an optimal trade-off between accuracy and processing depth, formalized as bits of information extracted from the input, which increases with processing time. The model provides a measure of processing effort as the change in processing depth, which we link to EEG signals and reading times. We validate our theory against a large-scale dataset of garden path sentence reading times, and EEG experiments featuring N400, P600 and biphasic ERP effects. By quantifying the timecourse of language processing as it proceeds from shallow to deep, our model provides a unified framework to explain behavioral and neural signatures of language comprehension.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,Computer Science - Information Theory},
   file = {/Users/j/Zotfiles/li.j2024arxiv An information-theoretic model of shallo.pdf}
 }
@@ -9668,7 +9668,7 @@
   url = {http://arxiv.org/abs/2006.01659},
   urldate = {2023-03-19},
   abstract = {Autoregressive neural network models have been used successfully for sequence generation, feature extraction, and hypothesis scoring. This paper presents yet another use for these models: allocating more computation to more difficult inputs. In our model, an autoregressive model is used both to extract features and to predict observations in a stream of input observations. The surprisal of the input, measured as the negative log-likelihood of the current observation according to the autoregressive model, is used as a measure of input difficulty. This in turn determines whether a small, fast network, or a big, slow network, is used. Experiments on two speech recognition tasks show that our model can match the performance of a baseline in which the big network is always used with 15\% fewer FLOPs.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
@@ -10875,7 +10875,7 @@
   url = {http://arxiv.org/abs/2310.17774},
   urldate = {2023-11-09},
   abstract = {An important assumption that comes with using LLMs on psycholinguistic data has gone unverified. LLM-based predictions are based on subword tokenization, not decomposition of words into morphemes. Does that matter? We carefully test this by comparing surprisal estimates using orthographic, morphological, and BPE tokenization against reading time data. Our results replicate previous findings and provide evidence that in the aggregate, predictions using BPE tokenization do not suffer relative to morphological and orthographic segmentation. However, a finer-grained analysis points to potential issues with relying on BPE-based tokenization, as well as providing promising results involving morphologically-aware surprisal estimates and suggesting a new method for evaluating morphological prediction.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,surprisal,tokenization},
   file = {/Users/j/Zotfiles/nair.s:2023 Words, Subwords, and Morphemes: What Rea.pdf}
 }
@@ -11076,6 +11076,23 @@
   langid = {english},
   pagetotal = {580},
   keywords = {Psychology / General}
+}
+
+@article{newton.m:1994,
+  title = {Approximate {{Bayesian Inference}} with the {{Weighted Likelihood Bootstrap}}},
+  author = {Newton, Michael A. and Raftery, Adrian E.},
+  date = {1994},
+  journaltitle = {Journal of the Royal Statistical Society: Series B (Methodological)},
+  volume = {56},
+  number = {1},
+  pages = {3--26},
+  issn = {2517-6161},
+  doi = {10.1111/j.2517-6161.1994.tb01956.x},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1994.tb01956.x},
+  urldate = {2024-06-25},
+  abstract = {We introduce the weighted likelihood bootstrap (WLB) as a way to simulate approximately from a posterior distribution. This method is often easy to implement, requiring only an algorithm for calculating the maximum likelihood estimator, such as iteratively reweighted least squares. In the generic weighting scheme, the WLB is first order correct under quite general conditions. Inaccuracies can be removed by using the WLB as a source of samples in the sampling-importance resampling (SIR) algorithm, which also allows incorporation of particular prior information. The SIR-adjusted WLB can be a competitive alternative to other integration methods in certain models. Asymptotic expansions elucidate the second-order properties of the WLB, which is a generalization of Rubin's Bayesian bootstrap. The calculation of approximate Bayes factors for model comparison is also considered. We note that, given a sample simulated from the posterior distribution, the required marginal likelihood may be simulation consistently estimated by the harmonic mean of the associated likelihood values; a modification of this estimator that avoids instability is also noted. These methods provide simple ways of calculating approximate Bayes factors and posterior model probabilities for a very wide class of models.},
+  langid = {english},
+  keywords = {bayes factor,bayesian inference,dirichlet weights,monte carlo methods}
 }
 
 @inproceedings{nguyen.l:2012,
@@ -11388,7 +11405,7 @@
   url = {http://arxiv.org/abs/2304.11389},
   urldate = {2023-05-15},
   abstract = {Recent psycholinguistic studies have drawn conflicting conclusions about the relationship between the quality of a language model and the ability of its surprisal estimates to predict human reading times, which has been speculated to be due to the large gap in both the amount of training data and model capacity across studies. The current work aims to consolidate these findings by evaluating surprisal estimates from Transformer-based language model variants that vary systematically in the amount of training data and model capacity on their ability to predict human reading times. The results show that surprisal estimates from most variants with contemporary model capacities provide the best fit after seeing about two billion training tokens, after which they begin to diverge from humanlike expectations. Additionally, newly-trained smaller model variants reveal a 'tipping point' at convergence, after which the decrease in language model perplexity begins to result in poorer fits to human reading times. These results suggest that the massive amount of training data is mainly responsible for the poorer fit achieved by surprisal from larger pre-trained language models, and that a certain degree of model capacity is necessary for Transformer-based language models to capture humanlike expectations.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/oh.b:2023arxiv Transformer-based LM surprisal predicts.pdf}
 }
@@ -11436,7 +11453,7 @@
   url = {http://arxiv.org/abs/2402.02255},
   urldate = {2024-02-10},
   abstract = {Recent studies have shown that as Transformer-based language models become larger and are trained on very large amounts of data, the fit of their surprisal estimates to naturalistic human reading times degrades. The current work presents a series of analyses showing that word frequency is a key explanatory factor underlying these two trends. First, residual errors from four language model families on four corpora show that the inverse correlation between model size and fit to reading times is the strongest on the subset of least frequent words, which is driven by excessively accurate predictions of larger model variants. Additionally, training dynamics reveal that during later training steps, all model variants learn to predict rare words and that larger model variants do so more accurately, which explains the detrimental effect of both training data amount and model size on fit to reading times. Finally, a feature attribution analysis demonstrates that larger model variants are able to accurately predict rare words based on both an effectively longer context window size as well as stronger local associations compared to smaller model variants. Taken together, these results indicate that Transformer-based language models' surprisal estimates diverge from human-like expectations due to the superhumanly complex associations they learn for predicting rare words.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/Users/j/Zotfiles/oh.b:2024arxiv Frequency explains the inverse correlati.pdf}
 }
@@ -11678,6 +11695,23 @@
   date-added = {2021-02-05 12:03:58 -0500},
   date-modified = {2021-02-05 12:03:58 -0500},
   project = {syntactic embedding}
+}
+
+@online{park.k:2024arxiv,
+  title = {Grammar-{{Aligned Decoding}}},
+  author = {Park, Kanghee and Wang, Jiayu and Berg-Kirkpatrick, Taylor and Polikarpova, Nadia and D'Antoni, Loris},
+  date = {2024-05-31},
+  eprint = {2405.21047},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2405.21047},
+  url = {http://arxiv.org/abs/2405.21047},
+  urldate = {2024-06-25},
+  abstract = {Large Language Models (LLMs) struggle with reliably generating highly structured outputs, such as program code, mathematical formulas, or well-formed markup. Constrained decoding approaches mitigate this problem by greedily restricting what tokens an LLM can output at each step to guarantee that the output matches a given constraint. Specifically, in grammar-constrained decoding (GCD), the LLM's output must follow a given grammar. In this paper we demonstrate that GCD techniques (and in general constrained decoding techniques) can distort the LLM's distribution, leading to outputs that are grammatical but appear with likelihoods that are not proportional to the ones given by the LLM, and so ultimately are low-quality. We call the problem of aligning sampling with a grammar constraint, grammar-aligned decoding (GAD), and propose adaptive sampling with approximate expected futures (ASAp), a decoding algorithm that guarantees the output to be grammatical while provably producing outputs that match the conditional probability of the LLM's distribution conditioned on the given grammar constraint. Our algorithm uses prior sample outputs to soundly overapproximate the future grammaticality of different output prefixes. Our evaluation on code generation and structured NLP tasks shows how ASAp often produces outputs with higher likelihood (according to the LLM's distribution) than existing GCD techniques, while still enforcing the desired grammatical constraints.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/Users/j/Zotfiles/park.k2024arxiv Grammar-Aligned Decoding.pdf}
 }
 
 @inproceedings{park.y:2009,
@@ -12307,7 +12341,7 @@
   urldate = {2023-09-30},
   abstract = {An essential feature of human communication is robustness to errors: even when speakers and writers make mistakes, listeners and readers can usually determine the intended meaning. A leading hypothesis is that comprehenders achieve robust error correction by internally deploying a "noisy-channel" model of the language production process. Crucially, to best achieve error robustness, a comprehender's noisy-channel model should be finely calibrated to the environmental statistics of language production, incorporating not only prior expectations about communicative intents but also structure-sensitive likelihoods of different types of speaker error. This environmentally-calibrated noisy-channel hypothesis has been difficult to test, because the rates of most types of language production errors are hard to estimate. Here we test this hypothesis by experimentally investigating comprehenders' interpretations of subject-verb agreement errors, for which context-contingent language production error rates are feasible to estimate. In a novel free-form error correction task,  participants edited sentences with subject-verb agreement mismatches to indicate what they think was intended. Bayesian analysis of the resulting data shows that comprehenders' interpretations reflect both item-specific prior expectations and structure-sensitive error likelihoods that closely correspond to error rates in language production. These results provide quantitative evidence that humans closely track prior statistics over linguistic forms and deploy a noisy-channel model finely calibrated to statistics of the linguistic environment to achieve robust language understanding.},
   langid = {american},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Bayesian models of cognition,Cognitive Psychology,Language,language comprehension,noisy-channel language processing,psycholinguistics,rational adaptation,Social and Behavioral Sciences},
   file = {/Users/j/Zotfiles/qian.p:2023psyarxiv Comprehenders’ error correction mechanis.pdf}
 }
@@ -12348,7 +12382,7 @@
   url = {http://arxiv.org/abs/2303.05221},
   urldate = {2023-06-05},
   abstract = {Models of eye-movement control during reading, developed largely within psychology, usually focus on visual, attentional, and motor processes but neglect post-lexical language processing; by contrast, models of sentence comprehension processes, developed largely within psycholinguistics, generally focus only on post-lexical language processes. We present a model that combines these two research threads, by integrating eye-movement control and sentence processing. Developing such an integrated model is extremely challenging and computationally demanding, but such an integration is an important step toward complete mathematical models of natural language comprehension in reading. We combine the SWIFT model of eye-movement control (Engbert et al., Psychological Review, 112, 2005, pp. 777-813) with key components of the Lewis and Vasishth sentence processing model (Lewis and Vasishth, Cognitive Science, 29, 2005, pp. 375-419). This integration becomes possible, for the first time, due in part to recent advances in successful parameter identification in dynamical models, which allows us to investigate profile log-likelihoods for individual model parameters. We present a fully implemented proof-of-concept model demonstrating how such an integrated model can be achieved; our approach includes Bayesian model inference with Markov Chain Monte Carlo (MCMC) sampling as a key computational tool. The integrated model, SEAM, can successfully reproduce eye movement patterns that arise due to similarity-based interference in reading. To our knowledge, this is the first-ever integration of a complete process model of eye-movement control with linguistic dependency completion processes in sentence comprehension. In future work, this proof of concept model will need to be evaluated using a comprehensive set of benchmark data.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,cue-based retrieval,eye-tracking,Quantitative Biology - Neurons and Cognition,sentence processing},
   file = {/Users/j/Zotfiles/rabe.m:2023 SEAM: an integrated activation-coupled m.pdf}
 }
@@ -12436,7 +12470,7 @@
   url = {http://arxiv.org/abs/2305.14587},
   urldate = {2024-04-11},
   abstract = {The recent explosion in work on neural topic modeling has been criticized for optimizing automated topic evaluation metrics at the expense of actual meaningful topic identification. But human annotation remains expensive and time-consuming. We propose LLM-based methods inspired by standard human topic evaluations, in a family of metrics called Contextualized Topic Coherence (CTC). We evaluate both a fully automated version as well as a semi-automated CTC that allows human-centered evaluation of coherence while maintaining the efficiency of automated methods. We evaluate CTC relative to five other metrics on six topic models and find that it outperforms automated topic coherence methods, works well on short documents, and is not susceptible to meaningless but high-scoring topics.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,Computer Science - Information Retrieval},
   file = {/Users/j/Zotfiles/rahimi.h:2023arxiv Contextualized Topic Coherence Metrics.pdf}
 }
@@ -12499,7 +12533,7 @@
   url = {http://arxiv.org/abs/1503.06733},
   urldate = {2022-05-17},
   abstract = {Dependency parsers are among the most crucial tools in natural language processing as they have many important applications in downstream tasks such as information retrieval, machine translation and knowledge acquisition. We introduce the Yara Parser, a fast and accurate open-source dependency parser based on the arc-eager algorithm and beam search. It achieves an unlabeled accuracy of 93.32 on the standard WSJ test set which ranks it among the top dependency parsers. At its fastest, Yara can parse about 4000 sentences per second when in greedy mode (1 beam). When optimizing for accuracy (using 64 beams and Brown cluster features), Yara can parse 45 sentences per second. The parser can be trained on any syntactic dependency treebank and different options are provided in order to make it more flexible and tunable for specific tasks. It is released with the Apache version 2.0 license and can be used for both commercial and academic purposes. The parser can be found at https://github.com/yahoo/YaraParser.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/rasooli.m:2015 Yara Parser: A Fast and Accurate Depende.pdf}
 }
@@ -12794,7 +12828,7 @@
   url = {http://arxiv.org/abs/2308.07120},
   urldate = {2024-06-04},
   abstract = {Much of the recent discourse within the ML community has been centered around Large Language Models (LLMs), their functionality and potential -- yet not only do we not have a working definition of LLMs, but much of this discourse relies on claims and assumptions that are worth re-examining. We contribute a definition of LLMs, critically examine five common claims regarding their properties (including 'emergent properties'), and conclude with suggestions for future research directions and their framing.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/rogers.a2024arxiv Position Key Claims in LLM Research Hav.pdf}
 }
@@ -13647,7 +13681,7 @@
   url = {http://arxiv.org/abs/2209.12128},
   urldate = {2022-10-26},
   abstract = {Scientists often use observational time series data to study complex natural processes, from climate change to civil conflict to brain activity. But regression analyses of these data often assume simplistic dynamics. Recent advances in deep learning have yielded startling improvements to the performance of models of complex processes, from speech comprehension to nuclear physics to competitive gaming. But deep learning is generally not used for scientific analysis. Here, we bridge this gap by showing that deep learning can be used, not just to imitate, but to analyze complex processes, providing flexible function approximation while preserving interpretability. Our approach -- the continuous-time deconvolutional regressive neural network (CDRNN) -- relaxes standard simplifying assumptions (e.g., linearity, stationarity, and homoscedasticity) that are implausible for many natural systems and may critically affect the interpretation of data. We evaluate CDRNNs on incremental human language processing, a domain with complex continuous dynamics. We demonstrate dramatic improvements to predictive likelihood in behavioral and neuroimaging data, and we show that CDRNNs enable flexible discovery of novel patterns in exploratory analyses, provide robust control of possible confounds in confirmatory analyses, and open up research questions that are otherwise hard to study using observational data.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning,Statistics - Methodology},
   file = {/Users/j/Zotfiles/shain.c:2022CDRNNdetails A deep learning approach to analyzing co.pdf}
 }
@@ -13669,7 +13703,7 @@
   urldate = {2023-01-26},
   abstract = {Words which are less predictable in context are harder to process, but theories of language processing diverge in how they explain this fact. Representational theories emphasize the demands of assembling sentence interpretations in memory; these theories predict a linear effect of predictability on processing cost. Inferential theories emphasize the demands of updating a probability distribution over possible sentence interpretations; these theories predict either a logarithmic or a superlogarithmic effect of predictability on processing cost, depending on whether they posit pressures toward a uniform distribution of information over time. The empirical record is currently mixed. Here we revisit this question at scale: we analyze six reading datasets, estimate next-word probabilities with diverse language models, and predict reading times with advanced nonlinear regression methods. Results support a logarithmic effect of word predictability on processing difficulty, which favors probabilistic inference as a key component of human language processing.},
   langid = {american},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Cognitive Psychology,Language,Naturalistic,Nonlinear regression,Prediction,Psycholinguistics,Sentence processing,Social and Behavioral Sciences,Surprisal},
   file = {/Users/j/Zotfiles/shain.c:2022preprint Large-scale evidence for logarithmic eff.pdf}
 }
@@ -13776,7 +13810,7 @@
   url = {http://arxiv.org/abs/2002.05202},
   urldate = {2023-05-27},
   abstract = {Gated Linear Units (arXiv:1612.08083) consist of the component-wise product of two linear projections, one of which is first passed through a sigmoid function. Variations on GLU are possible, using different nonlinear (or even linear) functions in place of sigmoid. We test these variants in the feed-forward sublayers of the Transformer (arXiv:1706.03762) sequence-to-sequence model, and find that some of them yield quality improvements over the typically-used ReLU or GELU activations.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning},
   file = {/Users/j/Zotfiles/shazeer.n:2020 GLU variants improve Transformer.pdf}
 }
@@ -13992,7 +14026,7 @@
   url = {http://arxiv.org/abs/2305.17743},
   urldate = {2023-06-03},
   abstract = {The recently discovered "hat" aperiodic monotile mixes unreflected and reflected tiles in every tiling it admits, leaving open the question of whether a single shape can tile aperiodically using translations and rotations alone. We show that a close relative of the hat -- the equilateral member of the continuum to which it belongs -- is a weakly chiral aperiodic monotile: it admits only non-periodic tilings if we forbid reflections by fiat. Furthermore, by modifying this polygon's edges we obtain a family of shapes called Spectres that are strictly chiral aperiodic monotiles: they admit only chiral non-periodic tilings based on a hierarchical substitution system.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {05B45 52C20 (Primary) 05B50 (Secondary),Computer Science - Discrete Mathematics,F.2.2,G.2.1,Mathematics - Combinatorics,Mathematics - Metric Geometry}
 }
 
@@ -14008,7 +14042,7 @@
   url = {https://doi.org/10.48550/arXiv.2303.10798},
   abstract = {A longstanding open problem asks for an aperiodic monotile, also known as an "einstein": a shape that admits tilings of the plane, but never periodic tilings. We answer this problem for topological disk tiles by exhibiting a continuum of combinatorially equivalent aperiodic polygons. We first show that a representative example, the "hat" polykite, can form clusters called "metatiles", for which substitution rules can be defined. Because the metatiles admit tilings of the plane, so too does the hat. We then prove that generic members of our continuum of polygons are aperiodic, through a new kind of geometric incommensurability argument. Separately, we give a combinatorial, computer-assisted proof that the hat must form hierarchical -- and hence aperiodic -- tilings.},
   archiveprefix = {arXiv},
-  pubstate = {preprint}
+  pubstate = {prepublished}
 }
 
 @inproceedings{smith.n:2008cogsci,
@@ -14152,7 +14186,7 @@
   url = {http://arxiv.org/abs/1503.03585},
   urldate = {2022-05-17},
   abstract = {A central problem in machine learning involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable. Here, we develop an approach that simultaneously achieves both flexibility and tractability. The essential idea, inspired by non-equilibrium statistical physics, is to systematically and slowly destroy structure in a data distribution through an iterative forward diffusion process. We then learn a reverse diffusion process that restores structure in data, yielding a highly flexible and tractable generative model of the data. This approach allows us to rapidly learn, sample from, and evaluate probabilities in deep generative models with thousands of layers or time steps, as well as to compute conditional and posterior probabilities under the learned model. We additionally release an open source reference implementation of the algorithm.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning,Condensed Matter - Disordered Systems and Neural Networks,diffusion processes,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning},
   file = {/Users/j/Zotfiles/sohl-dickstein.j:2015 Deep Unsupervised Learning using Nonequi.pdf}
 }
@@ -14645,7 +14679,7 @@
   url = {http://arxiv.org/abs/2210.11399},
   urldate = {2023-05-31},
   abstract = {Scaling language models improves performance but comes with significant computational costs. This paper proposes UL2R, a method that substantially improves existing language models and their scaling curves with a relatively tiny amount of extra compute. The key idea is to continue training a state-of-the-art large language model (e.g., PaLM) on a few more steps with UL2's mixture-of-denoiser objective. We show that, with almost negligible extra computational costs and no new sources of data, we are able to substantially improve the scaling properties of large language models on downstream metrics. In this paper, we continue training PaLM with UL2R, introducing a new set of models at 8B, 62B, and 540B scale which we call U-PaLM. Impressively, at 540B scale, we show an approximately 2x computational savings rate where U-PaLM achieves the same performance as the final PaLM 540B model at around half its computational budget (i.e., saving \$\textbackslash sim\$4.4 million TPUv4 hours). We further show that this improved scaling curve leads to 'emergent abilities' on challenging BIG-Bench tasks -- for instance, U-PaLM does much better than PaLM on some tasks or demonstrates better quality at much smaller scale (62B as opposed to 540B). Overall, we show that U-PaLM outperforms PaLM on many few-shot setups, i.e., English NLP tasks (e.g., commonsense reasoning, question answering), reasoning tasks with chain-of-thought (e.g., GSM8K), multilingual tasks (MGSM, TydiQA), MMLU and challenging BIG-Bench tasks. Finally, we provide qualitative examples showing the new capabilities of U-PaLM for single and multi-span infilling.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/Users/j/Zotfiles/tay.y:2022UL2R Transcending scaling laws with 0.1% extr.pdf}
 }
@@ -14661,7 +14695,7 @@
   url = {http://arxiv.org/abs/2205.05131},
   urldate = {2023-05-24},
   abstract = {Existing pre-trained models are generally geared towards a particular class of problems. To date, there seems to be still no consensus on what the right architecture and pre-training setup should be. This paper presents a unified framework for pre-training models that are universally effective across datasets and setups. We begin by disentangling architectural archetypes with pre-training objectives -- two concepts that are commonly conflated. Next, we present a generalized \& unified perspective for self-supervision in NLP and show how different pre-training objectives can be cast as one another and how interpolating between different objectives can be effective. We then propose Mixture-of-Denoisers (MoD), a pre-training objective that combines diverse pre-training paradigms together. We furthermore introduce a notion of mode switching, wherein downstream fine-tuning is associated with specific pre-training schemes. We conduct extensive ablative experiments to compare multiple pre-training objectives and find that our method pushes the Pareto-frontier by outperforming T5 \& GPT-like models across multiple diverse setups. By scaling our model up to 20B parameters, we achieve SOTA performance on 50 well-established supervised finetuning based NLP tasks. Our model also achieve strong results at in-context learning, outperforming 175B GPT-3 on zero-shot SuperGLUE and tripling the performance of T5-XXL on one-shot summarization. On 0-shot MMLU, UL2 20B outperforms T0 and T5 models. UL2 20B also works well with chain-of-thought prompting and reasoning, making it an appealing choice for research into reasoning at a small to medium scale of 20B parameters. Finally, we apply FLAN instruction tuning to the UL2 20B model, achieving MMLU and Big-Bench scores competitive to FLAN-PaLM 62B. We release Flax-based T5X checkpoints for the UL2 20B \& Flan-UL2 20B.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,unified LM},
   file = {/Users/j/Zotfiles/tay.y:2023UL2 UL2: Unifying language learning paradigm.pdf}
 }
@@ -14829,7 +14863,7 @@
   url = {http://arxiv.org/abs/2310.16142},
   urldate = {2023-11-09},
   abstract = {Two of the central factors believed to underpin human sentence processing difficulty are expectations and retrieval from working memory. A recent attempt to create a unified cognitive model integrating these two factors relied on the parallels between the self-attention mechanism of transformer language models and cue-based retrieval theories of working memory in human sentence processing (Ryu and Lewis 2021). While Ryu and Lewis show that attention patterns in specialized attention heads of GPT-2 are consistent with similarity-based interference, a key prediction of cue-based retrieval models, their method requires identifying syntactically specialized attention heads, and makes the cognitively implausible assumption that hundreds of memory retrieval operations take place in parallel. In the present work, we develop a recurrent neural language model with a single self-attention head, which more closely parallels the memory system assumed by cognitive theories. We show that our model's single attention head captures semantic and syntactic interference effects observed in human experiments.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning,memory effects,parsing,processing},
   file = {/Users/j/Zotfiles/timkey.w:2023 A Language Model with Limited Memory Cap.pdf}
 }
@@ -14871,7 +14905,7 @@
   url = {http://arxiv.org/abs/2302.13971},
   urldate = {2024-02-01},
   abstract = {We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   version = {1},
   keywords = {Computer Science - Computation and Language}
 }
@@ -14887,7 +14921,7 @@
   url = {http://arxiv.org/abs/2307.09288},
   urldate = {2024-02-01},
   abstract = {In this work, we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters. Our fine-tuned LLMs, called Llama 2-Chat, are optimized for dialogue use cases. Our models outperform open-source chat models on most benchmarks we tested, and based on our human evaluations for helpfulness and safety, may be a suitable substitute for closed-source models. We provide a detailed description of our approach to fine-tuning and safety improvements of Llama 2-Chat in order to enable the community to build on our work and contribute to the responsible development of LLMs.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
 }
 
@@ -15420,7 +15454,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2210.15458},
   urldate = {2022-11-07},
   abstract = {Decoding methods for large language models often trade-off between diversity of outputs and parallelism of computation. Methods such as beam search and Gumbel top-k sampling can guarantee a different output for each element of the beam, but are not easy to parallelize. Alternatively, methods such as temperature sampling and its modifications (top-k sampling, nucleus sampling, typical decoding, and others), are embarrassingly parallel, but have no guarantees about duplicate samples. We present a framework for sampling according to an arithmetic code book implicitly defined by a large language model, compatible with common sampling variations, with provable beam diversity under certain conditions, as well as being embarrassingly parallel and providing unbiased and consistent expectations from the original model. We demonstrate the effectiveness of our approach on WMT machine translation, showing substantially reduced variance when estimating expected BLEU score and up to 1 point increased BLEU in oracle experiments.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   version = {1},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning},
   file = {/Users/j/Zotfiles/vilnis.l:2022 Arithmetic sampling: parallel diverse de.pdf}
@@ -15657,7 +15691,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2204.05832},
   urldate = {2023-05-25},
   abstract = {Large pretrained Transformer language models have been shown to exhibit zero-shot generalization, i.e. they can perform a wide variety of tasks that they were not explicitly trained on. However, the architectures and pretraining objectives used across state-of-the-art models differ significantly, and there has been limited systematic comparison of these factors. In this work, we present a large-scale evaluation of modeling choices and their impact on zero-shot generalization. In particular, we focus on text-to-text models and experiment with three model architectures (causal/non-causal decoder-only and encoder-decoder), trained with two different pretraining objectives (autoregressive and masked language modeling), and evaluated with and without multitask prompted finetuning. We train models with over 5 billion parameters for more than 170 billion tokens, thereby increasing the likelihood that our conclusions will transfer to even larger scales. Our experiments show that causal decoder-only models trained on an autoregressive language modeling objective exhibit the strongest zero-shot generalization after purely unsupervised pretraining. However, models with non-causal visibility on their input trained with a masked language modeling objective followed by multitask finetuning perform the best among our experiments. We therefore consider the adaptation of pretrained models across architectures and objectives. We find that pretrained non-causal decoder models can be adapted into performant generative causal decoder models, using autoregressive language modeling as a downstream task. Furthermore, we find that pretrained causal decoder models can be efficiently adapted into non-causal decoder models, ultimately achieving competitive performance after multitask finetuning. Code and checkpoints are available at https://github.com/bigscience-workshop/architecture-objective.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning},
   file = {/Users/j/Zotfiles/wang.t:2022 What language model architecture and pre.pdf}
 }
@@ -15752,7 +15786,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   urldate = {2024-05-25},
   abstract = {Humans excel at extracting structurally-determined meaning from speech despite inherent physical variability. This study explores the brain’s ability to predict and understand spoken language robustly. It investigates the relationship between structural and statistical language knowledge in brain dynamics, focusing on phase and amplitude modulation. Using syntactic features from constituent hierarchies and surface statistics from a transformer model as predictors of forward encoding models, we reconstructed cross-frequency neural dynamics from MEG data during audiobook listening. Our findings challenge a strict separation of linguistic structure and statistics in the brain, with both aiding neural signal reconstruction. Syntactic features had a more temporally spread impact, and both word entropy and the number of closing syntactic constituents were linked to the phase-amplitude coupling of neural dynamics, implying a role in temporal prediction and cortical oscillation alignment during speech processing. Our results indicate that structured and statistical information jointly shape neural dynamics during spoken language comprehension and suggest an integration process via a cross-frequency coupling mechanism.},
   langid = {english},
-  pubstate = {preprint}
+  pubstate = {prepublished}
 }
 
 @article{wellwood.a:2018,
@@ -15855,7 +15889,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2307.03667},
   urldate = {2023-07-11},
   abstract = {A fundamental result in psycholinguistics is that less predictable words take a longer time to process. One theoretical explanation for this finding is Surprisal Theory (Hale, 2001; Levy, 2008), which quantifies a word's predictability as its surprisal, i.e. its negative log-probability given a context. While evidence supporting the predictions of Surprisal Theory have been replicated widely, most have focused on a very narrow slice of data: native English speakers reading English texts. Indeed, no comprehensive multilingual analysis exists. We address this gap in the current literature by investigating the relationship between surprisal and reading times in eleven different languages, distributed across five language families. Deriving estimates from language models trained on monolingual and multilingual corpora, we test three predictions associated with surprisal theory: (i) whether surprisal is predictive of reading times; (ii) whether expected surprisal, i.e. contextual entropy, is predictive of reading times; (iii) and whether the linking function between surprisal and reading times is linear. We find that all three predictions are borne out crosslinguistically. By focusing on a more diverse set of languages, we argue that these results offer the most robust link to-date between information theory and incremental language processing across languages.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,surprisal theory}
 }
 
@@ -15919,7 +15953,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   urldate = {2024-04-11},
   abstract = {Regressions, or backward saccades, are common during reading, accounting for between 5\% and 20\% of all saccades. And yet, relatively little is known about what causes them. We provide an information-theoretic operationalization for two previous qualitative hypotheses about regressions, which we dub reactivation and reanalysis. We argue that these hypotheses make different predictions about the pointwise mutual information or pmi between a regression’s source and target. Intuitively, the pmi between two words measures how much more (or less) likely one word is to be present given the other. On one hand, the reactivation hypothesis predicts that regressions occur between words that are associated, implying high positive values of pmi. On the other hand, the reanalysis hypothesis predicts that regressions should occur between words that are disassociated with each other, implying negative, low values of pmi. As a second theoretical contribution, we expand on previous theories by considering not only pmi but also expected values of pmi, E[pmi], where the expectation is taken over all possible realizations of the regression’s target. The rationale for this is that language processing involves making inferences under uncertainty, and readers may be uncertain about what they have read, especially if a previous word was skipped. To test both theories, we use contemporary language models to estimate pmi-based statistics over word pairs in three corpora of eye tracking data in English, as well as in six languages across three language families (Indo-European, Uralic, and Turkic). Our results are consistent across languages and models tested: Positive values of pmi and E[pmi] consistently help to predict the patterns of regressions during reading, whereas negative values of pmi and E[pmi] do not. Our information-theoretic interpretation increases the predictive scope of both theories and our studies present the first systematic crosslinguistic analysis of regressions in the literature. Our results support the reactivation hypothesis and, more broadly, they expand the number of language processing behaviors that can be linked to information-theoretic principles.},
   langid = {american},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Eye-tracking,Information Theory,Language Processing,Mutual Information,Reading,Regressions},
   annotation = {Published as: 10.1016/j.cognition.2024.105765},
   file = {/Users/j/Zotfiles/wilcox.e:2024psyarxiv An Information-Theoretic Analysis of Tar.pdf}
@@ -16038,7 +16072,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2306.12672},
   urldate = {2024-04-05},
   abstract = {How does language inform our downstream thinking? In particular, how do humans make meaning from language--and how can we leverage a theory of linguistic meaning to build machines that think in more human-like ways? In this paper, we propose rational meaning construction, a computational framework for language-informed thinking that combines neural language models with probabilistic models for rational inference. We frame linguistic meaning as a context-sensitive mapping from natural language into a probabilistic language of thought (PLoT)--a general-purpose symbolic substrate for generative world modeling. Our architecture integrates two computational tools that have not previously come together: we model thinking with probabilistic programs, an expressive representation for commonsense reasoning; and we model meaning construction with large language models (LLMs), which support broad-coverage translation from natural language utterances to code expressions in a probabilistic programming language. We illustrate our framework through examples covering four core domains from cognitive science: probabilistic reasoning, logical and relational reasoning, visual and physical reasoning, and social reasoning. In each, we show that LLMs can generate context-sensitive translations that capture pragmatically-appropriate linguistic meanings, while Bayesian inference with the generated programs supports coherent and robust commonsense reasoning. We extend our framework to integrate cognitively-motivated symbolic modules (physics simulators, graphics engines, and planning algorithms) to provide a unified commonsense thinking interface from language. Finally, we explore how language can drive the construction of world models themselves. We hope this work will provide a roadmap towards cognitive models and AI systems that synthesize the insights of both modern and classical computational perspectives.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Symbolic Computation},
   file = {/Users/j/Zotfiles/wong.l:2023arxiv From Word Models to World Models: Transl.pdf}
 }
@@ -16162,7 +16196,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2205.09735},
   urldate = {2022-08-18},
   abstract = {Probabilistic programs provide an expressive representation language for generative models. Given a probabilistic program, we are interested in the task of posterior inference: estimating a latent variable given a set of observed variables. Existing techniques for inference in probabilistic programs often require choosing many hyper-parameters, are computationally expensive, and/or only work for restricted classes of programs. Here we formulate inference as masked language modeling: given a program, we generate a supervised dataset of variables and assignments, and randomly mask a subset of the assignments. We then train a neural network to unmask the random values, defining an approximate posterior distribution. By optimizing a single neural network across a range of programs we amortize the cost of training, yielding a ``foundation'' posterior able to do zero-shot inference for new programs. The foundation posterior can also be fine-tuned for a particular program and dataset by optimizing a variational inference objective. We show the efficacy of the approach, zero-shot and fine-tuned, on a benchmark of STAN programs.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning,inference,probabilistic programming,Statistics - Machine Learning},
   file = {/Users/j/Zotfiles/wu.m:2022 Foundation posteriors for approximate pr.pdf}
 }
@@ -16552,7 +16586,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2210.02414},
   urldate = {2023-05-31},
   abstract = {We introduce GLM-130B, a bilingual (English and Chinese) pre-trained language model with 130 billion parameters. It is an attempt to open-source a 100B-scale model at least as good as GPT-3 and unveil how models of such a scale can be successfully pre-trained. Over the course of this effort, we face numerous unexpected technical and engineering challenges, particularly on loss spikes and disconvergence. In this paper, we introduce the training process of GLM-130B including its design choices, training strategies for both efficiency and stability, and engineering efforts. The resultant GLM-130B model offers significant outperformance over GPT-3 175B on a wide range of popular English benchmarks while the performance advantage is not observed in OPT-175B and BLOOM-176B. It also consistently and significantly outperforms ERNIE TITAN 3.0 260B -- the largest Chinese language model -- across related benchmarks. Finally, we leverage a unique scaling property of GLM-130B to reach INT4 quantization, without quantization aware training and with almost no performance loss, making it the first among 100B-scale models. More importantly, the property allows its effective inference on 4\$\textbackslash times\$RTX 3090 (24G) or 8\$\textbackslash times\$RTX 2080 Ti (11G) GPUs, the most ever affordable GPUs required for using 100B-scale models. The GLM-130B model weights are publicly accessible and its code, training logs, related toolkit, and lessons learned are open-sourced at https://github.com/THUDM/GLM-130B .},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/Users/j/Zotfiles/zeng.a:2022GLM130B GLM-130B: An open bilingual pre-trained.pdf}
 }
@@ -16581,7 +16615,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   eprinttype = {arXiv},
   eprintclass = {cs},
   url = {http://arxiv.org/abs/1809.10040},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {CoVe,ELMo,LSTM,syntactic information},
   file = {/Users/j/Zotfiles/zhang.k:2018 Language modeling teaches you more synta.pdf}
 }
@@ -16615,7 +16649,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2205.01068},
   urldate = {2023-05-04},
   abstract = {Large language models, which are often trained for hundreds of thousands of compute days, have shown remarkable capabilities for zero- and few-shot learning. Given their computational cost, these models are difficult to replicate without significant capital. For the few that are available through APIs, no access is granted to the full model weights, making them difficult to study. We present Open Pre-trained Transformers (OPT), a suite of decoder-only pre-trained transformers ranging from 125M to 175B parameters, which we aim to fully and responsibly share with interested researchers. We show that OPT-175B is comparable to GPT-3, while requiring only 1/7th the carbon footprint to develop. We are also releasing our logbook detailing the infrastructure challenges we faced, along with code for experimenting with all of the released models.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {/Users/j/Zotfiles/zhang.s:2022OPT OPT: Open Pre-trained Transformer langua.pdf}
 }
@@ -16703,7 +16737,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   urldate = {2024-05-27},
   abstract = {During language comprehension, people sometimes accept sentences that are ungrammatical or semantically implausible and the cognitive mechanism underlying this language illusion is understudied. In this paper, we study the “comparative illusion” (CI) phenomenon where people believe the sentence "More people have been to Russia than I have" to be acceptable while in fact it is semantically ill-formed. We provide a potential explanation for the reasons behind the language illusion from the noisy-channel framework. We hypothesize that comprehenders make rational inference over the perceived sentence by entertaining alternative plausible interpretations and weighing the likelihood of the plausible interpretation being produced with errors. In four experiments, we identified the construction that elicited the most salient illusion effect, established the range of the plausible interpretations, and found that the probability for comprehenders to assign a certain plausible interpretation to the CI sentence is proportional to how likely they think that that interpretation is encapsulated into the CI sentence during speech production. This finding is consistent with the noisy-channel predictions and provides another example supporting the rational behavior underlying language comprehension.},
   langid = {american},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {information theory,language illusion,language processing,psycholinguistics,rational inference}
 }
 
@@ -16718,7 +16752,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2303.18223},
   urldate = {2023-05-31},
   abstract = {Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/zhao.w:2023 A survey of large language models.pdf}
 }
@@ -16734,7 +16768,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {http://arxiv.org/abs/2303.18223},
   urldate = {2024-05-23},
   abstract = {Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.},
-  pubstate = {preprint},
+  pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
   file = {/Users/j/Zotfiles/zhao.w:2023arxiv A Survey of Large Language Models.pdf}
 }
