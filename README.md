@@ -1,8 +1,7 @@
 This is a way of keeping a copy of all my references in a bib file in GitHub.
 Then I can use that in Overleaf (this is similar to the features they offer for Zotero or Mendeley bibliography synching, but does not require having to have a paid subscription to overleaf :). 
 
-## Setup:
-
+## Setup from scratch:
 
 1.  Add the following lines to your zsh config file (located by default at `~/.zshrc`).  First set variables for the location of the work tree and the git dir.
   (note, I chose to put the work tree in the bibtex/bib folder in my TEXMFHOME dir. You can check where this is with `kpsewhich -var-value TEXMFHOME`. If it does not already exist consider setting it up the standard way, using [amunn/make-local-texmf](https://github.com/amunn/make-local-texmf)):
@@ -36,7 +35,7 @@ Then I can use that in Overleaf (this is similar to the features they offer for 
     allbib-git remote add origin https://github.com/$GITHUB_USERNAME/allbib.git
     ```
 
-## Setting up on new computer
+## Setting up on new computer (pulling already existing version)
 
 -   Run step 1 above to set locations and make aliases.
 
@@ -69,5 +68,7 @@ Anytime you make changes to the local bibliography file `all.bib`, just run the 
 allbib-refresh
 ```
 
-- Import your allbib.git project onto Overleaf with "New Project > Import from GitHub". Then you will have this bibfile in its own Overleaf project.  You can make sure it is up to date after doing an `allbib-refresh` by selecting "Menu > GitHub" in the allbib project on Overleaf and pulling any recent changes.
-- Then in any other Overleaf project, you can "Add File > From Another Project" to import this bibfile.  Note anytime you update the file in the allbib project on Overleaf, you'll need to "refresh" the linked file in this project.
+One workflow I find particularly useful is:
+
+-   Import your allbib.git project onto Overleaf with "New Project > Import from GitHub". Then you will have this bibfile in its own Overleaf project.  You can make sure it is up to date after doing an `allbib-refresh` by selecting "Menu > GitHub" in the allbib project on Overleaf and pulling any recent changes.
+-   Then in any other Overleaf project, you can "Add File > From Another Project" to import this bibfile.  Note anytime you update the file in the allbib project on Overleaf, you'll need to "refresh" the linked file in this project.
