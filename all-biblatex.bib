@@ -1,3 +1,8 @@
+@online{:,
+  title = {{{NVlabs}}/{{RLP}}: {{RLP}}: {{Reinforcement}} as a {{Pretraining Objective}}},
+  file = {/Users/v/Zotero/storage/4EAWANM8/main.html}
+}
+
 @article{aaronson.s:2014,
   title = {The Equivalence of Sampling and Searching},
   author = {Aaronson, Scott},
@@ -144,18 +149,49 @@
   number = {3},
   issn = {0883-4237},
   doi = {10.1214/17-STS611},
-  url = {https://projecteuclid.org/journals/statistical-science/volume-32/issue-3/Importance-Sampling-Intrinsic-Dimension-and-Computational-Cost/10.1214/17-STS611.full},
-  urldate = {2022-12-21},
   keywords = {importance sampling},
   file = {~/Zotfiles/agapiou.s2017 Importance sampling intrinsic dimension 2.pdf;~/Zotfiles/agapiou.s2017 Importance sampling intrinsic dimension 3.pdf;~/Zotfiles/agapiou.s2017 Importance sampling intrinsic dimension.pdf}
 }
 
-@report{ai@meta.:2024,
-  title = {Llama 3 Model Card},
-  author = {{AI @ Meta}},
-  date = {2024},
-  institution = {Meta},
-  url = {https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md}
+@inproceedings{ahmadian.a:2024,
+  title = {Back to {{Basics}}: {{Revisiting REINFORCE-Style Optimization}} for {{Learning}} from {{Human Feedback}} in {{LLMs}}},
+  shorttitle = {Back to {{Basics}}},
+  booktitle = {Proceedings of the 62nd {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{Volume}} 1: {{Long Papers}})},
+  author = {Ahmadian, Arash and Cremer, Chris and Gallé, Matthias and Fadaee, Marzieh and Kreutzer, Julia and Pietquin, Olivier and Üstün, Ahmet and Hooker, Sara},
+  editor = {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
+  date = {2024-08},
+  pages = {12248--12267},
+  publisher = {Association for Computational Linguistics},
+  location = {Bangkok, Thailand},
+  doi = {10.18653/v1/2024.acl-long.662},
+  url = {https://aclanthology.org/2024.acl-long.662/},
+  urldate = {2025-09-18},
+  abstract = {AI alignment in the shape of Reinforcement Learning from Human Feedback (RLHF) is increasingly treated as a crucial ingredient for high performance large language models. Proximal Policy Optimization (PPO) has been installed by the seminal literature as the standard method for the RL part of RLHF. However, it involves both high computational cost and sensitive hyperparameter tuning. We posit that most of the motivational principles that led to the development of PPO are less of a practical concern in RLHF and advocate for a less computationally expensive method that preserves and even increases performance. We revisit how alignment from human preferences is formulated in the context of RL. Keeping simplicity as a guiding principle, we show that many components of PPO are unnecessary in an RLHF context and that far simpler REINFORCE-style optimization variants outperform both PPO and newly proposed “RL-free” methods such as DPO and RAFT. Our work suggests that careful adaptation to LLMs alignment characteristics allows benefiting from online RL optimization at low cost.},
+  eventtitle = {{{ACL}} 2024},
+  file = {/Users/v/Zotfiles/ahmadian.a2024 Back to Basics Revisiting REINFORCE-Sty.pdf}
+}
+
+@article{ahmed.z:2025,
+  title = {Synthesizing World Models for Bilevel Planning},
+  author = {Ahmed, Zergham and Tenenbaum, Joshua B. and Bates, Chris and Gershman, Samuel J.},
+  date = {2025-04-20},
+  journaltitle = {Transactions on Machine Learning Research},
+  issn = {2835-8856},
+  url = {https://openreview.net/forum?id=m9V4JHLJrD},
+  urldate = {2025-12-22},
+  abstract = {Modern reinforcement learning (RL) systems have demonstrated remarkable capabilities in complex environments, such as video games. However, they still fall short of achieving human-like sample efficiency and adaptability when learning new domains. Theory-based reinforcement learning (TBRL) is an algorithmic framework specifically designed to address this gap. Modeled on cognitive theories, TBRL leverages structured, causal world models---``theories''---as forward simulators for use in planning, generalization and exploration. Although current TBRL systems provide compelling explanations of how humans learn to play video games, they face several technical limitations: their theory languages are restrictive, and their planning algorithms are not scalable. To address these challenges, we introduce TheoryCoder, an instantiation of TBRL that exploits hierarchical representations of theories and efficient program synthesis methods for more powerful learning and planning. TheoryCoder equips agents with general-purpose abstractions (e.g., ``move to''), which are then grounded in a particular environment by learning a low-level transition model (a Python program synthesized from observations by a large language model). A bilevel planning algorithm can exploit this hierarchical structure to solve large domains. We demonstrate that this approach can be successfully applied to diverse and challenging grid-world games, where approaches based on directly synthesizing a policy perform poorly. Ablation studies demonstrate the benefits of using hierarchical abstractions.},
+  langid = {english},
+  file = {/Users/v/Zotfiles/ahmed.z2025 Synthesizing world models for bilevel pl.pdf}
+}
+
+@inproceedings{ahmed.z:2026,
+  title = {Learning Abstractions for Hierarchical Planning in Program-Synthesis Agents},
+  booktitle = {In Prep},
+  author = {Ahmed, Zergham and Gershman, Samuel J.},
+  date = {2026},
+  url = {https://openreview.net/forum?id=DwLrBBZfDl},
+  eventtitle = {International Conference on Learning Representations},
+  file = {/Users/v/Zotfiles/ahmed.z2026 Learning abstractions for hierarchical p.pdf}
 }
 
 @inproceedings{ait-mokhtar.s:1997,
@@ -315,6 +351,22 @@
   eventtitle = {{{IEEE Transactions}} on {{Neural Networks}}},
   keywords = {Computer architecture,information geometry,Information geometry,Information processing,Machine learning,Manifolds,Network topology,Neural networks,Neurons,Probability distribution,Stochastic processes},
   file = {~/Zotfiles/amari.s1992 Information geometry of Boltzmann machin.pdf}
+}
+
+@online{amini.a:2025arxiv,
+  title = {Better {{Estimation}} of the {{Kullback--Leibler Divergence Between Language Models}}},
+  author = {Amini, Afra and Vieira, Tim and Cotterell, Ryan},
+  date = {2025-10-25},
+  eprint = {2504.10637},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2504.10637},
+  url = {http://arxiv.org/abs/2504.10637},
+  urldate = {2025-10-29},
+  abstract = {Estimating the Kullback--Leibler (KL) divergence between language models has many applications, e.g., reinforcement learning from human feedback (RLHF), interpretability, and knowledge distillation. However, computing the exact KL divergence between two arbitrary language models is intractable. Thus, practitioners often resort to sampling-based estimators. While it is easy to fashion a simple Monte Carlo (MC) estimator that provides an unbiased estimate of the KL divergence between language models, this estimator notoriously suffers from high variance and can even result in a negative estimate of the KL divergence, a non-negative quantity. In this paper, we introduce a Rao--Blackwellized estimator that is unbiased and provably has variance less than or equal to that of the standard Monte Carlo estimator. In an empirical study on sentiment-controlled fine-tuning, we show that our estimator provides more stable KL estimates and reduces variance substantially. Additionally, we derive an analogous Rao--Blackwellized estimator of the gradient of the KL divergence, which leads to more stable training and produces models that more frequently appear on the Pareto frontier of reward vs. KL compared to the ones trained with the MC estimator of the gradient.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/Users/v/Zotfiles/amini.a2025arxiv Better Estimation of the Kullback--Leibl.pdf;/Users/v/Zotero/storage/JT6SEV9N/2504.html}
 }
 
 @book{anagnostopoulou.e:2003book,
@@ -586,7 +638,7 @@
   date-modified = {2021-12-13 19:48:22 -0500}
 }
 
-@online{arora.k:2023arxiv,
+@online{arora.k:2023,
   title = {The Stable Entropy Hypothesis and Entropy-Aware Decoding: An Analysis and Algorithm for Robust Natural Language Generation},
   shorttitle = {The Stable Entropy Hypothesis and Entropy-Aware Decoding},
   author = {Arora, Kushal and O'Donnell, Timothy J. and Precup, Doina and Weston, Jason and Cheung, Jackie C. K.},
@@ -721,7 +773,7 @@
   journaltitle = {Language and Speech},
   volume = {47},
   number = {1},
-  eprint = {15298329},
+  eprint = {https://doi.org/10.1177/00238309040470010201},
   eprinttype = {pubmed},
   pages = {31--56},
   doi = {10.1177/00238309040470010201},
@@ -781,7 +833,8 @@
   keywords = {Las Vegas algorithms}
 }
 
-@thesis{bachrach.a:2008,
+@thesis{bachrach.a:2008phd,
+  type = {phdthesis},
   title = {Imaging Neural Correlates of Syntactic Complexity in a Naturalistic Context},
   author = {Bachrach, Asaf},
   date = {2008},
@@ -828,7 +881,7 @@
   keywords = {Grammar,Psycholinguistics,Sentence Comprehension,Sentence Structure,Syntax,Verbs}
 }
 
-@unpublished{bahdanau.d:2016,
+@unpublished{bahdanau.d:2016report,
   title = {Neural {{Machine Translation}} by {{Jointly Learning}} to {{Align}} and {{Translate}}},
   author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
   date = {2016-05-19},
@@ -1150,7 +1203,7 @@
   file = {~/Zotfiles/bayes.t1763 An essay towards solving a problem in th.pdf}
 }
 
-@article{beauchene.c:2022,
+@article{beauchene.c:2022report,
   title = {Dynamic Cognitive States Predict Individual Variability in Behavior and Modulate with {{EEG}} Functional Connectivity during Working Memory},
   author = {Beauchene, Christine and Hinault, Thomas and Sarma, Sridevi V. and Courtney, Susan},
   date = {2022-01-29},
@@ -1218,7 +1271,7 @@
   bdsk-url-2 = {https://doi.org/10.18653/v1/P17-1080}
 }
 
-@unpublished{bell-souder.d:2021HSP,
+@unpublished{bell-souder.d:2021cuny,
   title = {Language Modeling Using a Neural Network Shows Effects on {{N400}} beyond Just Surprisal},
   author = {Bell-Souder, Don and McKnight, Shannon and Zhdanov, Vladimir and Mullen, Sean and Miyake, Akira and Gilley, Phillip and Kim, Albert},
   date = {2021-03-06},
@@ -1349,7 +1402,7 @@
   file = {~/Zotfiles/bennett.r2009 English resumptive pronouns and the high 2.pdf;~/Zotfiles/bennett.r2009 English resumptive pronouns and the high.pdf}
 }
 
-@report{bennett.v:2018,
+@report{bennett.v:2018report,
   title = {Wasatch {{Solar Project}} Final Report},
   author = {Bennett, Vicki and Bowman, Kate and Wright, Sarah},
   date = {2018},
@@ -1455,7 +1508,8 @@
   bdsk-url-2 = {https://www.colorado.edu/amath/sites/default/files/attached-files/billingsley.pdf},
   date-added = {2021-03-28 11:47:36 -0400},
   date-modified = {2021-08-21 16:16:00 -0400},
-  keywords = {measure theory,probability theory}
+  keywords = {measure theory,probability theory},
+  file = {/Users/v/Zotfiles/billingsley.p1995book3 Probability and measure.pdf}
 }
 
 @book{bishop.c:2006book,
@@ -1502,7 +1556,7 @@
   file = {~/Zotfiles/blachman.n1968 The amount of information that y gives a.pdf}
 }
 
-@software{black.s:2021,
+@software{black.s:2021GPT-Neo,
   title = {{{GPT-Neo}}: {{Large}} Scale Autoregressive Language Modeling with Meshtensorflow},
   shorttitle = {{{GPT-Neo}}},
   author = {Black, Sid and Gao, Leo and Wang, Phil and Leahy, Connor and Biderman, Stella},
@@ -1515,7 +1569,7 @@
   version = {v1.1.1}
 }
 
-@inproceedings{black.s:2022,
+@inproceedings{black.s:2022GPT-NeoX,
   title = {{{GPT-NeoX-20B}}: {{An}} Open-Source Autoregressive Language Model},
   shorttitle = {{{GPT-NeoX-20B}}},
   booktitle = {Proceedings of {{BigScience Episode}} \#5 – {{Workshop}} on {{Challenges}} \& {{Perspectives}} in {{Creating Large Language Models}}},
@@ -1608,7 +1662,7 @@
   title = {British {{National Corpus}}, {{XML}} Edition},
   author = {{BNC Consortium}},
   date = {2007-03-06},
-  publisher = {Oxford Text Archive},
+  publisher = {University of Oxford},
   location = {ota:2554},
   url = {https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/2554},
   urldate = {2023-12-18},
@@ -1943,7 +1997,7 @@
   file = {~/Zotfiles/boyce.v2019LSA Female gender is consistently under-expr.pdf}
 }
 
-@unpublished{boyce.v:2020,
+@unpublished{boyce.v:2020amlap,
   type = {Talk},
   title = {A-Maze of {{Natural Stories}}: Texts Are Comprehensible Using the {{Maze}} Task},
   author = {Boyce, Veronica and Levy, Roger},
@@ -1955,7 +2009,7 @@
   venue = {Potsdam, Germany}
 }
 
-@article{boyce.v:2020a,
+@article{boyce.v:2020jml,
   title = {Maze Made Easy: Better and Easier Measurement of Incremental Processing Difficulty},
   author = {Boyce, Veronica and Futrell, Richard and Levy, Roger},
   date = {2020-04},
@@ -2092,6 +2146,17 @@
   publisher = {Association for Computational Linguistics},
   location = {Cambridge, MA},
   url = {https://www.aclweb.org/anthology/D10-1118}
+}
+
+@thesis{brooke-wilson.t:2023phd,
+  type = {phdthesis},
+  title = {Bounded Rationality as a Strategy for Cognitive Science},
+  author = {Brooke-Wilson, Tyler},
+  date = {2023},
+  institution = {Massachusetts Institute of Technology},
+  location = {Cambridge, MA},
+  langid = {english},
+  file = {/Users/v/Zotero/storage/4Q5ZQSQJ/brooke-wilson.t Bounded Rationality as a Strategy for Co.pdf}
 }
 
 @article{brothers.t:2021,
@@ -2733,6 +2798,22 @@
   file = {~/Zotfiles/chatterjee.s2018 The sample size required in importance s.pdf}
 }
 
+@online{chatterjee.s:2025arxiv,
+  title = {Estimating the Size of a Set Using Cascading Exclusion},
+  author = {Chatterjee, Sourav and Diaconis, Persi and Holmes, Susan},
+  date = {2025-09-08},
+  eprint = {2508.05901},
+  eprinttype = {arXiv},
+  eprintclass = {math},
+  doi = {10.48550/arXiv.2508.05901},
+  url = {http://arxiv.org/abs/2508.05901},
+  urldate = {2025-09-25},
+  abstract = {Let \$S\$ be a finite set, and \$X\_1,\textbackslash ldots,X\_n\$ an i.i.d. uniform sample from \$S\$. To estimate the size \$|S|\$, without further structure, one can wait for repeats and use the birthday problem. This requires a sample size of the order \$|S|\textasciicircum\textbackslash frac\{1\}\{2\}\$. On the other hand, if \$S=\textbackslash\{1,2,\textbackslash ldots,|S|\textbackslash\}\$, the maximum of the sample blown up by \$n/(n-1)\$ gives an efficient estimator based on any growing sample size. This paper gives refinements that interpolate between these extremes. A general non-asymptotic theory is developed. This includes estimating the volume of a compact convex set, the unseen species problem, and a host of testing problems that follow from the question `Is this new observation a typical pick from a large prespecified population?' We also treat regression style predictors. A general theorem gives non-parametric finite \$n\$ error bounds in all cases.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Information Theory,Mathematics - Information Theory,Mathematics - Probability,Mathematics - Statistics Theory,Statistics - Machine Learning,Statistics - Statistics Theory},
+  file = {/Users/v/Zotfiles/chatterjee.s2025arxiv Estimating the size of a set using casca.pdf;/Users/v/Zotero/storage/KVI4MSX9/2508.html}
+}
+
 @online{chen.c:2023arxiv,
   title = {Accelerating Large Language Model Decoding with Speculative Sampling},
   author = {Chen, Charlie and Borgeaud, Sebastian and Irving, Geoffrey and Lespiau, Jean-Baptiste and Sifre, Laurent and Jumper, John},
@@ -2777,6 +2858,22 @@
   eventtitle = {{{NAACL-HLT}} 2024},
   keywords = {dependency parsing,dependency structures,pmi},
   file = {~/Zotfiles/chen.j2024 Language Model Based Unsupervised Depend.pdf}
+}
+
+@online{chen.k:2025arxiv,
+  title = {Reinforcement {{Learning}} for {{Long-Horizon Interactive LLM Agents}}},
+  author = {Chen, Kevin and Cusumano-Towner, Marco and Huval, Brody and Petrenko, Aleksei and Hamburger, Jackson and Koltun, Vladlen and Krähenbühl, Philipp},
+  date = {2025-03-08},
+  eprint = {2502.01600},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2502.01600},
+  url = {http://arxiv.org/abs/2502.01600},
+  urldate = {2025-10-01},
+  abstract = {Interactive digital agents (IDAs) leverage APIs of stateful digital environments to perform tasks in response to user requests. While IDAs powered by instruction-tuned large language models (LLMs) can react to feedback from interface invocations in multi-step exchanges, they have not been trained in their respective digital environments. Prior methods accomplish less than half of tasks in sophisticated benchmarks such as AppWorld. We present a reinforcement learning (RL) approach that trains IDAs directly in their target environments. We formalize this training as a partially observable Markov decision process and derive LOOP, a data- and memory-efficient variant of proximal policy optimization. LOOP uses no value network and maintains exactly one copy of the underlying LLM in memory, making its implementation straightforward and as memory-efficient as fine-tuning a single LLM. A 32-billion-parameter agent trained with LOOP in the AppWorld environment outperforms the much larger OpenAI o1 agent by 9 percentage points (15\% relative). To our knowledge, this is the first reported application of RL to IDAs that interact with a stateful, multi-domain, multi-app environment via direct API calls. Our analysis sheds light on the effectiveness of RL in this area, showing that the agent learns to consult the API documentation, avoid unwarranted assumptions, minimize confabulation, and recover from setbacks.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {/Users/v/Zotfiles/chen.k2025arxiv Reinforcement Learning for Long-Horizon.pdf;/Users/v/Zotero/storage/TVGRGYKG/2502.html}
 }
 
 @inproceedings{chen.r:2021cogsci,
@@ -3257,6 +3354,25 @@
   file = {~/Zotfiles/clark.t2023 A cross-linguistic pressure for uniform.pdf}
 }
 
+@inproceedings{clark.t:2025,
+  title = {Resource-{{Rational Noisy-Channel Language Processing}}: {{Testing}} the {{Effect}} of {{Algorithmic Constraints}} on {{Inferences}}},
+  shorttitle = {Resource-{{Rational Noisy-Channel Language Processing}}},
+  booktitle = {Proceedings of the 2025 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
+  author = {Clark, Thomas Hikaru and Vigly, Jacob Hoover and Gibson, Edward and Levy, Roger P.},
+  editor = {Christodoulopoulos, Christos and Chakraborty, Tanmoy and Rose, Carolyn and Peng, Violet},
+  date = {2025-11},
+  pages = {23648--23661},
+  publisher = {Association for Computational Linguistics},
+  location = {Suzhou, China},
+  doi = {10.18653/v1/2025.emnlp-main.1207},
+  url = {https://aclanthology.org/2025.emnlp-main.1207/},
+  urldate = {2026-01-28},
+  abstract = {Human language use is robust to errors: comprehenders can and do mentally correct utterances that are implausible or anomalous. How are humans able to solve these problems in real time, picking out alternatives from an unbounded space of options using limited cognitive resources? And can language models trained on next-word prediction for typical language be augmented to handle language anomalies in a human-like way? Using a language model as a prior and an error model to encode likelihoods, we use Sequential Monte Carlo with optional rejuvenation to perform incremental and approximate probabilistic inference over intended sentences and production errors. We demonstrate that the model captures previously established patterns in human sentence processing, and that a trade-off between human-like noisy-channel inferences and computational resources falls out of this model. From a psycholinguistic perspective, our results offer a candidate algorithmic model of rational inference in language processing. From an NLP perspective, our results showcase how to elicit human-like noisy-channel inference behavior from a relatively small LLM while controlling the amount of computation available during inference. Our model is implemented in the Gen.jl probabilistic programming language, and our code is available at https://github.com/thomashikaru/noisy\_channel\_model.},
+  eventtitle = {{{EMNLP}} 2025},
+  isbn = {979-8-89176-332-6},
+  file = {/Users/v/Zotfiles/clark.t2025 Resource-Rational Noisy-Channel Language.pdf}
+}
+
 @inproceedings{clark.t:2025cogsci,
   title = {A Model of Approximate and Incremental Noisy-Channel Language Processing},
   booktitle = {Proceedings of the 47th Annual Meeting of the {{Cognitive Science Society}}},
@@ -3282,7 +3398,8 @@
   title = {Resource-Rational Noisy-Channel Language Processing: Testing the Effect of Algorithmic Constraints on Inferences},
   author = {Clark, Thomas Hikaru and Vigly, Jacob Hoover and Gibson, Edward and Levy, Roger P.},
   date = {2025},
-  howpublished = {ACL ARR 2025 May Submission}
+  howpublished = {ACL ARR 2025 May Submission},
+  annotation = {comment: To appear at EMNLP 2025}
 }
 
 @article{clayards.m:2008,
@@ -3382,6 +3499,22 @@
   file = {~/Zotfiles/collins.k2024 Building machines that learn and think w.pdf}
 }
 
+@online{collins.k:2025arxiv,
+  title = {People Use Fast, Flat Goal-Directed Simulation to Reason about Novel Problems},
+  author = {Collins, Katherine M. and Zhang, Cedegao E. and Wong, Lionel and Barba da Costa, Mauricio and Todd, Graham and Weller, Adrian and Cheyette, Samuel J. and Griffiths, Thomas L. and Tenenbaum, Joshua B.},
+  date = {2025-10-13},
+  eprint = {2510.11503},
+  eprinttype = {arXiv},
+  eprintclass = {q-bio},
+  doi = {10.48550/arXiv.2510.11503},
+  url = {http://arxiv.org/abs/2510.11503},
+  urldate = {2026-01-10},
+  abstract = {Games have long been a microcosm for studying planning and reasoning in both natural and artificial intelligence, especially with a focus on expert-level or even super-human play. But real life also pushes human intelligence along a different frontier, requiring people to flexibly navigate decision-making problems that they have never thought about before. Here, we use novice gameplay to study how people make decisions and form judgments in new problem settings. We show that people are systematic and adaptively rational in how they play a game for the first time, or evaluate a game (e.g., how fair or how fun it is likely to be) before they have played it even once. We explain these capacities via a computational cognitive model that we call the "Intuitive Gamer". The model is based on mechanisms of fast and flat (depth-limited) goal-directed probabilistic simulation--analogous to those used in Monte Carlo tree-search models of expert game-play, but scaled down to use very few stochastic samples, simple goal heuristics for evaluating actions, and no deep search. In a series of large-scale behavioral studies with over 1000 participants and 121 two-player strategic board games (almost all novel to our participants), our model quantitatively captures human judgments and decisions varying the amount and kind of experience people have with a game--from no experience at all ("just thinking"), to a single round of play, to indirect experience watching another person and predicting how they should play--and does so significantly better than much more compute-intensive expert-level models. More broadly, our work offers new insights into how people rapidly evaluate, act, and make suggestions when encountering novel problems, and could inform the design of more flexible and human-like AI systems that can determine not just how to solve new tasks, but whether a task is worth thinking about at all.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Science and Game Theory,Quantitative Biology - Neurons and Cognition},
+  file = {/Users/v/Zotfiles/collins.k2025arxiv People use fast, flat goal-directed simu.pdf;/Users/v/Zotero/storage/RFB4YVV7/2510.html}
+}
+
 @thesis{collins.m:1999phd,
   type = {phdthesis},
   title = {Head-Driven Statistical Models for Natural Language Parsing},
@@ -3392,7 +3525,7 @@
   url = {https://www.proquest.com/docview/304536592/abstract/20DAD4A135504E28PQ/1},
   urldate = {2022-10-16},
   abstract = {Statistical models for parsing natural language have recently shown considerable success in broad-coverage domains. Ambiguity often leads to an input sentence having many possible parse trees; statistical approaches assign a probability to each tree, thereby ranking competing trees in order of plausibility. The probability for each candidate tree is calculated as a product of terms, each term corresponding to some sub-structure within the tree. The choice of parameterization is the choice of how to break down the tree. There are two critical questions regarding the parameterization of the problem: (1) What linguistic objects (e.g., context-free rules, parse moves) should the model's parameters be associated with? I.e., How should trees be decomposed into smaller fragments? (2) How can this choice be instantiated in a sound probabilistic model? This thesis argues that the locality of a lexical head's influence in a tree should motivate modeling choices in the parsing problem. In the final parsing models a parse tree is represented as the sequence of decisions corresponding to a head-centered, top-down derivation of the tree. Independence assumptions then follow naturally, leading to parameters that encode the X-bar schema, subcategorization, ordering of complements, placement of adjuncts, lexical dependencies, wh-movement, and preferences for close attachment. All of these preferences are expressed by probabilities conditioned on lexical heads. The goals of the work are two-fold. First, we aim to advance the state of the art. We report tests on Wall Street Journal text showing that the models give improved accuracy over other methods in the literature. The models recover richer representations than previous approaches, adding the complement/adjunct distinction and information regarding wh-movement. Second, we aim to increase understanding of statistical parsing models. Each parameter type is motivated through tree examples where it provides discriminative information. An empirical study of prepositional phrase attachment ambiguity is used to investigate the effectiveness of dependency parameters for ambiguity resolution. A number of parsing models are tested, and we give a breakdown of their performance on different types of construction. Finally, we give a detailed comparison of the models to others in the literature.},
-  isbn = {9780599258747},
+  isbn = {978-0-599-25874-7},
   langid = {english},
   pagetotal = {276},
   keywords = {Applied sciences,Head-driven,Natural language,Parameterization,Parsing,Statistical models},
@@ -3574,6 +3707,18 @@
   issue = {1},
   langid = {english},
   keywords = {Scientific community,Software}
+}
+
+@article{crisan.d:1999,
+  title = {Discrete Filtering Using Branching and Interacting Particle Systems},
+  author = {Crisan, Dan and Del Moral, Pierre and Lyons, Terry},
+  date = {1999-03},
+  journaltitle = {Markov Processes and Related Fields},
+  volume = {5},
+  number = {3},
+  pages = {293--318},
+  url = {https://www.researchgate.net/publication/2443239_Discrete_Filtering_Using_Branching_and_Interacting_Particle_Systems},
+  file = {/Users/v/Zotfiles/crisan.d1999 Discrete filtering using branching and i.pdf}
 }
 
 @article{crocker.m:2000,
@@ -3881,6 +4026,23 @@
   file = {~/Zotfiles/darwin.o2022 On the Sequential Probability Ratio Test.pdf}
 }
 
+@article{dasgupta.i:2020,
+  title = {A Theory of Learning to Infer},
+  author = {Dasgupta, Ishita and Schulz, Eric and Tenenbaum, Joshua B. and Gershman, Samuel J.},
+  date = {2020-04},
+  journaltitle = {Psychological Review},
+  shortjournal = {Psychological Review},
+  volume = {127},
+  number = {3},
+  pages = {412--441},
+  issn = {1939-1471, 0033-295X},
+  doi = {10.1037/rev0000178},
+  url = {https://doi.apa.org/doi/10.1037/rev0000178},
+  urldate = {2026-01-30},
+  langid = {english},
+  file = {/Users/v/Zotfiles/dasgupta.i2020 A theory of learning to infer.pdf}
+}
+
 @inproceedings{dasgupta.s:2016,
   title = {A Cost Function for Similarity-Based Hierarchical Clustering},
   booktitle = {Proceedings of the 48th Annual {{ACM SIGACT}} Symposium on Theory of Computing, {{STOC}} 2016, Cambridge, {{MA}}, {{USA}}, June 18-21, 2016},
@@ -4016,23 +4178,6 @@
   file = {~/Zotfiles/definetti.b1972 Probability, induction and statistics t.djvu}
 }
 
-@book{definetti.b:2017book,
-  title = {Theory of Probability: A Critical Introductory Treatment},
-  shorttitle = {Theory of Probability},
-  author = {family=Finetti, given=Bruno, prefix=de, useprefix=true},
-  editor = {Machí, Antonio and Smith, Adrian},
-  date = {2017-02-16},
-  origdate = {1975},
-  series = {Wiley {{Series}} in {{Probability}} and {{Statistics}}},
-  edition = {1},
-  publisher = {Wiley},
-  doi = {10.1002/9781119286387},
-  url = {https://onlinelibrary.wiley.com/doi/book/10.1002/9781119286387},
-  urldate = {2024-05-13},
-  isbn = {978-1-119-28637-0 978-1-119-28638-7},
-  langid = {english}
-}
-
 @article{degen.j:2023,
   title = {The Rational Speech Act Framework},
   author = {Degen, Judith},
@@ -4072,6 +4217,18 @@
   url = {https://openreview.net/forum?id=HyzdRiR9Y7},
   eventtitle = {7th {{International Conference}} on {{Learning Representations}} ({{ICLR}} 2019)},
   file = {~/Zotfiles/dehghani.m2019 Universal transformers.pdf}
+}
+
+@inproceedings{dekoninck.j:2023,
+  title = {Controlled Text Generation via Language Model Arithmetic},
+  author = {Dekoninck, Jasper and Fischer, Marc and Beurer-Kellner, Luca and Vechev, Martin},
+  date = {2023-10-13},
+  url = {https://openreview.net/forum?id=SLw9fp4yI6},
+  urldate = {2026-01-28},
+  abstract = {As Large Language Models (LLMs) are deployed more widely, customization with respect to vocabulary, style, and character becomes more important. In this work, we introduce model arithmetic, a novel inference framework for composing and biasing LLMs without the need for model (re)training or highly specific datasets. In addition, the framework allows for more precise control of generated text than direct prompting and prior controlled text generation (CTG) techniques. Using model arithmetic, we can express prior CTG techniques as simple formulas and naturally extend them to new and more effective formulations. Further, we show that speculative sampling, a technique for efficient LLM sampling, extends to our setting. This enables highly efficient text generation with multiple composed models with only marginal overhead over a single model. Our empirical evaluation demonstrates that model arithmetic allows fine-grained control of generated text while outperforming state-of-the-art on the task of toxicity reduction. We release an open source easy-to-use implementation of our framework at https://github.com/eth-sri/language-model-arithmetic.},
+  eventtitle = {The {{Twelfth International Conference}} on {{Learning Representations}}},
+  langid = {english},
+  file = {/Users/v/Zotfiles/dekoninck.j2023 Controlled Text Generation via Language.pdf}
 }
 
 @online{deletang.g:2022arxiv,
@@ -4143,25 +4300,6 @@
   timestamp = {Mon, 08 May 2017 16:29:45 +0200}
 }
 
-@incollection{demarcken.c:1999,
-  title = {On the Unsupervised Induction of Phrase-Structure Grammars},
-  booktitle = {Natural Language Processing Using Very Large Corpora},
-  author = {family=Marcken, given=C., prefix=de, useprefix=true},
-  editor = {Armstrong, Susan and Church, Kenneth and Isabelle, Pierre and Manzi, Sandra and Tzoukermann, Evelyne and Yarowsky, David},
-  date = {1999},
-  pages = {191--208},
-  publisher = {Springer Netherlands},
-  location = {Dordrecht},
-  doi = {10.1007/978-94-017-2390-9_12},
-  url = {https://doi.org/10.1007/978-94-017-2390-9₁2},
-  abstract = {Researchers investigating the acquisition of phrase-structure grammars from raw text have had only mixed success. In particular, unsupervised learning techniques, such as the inside-outside algorithm (Baker, 1979) for estimating the parameters of stochastic context-free grammars (SCFGs), tend to produce grammars that structure text in ways contrary to our linguistic intuitions. One effective way around this problem is to use hand-structured text like the Penn Treebank (Marcus, 1991) to constrain the learner: (Pereira and Schabes, 1992) demonstrate that the inside-outside algorithm can learn grammars effectively given such constraint, and currently the best performing parsers are trained on treebanks (Black et al., 1992; Magerman, 1995).},
-  date-added = {2020-01-27 11:50:06 -0500},
-  date-modified = {2021-07-16 11:27:47 -0400},
-  isbn = {978-94-017-2390-9},
-  project = {syntactic embedding},
-  keywords = {information theory,unsupervised grammar induction}
-}
-
 @inproceedings{demarneffe.m:2006,
   title = {Generating Typed Dependency Parses from Phrase Structure Parses},
   booktitle = {Proceedings of the Fifth International Conference on Language Resources and Evaluation ({{LREC}}'06)},
@@ -4195,22 +4333,6 @@
   project = {syntactic embedding},
   version = {Stanford Parser v.3.7.0},
   keywords = {dependency structures,stanford dependencies}
-}
-
-@article{demarneffe.m:2019,
-  title = {Dependency Grammar},
-  author = {family=Marneffe, given=Marie-Catherine, prefix=de, useprefix=true and Nivre, Joakim},
-  date = {2019},
-  journaltitle = {Annual Review of Linguistics},
-  volume = {5},
-  number = {1},
-  pages = {197--218},
-  publisher = {Annual Reviews},
-  doi = {10.1146/annurev-linguistics-011718-011842},
-  url = {https://doi.org/10.1146%2Fannurev-linguistics-011718-011842},
-  bdsk-url-2 = {https://doi.org/10.1146/annurev-linguistics-011718-011842},
-  date-added = {2021-07-16 19:34:18 -0400},
-  date-modified = {2021-07-16 19:34:19 -0400}
 }
 
 @article{demberg.v:2008,
@@ -4334,6 +4456,22 @@
   file = {~/Zotfiles/dieng.a2017 Variational inference via χ upper bound.pdf}
 }
 
+@online{dohan.d:2022arxiv,
+  title = {Language Model Cascades},
+  author = {Dohan, David and Xu, Winnie and Lewkowycz, Aitor and Austin, Jacob and Bieber, David and Lopes, Raphael Gontijo and Wu, Yuhuai and Michalewski, Henryk and Saurous, Rif A. and Sohl-dickstein, Jascha and Murphy, Kevin and Sutton, Charles},
+  date = {2022-07-28},
+  eprint = {2207.10342},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2207.10342},
+  url = {http://arxiv.org/abs/2207.10342},
+  urldate = {2025-12-21},
+  abstract = {Prompted models have demonstrated impressive few-shot learning abilities. Repeated interactions at test-time with a single model, or the composition of multiple models together, further expands capabilities. These compositions are probabilistic models, and may be expressed in the language of graphical models with random variables whose values are complex data types such as strings. Cases with control flow and dynamic structure require techniques from probabilistic programming, which allow implementing disparate model structures and inference strategies in a unified language. We formalize several existing techniques from this perspective, including scratchpads / chain of thought, verifiers, STaR, selection-inference, and tool use. We refer to the resulting programs as language model cascades.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  file = {/Users/v/Zotfiles/dohan.d2022arxiv Language Model Cascades.pdf;/Users/v/Zotero/storage/NGYIJHE2/2207.html}
+}
+
 @online{domke.j:2025arxiv,
   title = {Large {{Language Bayes}}},
   author = {Domke, Justin},
@@ -4383,19 +4521,22 @@
   file = {~/Zotfiles/dotlacil.j2021 Parsing as a cue-based retrieval model.pdf}
 }
 
-@article{douc.r:2005,
+@inproceedings{douc.r:2005,
   title = {Comparison of Resampling Schemes for Particle Filtering},
+  booktitle = {{{ISPA}} 2005. {{Proceedings}} of the 4th {{International Symposium}} on {{Image}} and {{Signal Processing}} and {{Analysis}}},
   author = {Douc, Randal and Cappé, Olivier and Moulines, Eric},
-  date = {2005},
-  publisher = {arXiv},
-  doi = {10.48550/ARXIV.CS/0507025},
-  url = {https://arxiv.org/abs/cs/0507025},
-  bdsk-url-2 = {https://doi.org/10.48550/ARXIV.CS/0507025},
-  copyright = {Assumed arXiv.org perpetual, non-exclusive license to distribute this article for submissions made before January 2004},
-  date-added = {2022-03-29 20:05:42 -0400},
-  date-modified = {2022-03-29 20:05:43 -0400},
-  keywords = {and Science (cs.CE),Computational Engineering,Finance,FOS: Computer and information sciences},
-  file = {~/Zotfiles/douc.r2005 Comparison of resampling schemes for par.pdf}
+  date = {2005-09},
+  eprint = {cs/0507025},
+  eprinttype = {arXiv},
+  pages = {64--69},
+  issn = {1845-5921},
+  doi = {10.1109/ISPA.2005.195385},
+  url = {https://ieeexplore.ieee.org/document/1521264/},
+  urldate = {2026-01-07},
+  abstract = {This contribution is devoted to the comparison of various resampling approaches that have been proposed in the literature on particle filtering. It is first shown using simple arguments that the so-called residual and stratified methods do yield an improvement over the basic multinomial resampling approach. A simple counter-example showing that this property does not hold true for systematic resampling is given. Finally, some results on the large-sample behavior of the simple bootstrap filter algorithm are given. In particular, a central limit theorem is established for the case where resampling is performed using the residual approach.},
+  eventtitle = {The 4th {{International Symposium}} on {{Image}} and {{Signal Processing}} and {{Analysis}}},
+  keywords = {Computational modeling,Density functional theory,Filtering,Filters,Image processing,Monte Carlo methods,Signal processing,Signal processing algorithms,Sliding mode control,State estimation},
+  file = {/Users/v/Zotfiles/douc.r2005 Comparison of resampling schemes for par.pdf}
 }
 
 @incollection{doucet.a:2001,
@@ -4495,7 +4636,7 @@
   date-modified = {2022-05-17 08:09:30 -0400}
 }
 
-@inproceedings{du.z:2022,
+@inproceedings{du.z:2022GLM,
   title = {{{GLM}}: {{General}} Language Model Pretraining with Autoregressive Blank Infilling},
   shorttitle = {Glm},
   booktitle = {Proceedings of the 60th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{Volume}} 1: {{Long Papers}})},
@@ -5291,6 +5432,23 @@
   keywords = {DL minimization,memory}
 }
 
+@book{finetti.b:2017book,
+  title = {Theory of Probability: A Critical Introductory Treatment},
+  shorttitle = {Theory of Probability},
+  author = {family=Finetti, given=Bruno, prefix=de, useprefix=true},
+  editor = {Machí, Antonio and Smith, Adrian},
+  date = {2017-02-16},
+  origdate = {1975},
+  series = {Wiley {{Series}} in {{Probability}} and {{Statistics}}},
+  edition = {1},
+  publisher = {Wiley},
+  doi = {10.1002/9781119286387},
+  url = {https://onlinelibrary.wiley.com/doi/book/10.1002/9781119286387},
+  urldate = {2024-05-13},
+  isbn = {978-1-119-28637-0 978-1-119-28638-7},
+  langid = {english}
+}
+
 @inproceedings{finkel.j:2008,
   title = {Efficient, Feature-Based, Conditional Random Field Parsing},
   booktitle = {Proceedings of {{ACL-08}}: {{HLT}}},
@@ -5417,6 +5575,23 @@
   url = {https://www.jstor.org/stable/4178071},
   urldate = {2023-02-22},
   file = {~/Zotfiles/fodor.j1978 Parsing strategies and constraints on tr.pdf}
+}
+
+@online{foerster.j:2018arxiv,
+  title = {{{DiCE}}: {{The Infinitely Differentiable Monte-Carlo Estimator}}},
+  shorttitle = {{{DiCE}}},
+  author = {Foerster, Jakob and Farquhar, Gregory and Al-Shedivat, Maruan and Rocktäschel, Tim and Xing, Eric P. and Whiteson, Shimon},
+  date = {2018-09-19},
+  eprint = {1802.05098},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1802.05098},
+  url = {http://arxiv.org/abs/1802.05098},
+  urldate = {2025-09-28},
+  abstract = {The score function estimator is widely used for estimating gradients of stochastic objectives in stochastic computation graphs (SCG), eg, in reinforcement learning and meta-learning. While deriving the first-order gradient estimators by differentiating a surrogate loss (SL) objective is computationally and conceptually simple, using the same approach for higher-order derivatives is more challenging. Firstly, analytically deriving and implementing such estimators is laborious and not compliant with automatic differentiation. Secondly, repeatedly applying SL to construct new objectives for each order derivative involves increasingly cumbersome graph manipulations. Lastly, to match the first-order gradient under differentiation, SL treats part of the cost as a fixed sample, which we show leads to missing and wrong terms for estimators of higher-order derivatives. To address all these shortcomings in a unified way, we introduce DiCE, which provides a single objective that can be differentiated repeatedly, generating correct estimators of derivatives of any order in SCGs. Unlike SL, DiCE relies on automatic differentiation for performing the requisite graph manipulations. We verify the correctness of DiCE both through a proof and numerical evaluation of the DiCE derivative estimates. We also use DiCE to propose and evaluate a novel approach for multi-agent learning. Our code is available at https://www.github.com/alshedivat/lola.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  file = {/Users/v/Zotfiles/foerster.j2018arxiv DiCE The Infinitely Differentiable Mont.pdf;/Users/v/Zotero/storage/MUPLISRA/1802.html}
 }
 
 @book{folland.g:1999book2,
@@ -6211,7 +6386,7 @@
   file = {~/Zotfiles/geman.s1984 Stochastic Relaxation, Gibbs Distributio.pdf}
 }
 
-@unpublished{genewein.t:2013,
+@unpublished{genewein.t:2013report,
   title = {Abstraction in Decision-Makers with Limited Information Processing Capabilities},
   author = {Genewein, Tim and Braun, Daniel A.},
   date = {2013-12-19},
@@ -6334,6 +6509,17 @@
   file = {~/Zotfiles/gershman.s2023 The molecular memory code and synaptic p.pdf}
 }
 
+@inproceedings{gerstenberg.t:2012cogsci,
+  title = {Ping Pong in {{Church}}: Productive Use of Concepts in Human Probabilistic Inference},
+  booktitle = {Proceedings of the 34th Annual Meeting of the {{Cognitive Science Society}}},
+  author = {Gerstenberg, Tobias and Goodman, Noah},
+  date = {2012},
+  url = {https://escholarship.org/uc/item/7xt99314},
+  abstract = {How do people make inferences from complex patterns of evidence across diverse situations? What does a computational model need in order to capture the abstract knowledge people use for everyday reasoning? In this paper, we explore a novel modeling framework based on the probabilistic language of thought (PLoT) hypothesis, which conceptualizes thinking in terms of probabilistic inference over compositionally structured representations. The core assumptions of the PLoT hypothesis are realized in the probabilistic programming language Church (Goodman, Mansinghka, Roy, Bonawitz, \& Tenenbaum, 2008). Using “ping pong tournaments” as a case study, we show how a single Church program concisely represents the concepts required to specify inferences from diverse patterns of evidence. In two experiments, we demonstrate a very close fit between our model’s predictions and participants’ judgments. Our model accurately predicts how people reason with confounded and indirect evidence and how different sources of information are integrated.},
+  langid = {english},
+  file = {/Users/v/Zotfiles/gerstenberg.t2012cogsci Ping pong in Church productive use of c.pdf}
+}
+
 @article{gibbs.a:2002,
   title = {On Choosing and Bounding Probability Metrics},
   author = {Gibbs, Alison L. and Su, Francis Edward},
@@ -6363,7 +6549,7 @@
   url = {https://www.proquest.com/docview/303922361/abstract/D91794B7808B4DE7PQ/1},
   urldate = {2022-06-14},
   abstract = {This thesis gives a theory of sentence comprehension that attempts to explain a number of linguistic performance effects, including garden-path effects, preferred readings for ambiguous input and processing overload effects. It is hypothesized that the human parser heuristically determines its options based upon evaluation of possible representations with respect to lexical, syntactic, semantic and pragmatic properties, each of which is associated with a weight. Processing overload effects are explained by the assumption of the existence of a maximum load corresponding to the limited capacity of short term memory: a structure becomes unacceptable at a particular parse state if the combination of the processing weights associated with its properties at that state is greater than the available capacity. Furthermore, it is assumed that the language processor is an automatic device that maintains only the best of the set of all compatible representations for an input string. This thesis assumes a formulation of representational evaluation within a parallel framework: one structure is preferred over another if the processing load associated with the first structure is markedly lower than the processing load associated with the second. Thus a garden path effect results if the unpreferred structure is necessary for a successful parse of the input. Four properties of linguistic representations are presented within this framework. The first two--the Properties of Thematic Reception and Transmission--derivable from the \$\textbackslash theta\$-Criterion from Government-Binding (GB) Theory (Chomsky (1981)); the third--the Property of Lexical Requirement--derivable from the Projection Principle of GB Theory; and the fourth--the Property of Recency Preference--prefers local attachments over more distant attachments (cf. Kimball (1973), Frazier (1979)). This thesis shows how these properties interact to give a partially unified theory of many performance effects.},
-  isbn = {9798617014688},
+  isbn = {979-8-6170-1468-8},
   langid = {english},
   pagetotal = {318},
   keywords = {Applied sciences,computational linguistics,Language,literature and linguistics,memory,parsing,processing,psycholinguistics},
@@ -6757,6 +6943,22 @@
   opturl = {http://www.sciencedirect.com/science/article/pii/S0885230801901743}
 }
 
+@incollection{goodman.n:2014,
+  title = {Concepts in a Probabilistic Language of Thought},
+  booktitle = {The {{Conceptual Mind}}: {{New Directions}} in the {{Study}} of {{Concepts}}},
+  author = {Goodman, Noah D. and Tenenbaum, Joshua B. and Gerstenberg, Tobias},
+  date = {2014-06-14},
+  series = {{{CBMM Memo Series}}},
+  number = {010},
+  publisher = {{Center for Brains, Minds and Machines (CBMM)}},
+  url = {https://dspace.mit.edu/handle/1721.1/100174},
+  urldate = {2025-12-29},
+  abstract = {Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts—elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty—our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought (PLoT) in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states. The purpose of this chapter is to formalize these ideas in computational terms, to illustrate key properties of the PLoT approach with a concrete example, and to draw connections with other views of conceptual structure.},
+  langid = {american},
+  annotation = {Accepted: 2015-12-10T18:45:00Z},
+  file = {/Users/v/Zotfiles/goodman.n2014report Concepts in a Probabilistic Language of.pdf}
+}
+
 @inproceedings{goodwin.e:2020,
   title = {Probing {{Linguistic Systematicity}}},
   booktitle = {Proceedings of the 58th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}}},
@@ -7051,7 +7253,7 @@
   keywords = {reading time,self-paced reading}
 }
 
-@online{groeneveld.d:2024arxiv,
+@online{groeneveld.d:2024OLMo,
   title = {{{OLMo}}: Accelerating the Science of Language Models},
   shorttitle = {{{OLMo}}},
   author = {Groeneveld, Dirk and Beltagy, Iz and Walsh, Pete and Bhagia, Akshita and Kinney, Rodney and Tafjord, Oyvind and Jha, Ananya Harsh and Ivison, Hamish and Magnusson, Ian and Wang, Yizhong and Arora, Shane and Atkinson, David and Authur, Russell and Chandu, Khyathi Raghavi and Cohan, Arman and Dumas, Jennifer and Elazar, Yanai and Gu, Yuling and Hessel, Jack and Khot, Tushar and Merrill, William and Morrison, Jacob and Muennighoff, Niklas and Naik, Aakanksha and Nam, Crystal and Peters, Matthew E. and Pyatkin, Valentina and Ravichander, Abhilasha and Schwenk, Dustin and Shah, Saurabh and Smith, Will and Strubell, Emma and Subramani, Nishant and Wortsman, Mitchell and Dasigi, Pradeep and Lambert, Nathan and Richardson, Kyle and Zettlemoyer, Luke and Dodge, Jesse and Lo, Kyle and Soldaini, Luca and Smith, Noah A. and Hajishirzi, Hannaneh},
@@ -7122,6 +7324,22 @@
   langid = {english},
   keywords = {biased coin,coin flip,discrete distribution,Discrete probability measure,expected value,Primary 65C10,Secondary 60A10,simulation of distribution},
   file = {~/Zotfiles/gryszka.k2021 From biased coin to any discrete distrib.pdf}
+}
+
+@inproceedings{gu.s:2015,
+  title = {Neural Adaptive Sequential Monte Carlo},
+  booktitle = {Proceedings of the 29th International Conference on Neural Information Processing Systems - Volume 2},
+  author = {Gu, Shixiang and Ghahramani, Zoubin and Turner, Richard E.},
+  date = {2015},
+  series = {{{NIPS}}'15},
+  pages = {2629--2637},
+  publisher = {MIT Press},
+  address = {Cambridge, MA, USA},
+  location = {Montreal, Canada},
+  url = {https://proceedings.neurips.cc/paper/2015/hash/99adff456950dd9629a5260c4de21858-Abstract.html},
+  abstract = {Sequential Monte Carlo (SMC), or particle filtering, is a popular class of methods for sampling from an intractable target distribution using a sequence of simpler intermediate distributions. Like other importance sampling-based methods, performance is critically dependent on the proposal distribution: a bad proposal can lead to arbitrarily inaccurate estimates of the target distribution. This paper presents a new method for automatically adapting the proposal using an approximation of the Kullback-Leibler divergence between the true posterior and the proposal distribution. The method is very flexible, applicable to any parameterized proposal distribution and it supports online and batch variants. We use the new framework to adapt powerful proposal distributions with rich parameterizations based upon neural networks leading to Neural Adaptive Sequential Monte Carlo (NASMC). Experiments indicate that NASMC significantly improves inference in a non-linear state space model outperforming adaptive proposal methods including the Extended Kalman and Unscented Particle Filters. Experiments also indicate that improved inference translates into improved parameter learning when NASMC is used as a subroutine of Particle Marginal Metropolis Hastings. Finally we show that NASMC is able to train a latent variable recurrent neural network (LV-RNN) achieving results that compete with the state-of-the-art for polymorphic music modelling. NASMC can be seen as bridging the gap between adaptive SMC methods and the recent work in scalable, black-box variational inference.},
+  pagetotal = {9},
+  file = {/Users/v/Zotfiles/gu.s2015 Neural adaptive sequential monte carlo_1.pdf;/Users/v/Zotfiles/gu.s2015 Neural adaptive sequential monte carlo.pdf}
 }
 
 @article{gull.s:1993,
@@ -7691,6 +7909,14 @@
   date-modified = {2022-01-05 22:10:25 -0500}
 }
 
+@article{hatamizadeh.a:2025rlp,
+  title = {{{RLP}}: {{Reinforcement}} Learning Pre‑training},
+  author = {Hatamizadeh, Ali and Akter, Syeda Nahida and Prabhumoye, Shrimai and Kautz, Jan and Patwary, Mostofa and Shoeybi, Mohammad and Catanzaro, Bryan and Choi, Yejin},
+  date = {2025},
+  url = {https://github.com/NVlabs/RLP/tree/main?tab=readme-ov-file#paper},
+  file = {/Users/v/Zotfiles/hatamizadeh2025rlp RLP Reinforcement learning pre‑training.pdf}
+}
+
 @article{havelka.j:2007,
   title = {Mathematical Properties of Dependency Trees and Their Application to Natural Language Syntax},
   author = {Havelka, Jiří},
@@ -7799,7 +8025,7 @@
   keywords = {Semantics}
 }
 
-@online{heiss.a:2021,
+@online{heiss.a:2021blog,
   title = {A Guide to Correctly Calculating Posterior Predictions and Average Marginal Effects with Multilievel {{Bayesian}} Models},
   author = {Heiss, Andrew},
   date = {2021-11-10},
@@ -7937,6 +8163,23 @@
   urldate = {2025-08-08},
   abstract = {An unsupervised learning algorithm for a multilayer network of stochastic neurons is described. Bottom-up "recognition" connections convert the input into representations in successive hidden layers, and top-down "generative" connections reconstruct the representation in one layer from the representation in the layer above. In the "wake" phase, neurons are driven by recognition connections, and generative connections are adapted to increase the probability that they would reconstruct the correct activity vector in the layer below. In the "sleep" phase, neurons are driven by generative connections, and recognition connections are adapted to increase the probability that they would produce the correct activity vector in the layer above.},
   file = {~/Zotfiles/hinton.g1995 The wake-sleep algorithm for unsupervi.pdf}
+}
+
+@article{hinton.g:2002,
+  title = {Training {{Products}} of {{Experts}} by {{Minimizing Contrastive Divergence}}},
+  author = {Hinton, Geoffrey E.},
+  date = {2002-08-01},
+  journaltitle = {Neural Computation},
+  shortjournal = {Neural Comput},
+  volume = {14},
+  number = {8},
+  pages = {1771--1800},
+  issn = {0899-7667},
+  doi = {10.1162/089976602760128018},
+  url = {https://doi.org/10.1162/089976602760128018},
+  urldate = {2026-01-27},
+  abstract = {It is possible to combine multiple latent-variable models of the same data by multiplying their probability distributions together and then renormalizing. This way of combining individual “expert” models makes it hard to generate samples from the combined model but easy to infer the values of the latent variables of each expert, because the combination rule ensures that the latent variables of different experts are conditionally independent when given the data. A product of experts (PoE) is therefore an interesting candidate for a perceptual system in which rapid inference is vital and generation is unnecessary. Training a PoE by maximizing the likelihood of the data is difficult because it is hard even to approximate the derivatives of the renormalization term in the combination rule. Fortunately, a PoE can be trained using a different objective function called “contrastive divergence” whose derivatives with regard to the parameters can be approximated accurately and efficiently. Examples are presented of contrastive divergence learning using several types of expert on several types of data.},
+  file = {/Users/v/Zotero/storage/5Z94QL7A/089976602760128018.html}
 }
 
 @inproceedings{ho.j:2020,
@@ -8104,7 +8347,7 @@
   file = {~/Zotfiles/hoover.i2022phd Effective equidistribution on Hilbert mo.pdf}
 }
 
-@unpublished{hoover.j:2020,
+@unpublished{hoover.j:2020handout,
   type = {Handout},
   title = {Accounting for Variation in Number Agreement in {{Icelandic DAT-NOM}} Constructions},
   author = {Hoover, Jacob Louis},
@@ -8118,25 +8361,23 @@
   keywords = {agreement,feature geometry}
 }
 
-@inproceedings{hoover.j:2021,
-  title = {Accounting for Variation in Number Agreement in Icelandic Dative-Nominative Constructions},
-  booktitle = {Proceedings of the 38th {{West Coast Conference}} on {{Formal Linguistics}}},
-  author = {Hoover, Jacob Louis},
-  editor = {Soo, Rachel and Chow, Una Y. and Nederveen, Sander},
-  date = {2021-06},
-  pages = {231--241},
-  publisher = {Cascadilla Proceedings Project},
-  location = {Somerville, Mass., USA},
-  url = {http://www.lingref.com/cpp/wccfl/38/abstract3568.html},
-  abstract = {Icelandic dative-nominative constructions exhibit a syntactic hierarchy effect known as the Person Restriction: only third person nominatives may control agreement. In these constructions, there is variation between speakers in the extent to which the verb agrees with the nominative for number. Sigurðsson \& Holmberg (2008) explain this variation as arising due to differences between varieties in the timing of subject raising, using a split phi-probe. This paper revises their approach, using the feature gluttony mechanism for Agree developed in Coon \& Keine (2020), and a split phi-probe in which person probing precedes number probing. Within this framework, the observed variation can be captured by allowing variability two independent parameters: the timing of EPP subject raising, and the visibility of a number feature on dative DPs. The proposed mechanism describes the variation, including predicting the observed optional agreement in certain cases that previous literature had struggled to account for, and makes additional predictions about the differences between varieties in cases of syncretism within the verbal paradigm. An investigation into these predictions should allow this already well-studied area of Icelandic grammar to continue to be a useful test-case for crosslinguistic assumptions about the mechanism of Agree, and the status of dative arguments.},
-  eventtitle = {{{WCCFL38}}, {{March}} 6--8, 2020, {{University}} of {{British Columbia}}, {{Vancouver}}},
-  openaccess = {true},
-  peerreview = {no},
-  annotation = {Note: lingref.com document 3568},
-  file = {~/Zotfiles/hoover.j2021wccfl Accounting for variation in number agree.pdf}
+@online{hoover.j:2021arxiv,
+  title = {Linguistic Dependencies and Statistical Dependence},
+  author = {Hoover, Jacob Louis and Sordoni, Alessandro and Du, Wenyu and O'Donnell, Timothy J.},
+  date = {2021},
+  eprint = {2104.08685},
+  eprinttype = {arXiv},
+  eprintclass = {cs, math},
+  doi = {10.48550/arXiv.2104.08685},
+  url = {http://arxiv.org/abs/2104.08685},
+  urldate = {2022-05-18},
+  abstract = {Are pairs of words that tend to occur together also likely to stand in a linguistic dependency? This empirical question is motivated by a long history of literature in cognitive science, psycholinguistics, and NLP. In this work we contribute an extensive analysis of the relationship between linguistic dependencies and statistical dependence between words. Improving on previous work, we introduce the use of large pretrained language models to compute contextualized estimates of the pointwise mutual information between words (CPMI). For multiple models and languages, we extract dependency trees which maximize CPMI, and compare to gold standard linguistic dependencies. Overall, we find that CPMI dependencies achieve an unlabelled undirected attachment score of at most \$\textbackslash approx 0.5\$. While far above chance, and consistently above a non-contextualized PMI baseline, this score is generally comparable to a simple baseline formed by connecting adjacent words. We analyze which kinds of linguistic dependencies are best captured in CPMI dependencies, and also find marked differences between the estimates of the large pretrained language models, illustrating how their different training schemes affect the type of dependencies they capture.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computation and Language,Computer Science - Information Theory},
+  file = {~/Zotfiles/hoover.j2021arxiv Linguistic dependencies and statistical.pdf}
 }
 
-@inproceedings{hoover.j:2021a,
+@inproceedings{hoover.j:2021EMNLP,
   title = {Linguistic Dependencies and Statistical Dependence},
   booktitle = {Proceedings of the 2021 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
   author = {Hoover, Jacob Louis and Du, Wenyu and Sordoni, Alessandro and O'Donnell, Timothy J.},
@@ -8155,20 +8396,22 @@
   file = {~/Zotfiles/hoover.j2021emnlp Linguistic dependencies and statistical.pdf}
 }
 
-@online{hoover.j:2021arxiv,
-  title = {Linguistic Dependencies and Statistical Dependence},
-  author = {Hoover, Jacob Louis and Sordoni, Alessandro and Du, Wenyu and O'Donnell, Timothy J.},
-  date = {2021},
-  eprint = {2104.08685},
-  eprinttype = {arXiv},
-  eprintclass = {cs, math},
-  doi = {10.48550/arXiv.2104.08685},
-  url = {http://arxiv.org/abs/2104.08685},
-  urldate = {2022-05-18},
-  abstract = {Are pairs of words that tend to occur together also likely to stand in a linguistic dependency? This empirical question is motivated by a long history of literature in cognitive science, psycholinguistics, and NLP. In this work we contribute an extensive analysis of the relationship between linguistic dependencies and statistical dependence between words. Improving on previous work, we introduce the use of large pretrained language models to compute contextualized estimates of the pointwise mutual information between words (CPMI). For multiple models and languages, we extract dependency trees which maximize CPMI, and compare to gold standard linguistic dependencies. Overall, we find that CPMI dependencies achieve an unlabelled undirected attachment score of at most \$\textbackslash approx 0.5\$. While far above chance, and consistently above a non-contextualized PMI baseline, this score is generally comparable to a simple baseline formed by connecting adjacent words. We analyze which kinds of linguistic dependencies are best captured in CPMI dependencies, and also find marked differences between the estimates of the large pretrained language models, illustrating how their different training schemes affect the type of dependencies they capture.},
-  pubstate = {prepublished},
-  keywords = {Computer Science - Computation and Language,Computer Science - Information Theory},
-  file = {~/Zotfiles/hoover.j2021arxiv Linguistic dependencies and statistical.pdf}
+@inproceedings{hoover.j:2021WCCFL,
+  title = {Accounting for Variation in Number Agreement in Icelandic Dative-Nominative Constructions},
+  booktitle = {Proceedings of the 38th {{West Coast Conference}} on {{Formal Linguistics}}},
+  author = {Hoover, Jacob Louis},
+  editor = {Soo, Rachel and Chow, Una Y. and Nederveen, Sander},
+  date = {2021-06},
+  pages = {231--241},
+  publisher = {Cascadilla Proceedings Project},
+  location = {Somerville, Mass., USA},
+  url = {http://www.lingref.com/cpp/wccfl/38/abstract3568.html},
+  abstract = {Icelandic dative-nominative constructions exhibit a syntactic hierarchy effect known as the Person Restriction: only third person nominatives may control agreement. In these constructions, there is variation between speakers in the extent to which the verb agrees with the nominative for number. Sigurðsson \& Holmberg (2008) explain this variation as arising due to differences between varieties in the timing of subject raising, using a split phi-probe. This paper revises their approach, using the feature gluttony mechanism for Agree developed in Coon \& Keine (2020), and a split phi-probe in which person probing precedes number probing. Within this framework, the observed variation can be captured by allowing variability two independent parameters: the timing of EPP subject raising, and the visibility of a number feature on dative DPs. The proposed mechanism describes the variation, including predicting the observed optional agreement in certain cases that previous literature had struggled to account for, and makes additional predictions about the differences between varieties in cases of syncretism within the verbal paradigm. An investigation into these predictions should allow this already well-studied area of Icelandic grammar to continue to be a useful test-case for crosslinguistic assumptions about the mechanism of Agree, and the status of dative arguments.},
+  eventtitle = {{{WCCFL38}}, {{March}} 6--8, 2020, {{University}} of {{British Columbia}}, {{Vancouver}}},
+  openaccess = {true},
+  peerreview = {no},
+  annotation = {Note: lingref.com document 3568},
+  file = {~/Zotfiles/hoover.j2021wccfl Accounting for variation in number agree.pdf}
 }
 
 @unpublished{hoover.j:2022poster,
@@ -8197,18 +8440,7 @@
   file = {~/Zotfiles/hoover.j2022psyarxiv The plausibility of sampling as an algor.pdf}
 }
 
-@unpublished{hoover.j:2023,
-  title = {When Does Unpredictable Not Mean Difficult?},
-  author = {Hoover, Jacob Louis},
-  namea = {O'Donnell, Timothy J.},
-  nameatype = {collaborator},
-  date = {2023-12-01},
-  url = {https://jahoo.github.io/2023-12},
-  eventtitle = {Lab Meeting},
-  venue = {MIT Computational Psycholinguistics Laboratory}
-}
-
-@article{hoover.j:2023a,
+@article{hoover.j:2023,
   title = {The Plausibility of Sampling as an Algorithmic Theory of Sentence Processing},
   author = {Hoover, Jacob Louis and Sonderegger, Morgan and Piantadosi, Steven T. and O’Donnell, Timothy J.},
   date = {2023-07-21},
@@ -8225,6 +8457,18 @@
   pmcid = {PMC10449406},
   keywords = {processing algorithms,sentence processing,surprisal theory},
   file = {~/Zotfiles/hoover.j2023 The plausibility of sampling as an algor.pdf}
+}
+
+@unpublished{hoover.j:2023talk,
+  type = {talk},
+  title = {When Does Unpredictable Not Mean Difficult?},
+  author = {Hoover, Jacob Louis},
+  namea = {O'Donnell, Timothy J.},
+  nameatype = {collaborator},
+  date = {2023-12-01},
+  url = {https://jahoo.github.io/2023-12},
+  eventtitle = {Lab Meeting},
+  venue = {MIT Computational Psycholinguistics Laboratory}
 }
 
 @thesis{hoover.j:2024phd,
@@ -8565,6 +8809,39 @@
   abstract = {We argue that the educational and psychological sciences must embrace the diversity of reading rather than chase the phantom of normal reading behavior. We critically discuss the research practice of asking participants in experiments to read “normally.” We then draw attention to the large cross-cultural and linguistic diversity around the world and consider the enormous diversity of reading situations and goals. Finally, we observe that people bring a huge diversity of brains and experiences to the reading task. This leads to four implications: First, there are important lessons for how to conduct psycholinguistic experiments; second, we need to move beyond Anglocentric reading research and produce models of reading that reflect the large cross-cultural diversity of languages and types of writing systems; third, we must acknowledge that there are multiple ways of reading and reasons for reading, and none of them is normal or better or a “gold standard”; and fourth, we must stop stigmatizing individuals who read differently and for different reasons, and there should be increased focus on teaching the ability to extract information relevant to the person’s goals. What is important is not how well people decode written language and how fast people read but what people comprehend given their own stated goals.},
   langid = {english},
   file = {~/Zotfiles/huettig.f2023 The Myth of Normal Reading.pdf}
+}
+
+@thesis{huggins.j:2014master,
+  type = {mathesis},
+  title = {An Information-Theoretic Analysis of Resampling in {{Sequential Monte Carlo}}},
+  author = {Huggins, Jonathan H.},
+  date = {2014},
+  institution = {Massachusetts Institute of Technology},
+  url = {https://dspace.mit.edu/handle/1721.1/91033},
+  urldate = {2026-01-29},
+  abstract = {Sequential Monte Carlo (SMC) methods form a popular class of Bayesian inference algorithms. While originally applied primarily to state-space models, SMC is increasingly being used as a general-purpose Bayesian inference tool. Traditional analyses of SMC algorithms focus on their usage for approximating expectations with respect to the posterior of a Bayesian model. However, these algorithms can also be used to obtain approximate samples from the posterior distribution of interest. We investigate the asymptotic and non-asymptotic properties of SMC from this sampling viewpoint. Let P be a distribution of interest, such as a Bayesian posterior, and let P be a random estimator of P generated by an SMC algorithm. We study ... i.e., the law of a sample drawn from P, as the number of particles tends to infinity. We give convergence rates of the Kullback-Leibler divergence KL ... as well as necessary and sufficient conditions for the resampled version of P to asymptotically dominate the non-resampled version from this KL divergence perspective. Versions of these results are given for both the full joint and the filtering settings. In the filtering case we also provide time-uniform bounds under a natural mixing condition. Our results open up the possibility of extending recent analyses of adaptive SMC algorithms for expectation approximation to the sampling setting.},
+  langid = {english},
+  annotation = {Accepted: 2014-10-21T16:20:21Z},
+  file = {/Users/v/Zotfiles/huggins.j2014thesis An information-theoretic analysis of res.pdf}
+}
+
+@article{huggins.j:2019,
+  title = {Sequential {{Monte Carlo}} as Approximate Sampling: Bounds, Adaptive Resampling via \$\textbackslash infty\$-{{ESS}}, and an Application to Particle {{Gibbs}}},
+  shorttitle = {Sequential {{Monte Carlo}} as Approximate Sampling},
+  author = {Huggins, Jonathan H. and Roy, Daniel M.},
+  date = {2019-02},
+  journaltitle = {Bernoulli},
+  volume = {25},
+  number = {1},
+  pages = {584--622},
+  publisher = {{Bernoulli Society for Mathematical Statistics and Probability}},
+  issn = {1350-7265},
+  doi = {10.3150/17-BEJ999},
+  url = {https://projecteuclid.org/journals/bernoulli/volume-25/issue-1/Sequential-Monte-Carlo-as-approximate-sampling--bounds-adaptive-resampling/10.3150/17-BEJ999.full},
+  urldate = {2026-01-29},
+  abstract = {Sequential Monte Carlo (SMC) algorithms were originally designed for estimating intractable conditional expectations within state-space models, but are now routinely used to generate approximate samples in the context of general-purpose Bayesian inference. In particular, SMC algorithms are often used as subroutines within larger Monte Carlo schemes, and in this context, the demands placed on SMC are different: control of mean-squared error is insufficient—one needs to control the divergence from the target distribution directly. Towards this goal, we introduce the conditional adaptive resampling particle filter, building on the work of Gordon, Salmond, and Smith (1993), Andrieu, Doucet, and Holenstein (2010), and Whiteley, Lee, and Heine (2016). By controlling a novel notion of effective sample size, the \$\textbackslash infty\$-ESS, we establish the efficiency of the resulting SMC sampling algorithm, providing an adaptive resampling extension of the work of Andrieu, Lee, and Vihola (2018). We apply our results to arrive at new divergence bounds for SMC samplers with adaptive resampling as well as an adaptive resampling version of the Particle Gibbs algorithm with the same geometric-ergodicity guarantees as its nonadaptive counterpart.},
+  keywords = {adaptive resampling,effective sample size,geometric ergodicity,particle Gibbs,sequential Monte Carlo,state-space models,uniform ergodicity},
+  file = {/Users/v/Zotfiles/huggins.j2019 Sequential Monte Carlo as approximate sa.pdf}
 }
 
 @article{hughes.b:2004,
@@ -8912,7 +9189,7 @@
   urldate = {2024-05-03}
 }
 
-@online{jiang.a:2023arxiv,
+@online{jiang.a:2023Mistral,
   title = {Mistral {{7B}}},
   author = {Jiang, Albert Q. and Sablayrolles, Alexandre and Mensch, Arthur and Bamford, Chris and Chaplot, Devendra Singh and family=Casas, given=Diego, prefix=de las, useprefix=false and Bressand, Florian and Lengyel, Gianna and Lample, Guillaume and Saulnier, Lucile and Lavaud, Lélio Renard and Lachaux, Marie-Anne and Stock, Pierre and Scao, Teven Le and Lavril, Thibaut and Wang, Thomas and Lacroix, Timothée and Sayed, William El},
   date = {2023-10-10},
@@ -8927,7 +9204,7 @@
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning}
 }
 
-@online{jiang.a:2024arxiv,
+@online{jiang.a:2024Mixtral,
   title = {Mixtral of Experts},
   author = {Jiang, Albert Q. and Sablayrolles, Alexandre and Roux, Antoine and Mensch, Arthur and Savary, Blanche and Bamford, Chris and Chaplot, Devendra Singh and family=Casas, given=Diego, prefix=de las, useprefix=false and Hanna, Emma Bou and Bressand, Florian and Lengyel, Gianna and Bour, Guillaume and Lample, Guillaume and Lavaud, Lélio Renard and Saulnier, Lucile and Lachaux, Marie-Anne and Stock, Pierre and Subramanian, Sandeep and Yang, Sophia and Antoniak, Szymon and Scao, Teven Le and Gervet, Théophile and Lavril, Thibaut and Wang, Thomas and Lacroix, Timothée and Sayed, William El},
   date = {2024-01-08},
@@ -9142,7 +9419,7 @@
   file = {~/Zotfiles/kahane.s1997 Bubble trees and syntactic representatio.pdf}
 }
 
-@unpublished{kahardipraja.p:2021,
+@unpublished{kahardipraja.p:2021report,
   title = {Towards {{Incremental Transformers}}: {{An Empirical Analysis}} of {{Transformer Models}} for {{Incremental NLU}}},
   shorttitle = {Towards {{Incremental Transformers}}},
   author = {Kahardipraja, Patrick and Madureira, Brielen and Schlangen, David},
@@ -9168,7 +9445,7 @@
   institution = {RAND Corporation}
 }
 
-@report{kahn.h:1954,
+@report{kahn.h:1954report,
   type = {Technical report},
   title = {Applications of {{Monte Carlo}}},
   author = {Kahn, Herman},
@@ -9366,7 +9643,7 @@
   url = {https://www.proquest.com/docview/2041968142/abstract/42208A941C8E47AFPQ/1},
   urldate = {2023-02-22},
   abstract = {A grammatical illusion can be defined as a sentence that seems acceptable, but structurally, the sentence is ungrammatical. Grammatical illusions provide a challenge for linguists to understand why we do not immediately reject illusions like we do for most ungrammatical sentences. One type of illusion that has stirred several ongoing debates is the Escher Sentence. This dissertation focuses on the source of the illusory effect, or the reason why people fail to consistently reject these sentences. This dissertation explores the properties of Escher Sentences, the reason why they are illusory in nature, and what this contributes to our understanding of the parser. Six Experiments were designed to test the acceptability judgments, interpretations, and neurophysiological responses to these sentences. I conclude that Escher Sentences are recognized by the parser as ungrammatical, but because of the structure of these sentences, the parser is tricked into using a coercive operation to force Escher Sentences to have an acceptable interpretation. Escher Sentences gives us potential insight into the constraints of the parser in processing language while at the same time highlighting the parser’s strategies in resolving computations that are ungrammatical.},
-  isbn = {9780355930733},
+  isbn = {978-0-355-93073-3},
   langid = {english},
   pagetotal = {267},
   keywords = {Escher,grammatical illusions,Illusion,Language,literature and linguistics,Parser,Processing,Psychology},
@@ -9806,7 +10083,18 @@
   langid = {english}
 }
 
-@inproceedings{kool.w:2019,
+@article{kool.w:2019ICLR,
+  title = {Buy 4 {{REINFORCE Samples}}, {{Get}} a {{Baseline}} for {{Free}}!},
+  author = {Kool, Wouter and family=Hoof, given=Herke, prefix=van, useprefix=false and Welling, Max},
+  date = {2019-04-10},
+  url = {https://openreview.net/forum?id=r1lgTGL5DE},
+  urldate = {2025-09-12},
+  abstract = {REINFORCE can be used to train models in structured prediction settings to directly optimize the test-time objective. However, the common case of sampling one prediction per datapoint (input) is data-inefficient. We show that by drawing multiple samples (predictions) per datapoint, we can learn with significantly less data, as we freely obtain a REINFORCE baseline to reduce variance. Additionally we derive a REINFORCE estimator with baseline, based on sampling without replacement. Combined with a recent technique to sample sequences without replacement using Stochastic Beam Search, this improves the training procedure for a sequence model that predicts the solution to the Travelling Salesman Problem.},
+  langid = {english},
+  file = {/Users/v/Zotfiles/kool.w2019a Buy 4 REINFORCE Samples, Get a Baseline.pdf}
+}
+
+@inproceedings{kool.w:2019ICML,
   title = {Stochastic Beams and Where to Find Them: {{The Gumbel-top-k}} Trick for Sampling Sequences without Replacement},
   shorttitle = {Stochastic Beams and Where to Find Them},
   booktitle = {Proceedings of the 36th {{International Conference}} on {{Machine Learning}}},
@@ -9821,17 +10109,6 @@
   eventtitle = {International {{Conference}} on {{Machine Learning}}},
   langid = {english},
   file = {~/Zotfiles/kool.w2019 Stochastic beams and where to find them 2.pdf;~/Zotfiles/kool.w2019 Stochastic beams and where to find them.pdf}
-}
-
-@article{kool.w:2019ICLR,
-  title = {Buy 4 {{REINFORCE Samples}}, {{Get}} a {{Baseline}} for {{Free}}!},
-  author = {Kool, Wouter and family=Hoof, given=Herke, prefix=van, useprefix=false and Welling, Max},
-  date = {2019-04-10},
-  url = {https://openreview.net/forum?id=r1lgTGL5DE},
-  urldate = {2025-09-12},
-  abstract = {REINFORCE can be used to train models in structured prediction settings to directly optimize the test-time objective. However, the common case of sampling one prediction per datapoint (input) is data-inefficient. We show that by drawing multiple samples (predictions) per datapoint, we can learn with significantly less data, as we freely obtain a REINFORCE baseline to reduce variance. Additionally we derive a REINFORCE estimator with baseline, based on sampling without replacement. Combined with a recent technique to sample sequences without replacement using Stochastic Beam Search, this improves the training procedure for a sequence model that predicts the solution to the Travelling Salesman Problem.},
-  langid = {english},
-  file = {/Users/v/Zotfiles/kool.w2019a Buy 4 REINFORCE Samples, Get a Baseline.pdf}
 }
 
 @article{kool.w:2020,
@@ -10221,6 +10498,18 @@
   date-added = {2019-08-26 21:59:20 -0400},
   date-modified = {2020-04-16 12:12:14 -0400},
   keywords = {pregroup grammar}
+}
+
+@online{lambert.n:2025onlinebook,
+  type = {Online book},
+  title = {Reinforcement Learning from Human Feedback},
+  author = {Lambert, Nathan},
+  date = {2025-07-02},
+  url = {https://rlhfbook.com},
+  urldate = {2025-09-12},
+  abstract = {Reinforcement learning from human feedback (RLHF) has become an important technical and storytelling tool to deploy the latest machine learning systems. In this book, we hope to give a gentle introduction to the core methods for people with some level of quantitative background. The book starts with the origins of RLHF – both in recent literature and in a convergence of disparate fields of science in economics, philosophy, and optimal control. We then set the stage with definitions, problem formulation, data collection, and other common math used in the literature. The core of the book details every optimization stage in using RLHF, from starting with instruction tuning to training a reward model and finally all of rejection sampling, reinforcement learning, and direct alignment algorithms. The book concludes with advanced topics – understudied research questions in synthetic data and evaluation – and open questions for the field.},
+  langid = {american},
+  file = {/Users/v/Zotero/storage/XVHPMYXU/rlhfbook.com.html}
 }
 
 @incollection{lanchier.n:2017,
@@ -10618,6 +10907,41 @@
   readinglist = {Thesis}
 }
 
+@article{levine.r:2001,
+  title = {Implementations of the {{Monte Carlo EM}} Algorithm},
+  author = {Levine, Richard A. and Casella, George},
+  date = {2001},
+  journaltitle = {Journal of Computational and Graphical Statistics},
+  volume = {10},
+  number = {3},
+  eprint = {1391097},
+  eprinttype = {jstor},
+  pages = {422--439},
+  publisher = {[American Statistical Association, Taylor \& Francis, Ltd., Institute of Mathematical Statistics, Interface Foundation of America]},
+  issn = {1061-8600},
+  url = {https://www.jstor.org/stable/1391097},
+  urldate = {2025-12-10},
+  abstract = {The Monte Carlo EM (MCEM) algorithm is a modification of the EM algorithm where the expectation in the E-step is computed numerically through Monte Carlo simulations. The most flexible and generally applicable approach to obtaining a Monte Carlo sample in each iteration of an MCEM algorithm is through Markov chain Monte Carlo (MCMC) routines such as the Gibbs and Metropolis-Hastings samplers. Although MCMC estimation presents a tractable solution to problems where the E-step is not available in closed form, two issues arise when implementing this MCEM routine: (1) how do we minimize the computational cost in obtaining an MCMC sample? and (2) how do we choose the Monte Carlo sample size? We address the first question through an application of importance sampling whereby samples drawn during previous EM iterations are recycled rather than running an MCMC sampler each MCEM iteration. The second question is addressed through an application of regenerative simulation. We obtain approximate independent and identical samples by subsampling the generated MCMC sample during different renewal periods. Standard central limit theorems may thus be used to gauge Monte Carlo error. In particular, we apply an automated rule for increasing the Monte Carlo sample size when the Monte Carlo error overwhelms the EM estimate at any given iteration. We illustrate our MCEM algorithm through analyses of two datasets fit by generalized linear mixed models. As a part of these applications, we demonstrate the improvement in computational cost and efficiency of our routine over alternative MCEM strategies.},
+  file = {/Users/v/Zotfiles/levine.r2001 Implementations of the Monte Carlo EM Al.pdf}
+}
+
+@online{levine.s:2018arxiv,
+  title = {Reinforcement {{Learning}} and {{Control}} as {{Probabilistic Inference}}: {{Tutorial}} and {{Review}}},
+  shorttitle = {Reinforcement {{Learning}} and {{Control}} as {{Probabilistic Inference}}},
+  author = {Levine, Sergey},
+  date = {2018-05-20},
+  eprint = {1805.00909},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1805.00909},
+  url = {http://arxiv.org/abs/1805.00909},
+  urldate = {2025-11-03},
+  abstract = {The framework of reinforcement learning or optimal control provides a mathematical formalization of intelligent decision making that is powerful and broadly applicable. While the general form of the reinforcement learning problem enables effective reasoning about uncertainty, the connection between reinforcement learning and inference in probabilistic models is not immediately obvious. However, such a connection has considerable value when it comes to algorithm design: formalizing a problem as probabilistic inference in principle allows us to bring to bear a wide array of approximate inference tools, extend the model in flexible and powerful ways, and reason about compositionality and partial observability. In this article, we will discuss how a generalization of the reinforcement learning or optimal control problem, which is sometimes termed maximum entropy reinforcement learning, is equivalent to exact probabilistic inference in the case of deterministic dynamics, and variational inference in the case of stochastic dynamics. We will present a detailed derivation of this framework, overview prior work that has drawn on this and related ideas to propose new reinforcement learning and control algorithms, and describe perspectives on future research.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics,Statistics - Machine Learning},
+  file = {/Users/v/Zotfiles/levine.s2018arxiv Reinforcement Learning and Control as Pr.pdf;/Users/v/Zotero/storage/DABMTJMN/1805.html}
+}
+
 @inproceedings{levshina.n:2017,
   title = {Communicative Efficiency and Syntactic Predictability: {{A}} Cross-Linguistic Study Based on the {{Universal Dependencies}} Corpora},
   booktitle = {Proceedings of the {{NoDaLiDa}} 2017 Workshop on Universal Dependencies, 22 May, Gothenburg Sweden},
@@ -10917,15 +11241,21 @@
   file = {~/Zotfiles/lew.a2023LLaMPPL Sequential Monte Carlo steering of large 2.pdf;~/Zotfiles/lew.a2023LLaMPPL Sequential Monte Carlo steering of large.pdf}
 }
 
-@online{lew.a:2023SMCP3,
-  title = {{{SMCP}}{\textsuperscript{3}}: {{Sequential Monte Carlo}} with {{Probabilistic Program Proposals}}},
-  shorttitle = {Smcp3},
-  author = {Lew, Alexander K. and Matheos, George and Ghavamizadeh, Matin and Gothoskar, Nishad and Russell, Stuart and Mansinghka, Vikash K.},
-  date = {2023},
-  url = {https://george.matheos.com/publication/23-smcp3/},
-  abstract = {There is a widespread need for sound, flexible frameworks for Monte Carlo inference. This paper introduces SMCP3, a sequential Monte Carlo framework that broadens the class of strategies practitioners can employ to update particles from iteration to iteration, relative to existing frameworks like resample-move SMC (Gilks \& Berzuini, 2001) and SMC samplers (Del Moral et al., 2006). In SMCP3, proposal kernels can be general probabilistic programs, which differ from traditional proposal densities in that they may sample many auxiliary variables, and may apply deterministic post-processing to calculate a proposed update. We have implemented our framework in the Gen probabilistic programming platform: given probabilistic programs that specify target distributions, forward kernels, and reverse kernels, our implementation fully automates the sound computation of incremental importance weights. To illustrate the effectiveness of SMCP3 algorithms, we apply our framework in two domains. First, we use it for online state-estimation, using proposal programs based on Langevin ascent to reduce the bias in log marginal likelihood estimates relative to resample-move SMC with Langevin rejuvenation. Second, we demonstrate an SMCP3 algorithm that yields more robust online clustering in Dirichlet process mixture models than strong SMC baselines.},
-  pubstate = {prepublished},
-  file = {~/Zotfiles/lew.a2023SMCP3 SMCP3 Sequential Monte Carlo 2.pdf;~/Zotfiles/lew.a2023SMCP3 SMCP3 Sequential Monte Carlo.pdf}
+@inproceedings{lew.a:2023SMCP3,
+  title = {{{SMCP3}}: {{Sequential Monte Carlo}} with {{Probabilistic Program Proposals}}},
+  shorttitle = {{{SMCP3}}},
+  booktitle = {Proceedings of {{The}} 26th {{International Conference}} on {{Artificial Intelligence}} and {{Statistics}}},
+  author = {Lew, Alexander K. and Matheos, George and Zhi-Xuan, Tan and Ghavamizadeh, Matin and Gothoskar, Nishad and Russell, Stuart and Mansinghka, Vikash K.},
+  date = {2023-04-11},
+  pages = {7061--7088},
+  publisher = {PMLR},
+  issn = {2640-3498},
+  url = {https://proceedings.mlr.press/v206/lew23a.html},
+  urldate = {2025-12-10},
+  abstract = {This paper introduces SMCP3, a method for automatically implementing custom sequential Monte Carlo samplers for inference in probabilistic programs. Unlike particle filters and resample-move SMC (Gilks and Berzuini, 2001), SMCP3 algorithms can improve the quality of samples and weights using pairs of Markov proposal kernels that are also specified by probabilistic programs. Unlike Del Moral et al. (2006b), these proposals can themselves be complex probabilistic computations that generate auxiliary variables, apply deterministic transformations, and lack tractable marginal densities. This paper also contributes an efficient implementation in Gen that eliminates the need to manually derive incremental importance weights. SMCP3 thus simultaneously expands the design space that can be explored by SMC practitioners and reduces the implementation effort. SMCP3 is illustrated using applications to 3D object tracking, state-space modeling, and data clustering, showing that SMCP3 methods can simultaneously improve the quality and reduce the cost of marginal likelihood estimation and posterior inference.},
+  eventtitle = {International {{Conference}} on {{Artificial Intelligence}} and {{Statistics}}},
+  langid = {english},
+  file = {/Users/v/Zotfiles/lew.a2023SMCP3 SMCP3 Sequential Monte Carlo with Proba.pdf}
 }
 
 @thesis{lew.a:2025phd,
@@ -11247,7 +11577,7 @@
   url = {https://www.aclweb.org/anthology/D19-1276}
 }
 
-@unpublished{li.x:2022,
+@unpublished{li.x:2022report,
   title = {Diffusion-{{LM Improves Controllable Text Generation}}},
   author = {Li, Xiang Lisa and Thickstun, John and Gulrajani, Ishaan and Liang, Percy and Hashimoto, Tatsunori B.},
   date = {2022-05-27},
@@ -11261,6 +11591,23 @@
   abstract = {Controlling the behavior of language models (LMs) without re-training is a major open problem in natural language generation. While recent works have demonstrated successes on controlling simple sentence attributes (e.g., sentiment), there has been little progress on complex, fine-grained controls (e.g., syntactic structure). To address this challenge, we develop a new non-autoregressive language model based on continuous diffusions that we call Diffusion-LM. Building upon the recent successes of diffusion models in continuous domains, Diffusion-LM iteratively denoises a sequence of Gaussian vectors into word vectors, yielding a sequence of intermediate latent variables. The continuous, hierarchical nature of these intermediate variables enables a simple gradient-based algorithm to perform complex, controllable generation tasks. We demonstrate successful control of Diffusion-LM for six challenging fine-grained control tasks, significantly outperforming prior work.},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
   file = {~/Zotfiles/li.x2022 Diffusion-LM Improves Controllable Text.pdf}
+}
+
+@article{li.y:2022,
+  title = {Stratification and Optimal Resampling for Sequential {{Monte Carlo}}},
+  author = {Li, Yichao and Wang, Wenshuo and Deng, Ke and Liu, Jun S},
+  date = {2022-02-01},
+  journaltitle = {Biometrika},
+  volume = {109},
+  number = {1},
+  pages = {181--194},
+  issn = {0006-3444, 1464-3510},
+  doi = {10.1093/biomet/asab004},
+  url = {https://academic.oup.com/biomet/article/109/1/181/6132360},
+  urldate = {2026-01-07},
+  abstract = {Summary             Sequential Monte Carlo algorithms are widely accepted as powerful computational tools for making inference with dynamical systems. A key step in sequential Monte Carlo is resampling, which plays the role of steering the algorithm towards the future dynamics. Several strategies have been used in practice, including multinomial resampling, residual resampling, optimal resampling, stratified resampling and optimal transport resampling. In one-dimensional cases, we show that optimal transport resampling is equivalent to stratified resampling on the sorted particles, and both strategies minimize the resampling variance as well as the expected squared energy distance between the original and resampled empirical distributions. For general \$d\$-dimensional cases, we show that if the particles are first sorted using the Hilbert curve, the variance of stratified resampling is \$O(m\textasciicircum\{-(1+2/d)\})\$, an improvement over the best previously known rate of \$O(m\textasciicircum\{-(1+1/d)\})\$, where \$m\$ is the number of resampled particles. We show that this improved rate is optimal for ordered stratified resampling schemes, as conjectured in Gerber et al. (2019). We also present an almost-sure bound on the Wasserstein distance between the original and Hilbert-curve-resampled empirical distributions. In light of these results, we show that for dimension \$d\&gt;1\$ the mean square error of sequential quasi-Monte Carlo with \$n\$ particles can be \$O(n\textasciicircum\{-1-4/\textbackslash\{d(d+4)\textbackslash\}\})\$ if Hilbert curve resampling is used and a specific low-discrepancy set is chosen. To our knowledge, this is the first known convergence rate lower than \$o(n\textasciicircum\{-1\})\$.},
+  langid = {english},
+  file = {/Users/v/Zotfiles/li.y2022 Stratification and optimal resampling fo_2.pdf;/Users/v/Zotfiles/li.y2022 Stratification and optimal resampling fo.pdf}
 }
 
 @inproceedings{liang.d:2018,
@@ -11301,7 +11648,7 @@
   author = {Lieder, Falk and Griffiths, Thomas L. and Hsu, Ming},
   date = {2018-01},
   journaltitle = {Psychological Review},
-  shortjournal = {Psychological Review},
+  shortjournal = {Psych Rev},
   volume = {125},
   number = {1},
   pages = {1--32},
@@ -11342,6 +11689,23 @@
   doi = {10.18653/v1/n18-1085},
   url = {https://doi.org/10.18653%2Fv1%2Fn18-1085},
   keywords = {parsing,sampling}
+}
+
+@inproceedings{lin.c:2018a,
+  title = {Neural {{Particle Smoothing}} for {{Sampling}} from {{Conditional Sequence Models}}},
+  booktitle = {Proceedings of the 2018 {{Conference}} of the {{North American Chapter}} of the {{Association}} for {{Computational Linguistics}}: {{Human Language Technologies}}, {{Volume}} 1 ({{Long Papers}})},
+  author = {Lin, Chu-Cheng and Eisner, Jason},
+  editor = {Walker, Marilyn and Ji, Heng and Stent, Amanda},
+  date = {2018-06},
+  pages = {929--941},
+  publisher = {Association for Computational Linguistics},
+  location = {New Orleans, Louisiana},
+  doi = {10.18653/v1/N18-1085},
+  url = {https://aclanthology.org/N18-1085/},
+  urldate = {2026-01-29},
+  abstract = {We introduce neural particle smoothing, a sequential Monte Carlo method for sampling annotations of an input string from a given probability model. In contrast to conventional particle filtering algorithms, we train a proposal distribution that looks ahead to the end of the input string by means of a right-to-left LSTM. We demonstrate that this innovation can improve the quality of the sample. To motivate our formal choices, we explain how neural transduction models and our sampler can be viewed as low-dimensional but nonlinear approximations to working with HMMs over very large state spaces.},
+  eventtitle = {{{NAACL-HLT}} 2018},
+  file = {/Users/v/Zotfiles/lin.c2018a Neural Particle Smoothing for Sampling f.pdf}
 }
 
 @article{lindley.d:1956,
@@ -11417,6 +11781,31 @@
   date-modified = {2019-06-16 13:55:14 -0400},
   project = {syntactic embedding},
   keywords = {recurrent neural networks}
+}
+
+@article{lipkin.b:2023cogsci,
+  title = {Evaluating Statistical Language Models as Pragmatic Reasoners},
+  author = {Lipkin, Benjamin and Wong, Lionel and Grand, Gabriel and Tenenbaum, Josh},
+  date = {2023},
+  journaltitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume = {45},
+  number = {45},
+  url = {https://escholarship.org/uc/item/1024f51v},
+  urldate = {2025-09-25},
+  abstract = {The relationship between communicated language and intended meaning is often probabilistic and sensitive to context. Numerous strategies attempt to estimate such a mapping, often leveraging recursive Bayesian models of communication. In parallel, LLMs have been increasingly applied to semantic parsing applications, tasked with inferring logical representations from natural language. While existing LLM explorations have been largely restricted to literal language use, in this work, we evaluate the capacity of LLMs to infer the meanings of pragmatic utterances. Specifically, we explore the case of threshold estimation on the gradable adjective “strong”, contextually conditioned on a strength prior, then extended to composition with qualification, negation, polarity inversion, and class comparison. We find that LLMs can derive context-grounded, human-like distributions over the interpretations of several complex pragmatic utterances, yet struggle composing with negation. These results inform the inferential capacity of statistical language models, and their use in pragmatic and semantic parsing applications.},
+  langid = {english},
+  file = {/Users/v/Zotfiles/lipkin.b2023cogsci Evaluating statistical language models a.pdf}
+}
+
+@inproceedings{lipkin.b:2025,
+  title = {Fast Controlled Generation from Language Models with Adaptive Weighted Rejection Sampling},
+  author = {Lipkin, Ben and LeBrun, Benjamin and Vigly, Jacob Hoover and Loula, João and MacIver, David R. and Du, Li and Eisner, Jason and Cotterell, Ryan and Mansinghka, Vikash and O'Donnell, Timothy J. and Lew, Alexander K. and Vieira, Tim},
+  date = {2025-10-07},
+  publisher = {OpenReview.net},
+  location = {Montréal, Canada},
+  url = {https://openreview.net/forum?id=3BmPSFAdq3},
+  eventtitle = {Second Conference on Language Modeling ({{COLM}})},
+  file = {/Users/v/Zotfiles/lipkin.b2025 Fast controlled generation from language.pdf}
 }
 
 @online{lipkin.b:2025arxiv,
@@ -11700,7 +12089,6 @@
   urldate = {2025-02-23},
   isbn = {978-0-486-44136-8},
   langid = {english},
-  origpublisher = {Wiley},
   file = {~/Zotfiles/luce.r2005 Individual choice behavior A theoretica.pdf}
 }
 
@@ -11957,6 +12345,26 @@
   keywords = {case}
 }
 
+@article{malsburg.t:2020,
+  title = {Implicit Gender Bias in Linguistic Descriptions for Expected Events: The Cases of the 2016 {{United States}} and 2017 {{United Kingdom}} Elections},
+  shorttitle = {Implicit Gender Bias in Linguistic Descriptions for Expected Events},
+  author = {family=Malsburg, given=Titus, prefix=von der, useprefix=true and Poppels, Till and Levy, Roger P.},
+  date = {2020-02-01},
+  journaltitle = {Psychological Science},
+  shortjournal = {Psychol Sci},
+  volume = {31},
+  number = {2},
+  pages = {115--128},
+  publisher = {SAGE Publications Inc},
+  issn = {0956-7976},
+  doi = {10.1177/0956797619890619},
+  url = {https://doi.org/10.1177/0956797619890619},
+  urldate = {2024-10-22},
+  abstract = {Gender stereotypes influence subjective beliefs about the world, and this is reflected in our use of language. But do gender biases in language transparently reflect subjective beliefs? Or is the process of translating thought to language itself biased? During the 2016 United States (N = 24,863) and 2017 United Kingdom (N = 2,609) electoral campaigns, we compared participants’ beliefs about the gender of the next head of government with their use and interpretation of pronouns referring to the next head of government. In the United States, even when the female candidate was expected to win, she pronouns were rarely produced and induced substantial comprehension disruption. In the United Kingdom, where the incumbent female candidate was heavily favored, she pronouns were preferred in production but yielded no comprehension advantage. These and other findings suggest that the language system itself is a source of implicit biases above and beyond previously known biases, such as those measured by the Implicit Association Test.},
+  langid = {english},
+  file = {~/Zotfiles/malsburg.t2020 Implicit Gender Bias in Linguistic Descr 2.pdf;~/Zotfiles/malsburg.t2020 Implicit Gender Bias in Linguistic Descr.pdf}
+}
+
 @article{manasterramer.a:1992,
   title = {Mathematical Methods in Linguistics},
   author = {Manaster Ramer, Alexis},
@@ -12000,6 +12408,25 @@
   date-modified = {2022-05-05 09:39:35 -0400},
   pdf = {http://proceedings.mlr.press/v5/mansinghka09a/mansinghka09a.pdf},
   keywords = {adaptive sequential rejection sampling}
+}
+
+@incollection{marcken.c:1999,
+  title = {On the Unsupervised Induction of Phrase-Structure Grammars},
+  booktitle = {Natural Language Processing Using Very Large Corpora},
+  author = {family=Marcken, given=C., prefix=de, useprefix=true},
+  editor = {Armstrong, Susan and Church, Kenneth and Isabelle, Pierre and Manzi, Sandra and Tzoukermann, Evelyne and Yarowsky, David},
+  date = {1999},
+  pages = {191--208},
+  publisher = {Springer Netherlands},
+  location = {Dordrecht},
+  doi = {10.1007/978-94-017-2390-9_12},
+  url = {https://doi.org/10.1007/978-94-017-2390-9₁2},
+  abstract = {Researchers investigating the acquisition of phrase-structure grammars from raw text have had only mixed success. In particular, unsupervised learning techniques, such as the inside-outside algorithm (Baker, 1979) for estimating the parameters of stochastic context-free grammars (SCFGs), tend to produce grammars that structure text in ways contrary to our linguistic intuitions. One effective way around this problem is to use hand-structured text like the Penn Treebank (Marcus, 1991) to constrain the learner: (Pereira and Schabes, 1992) demonstrate that the inside-outside algorithm can learn grammars effectively given such constraint, and currently the best performing parsers are trained on treebanks (Black et al., 1992; Magerman, 1995).},
+  date-added = {2020-01-27 11:50:06 -0500},
+  date-modified = {2021-07-16 11:27:47 -0400},
+  isbn = {978-94-017-2390-9},
+  project = {syntactic embedding},
+  keywords = {information theory,unsupervised grammar induction}
 }
 
 @article{marcus.g:1999,
@@ -12105,6 +12532,22 @@
   pages = {153--162},
   url = {https://www.mathnet.ru/eng/im6612},
   langid = {russian}
+}
+
+@article{marneffe.m:2019,
+  title = {Dependency Grammar},
+  author = {family=Marneffe, given=Marie-Catherine, prefix=de, useprefix=true and Nivre, Joakim},
+  date = {2019},
+  journaltitle = {Annual Review of Linguistics},
+  volume = {5},
+  number = {1},
+  pages = {197--218},
+  publisher = {Annual Reviews},
+  doi = {10.1146/annurev-linguistics-011718-011842},
+  url = {https://doi.org/10.1146%2Fannurev-linguistics-011718-011842},
+  bdsk-url-2 = {https://doi.org/10.1146/annurev-linguistics-011718-011842},
+  date-added = {2021-07-16 19:34:18 -0400},
+  date-modified = {2021-07-16 19:34:19 -0400}
 }
 
 @article{marr.d:1976,
@@ -12456,6 +12899,22 @@
   file = {~/Zotfiles/mcguffie.k2020 The radicalization risks of GPT-3 and ad.pdf}
 }
 
+@inproceedings{mcnamara.d:2024,
+  title = {Sequential {{Monte Carlo}} for {{Inclusive KL Minimization}} in {{Amortized Variational Inference}}},
+  booktitle = {Proceedings of {{The}} 27th {{International Conference}} on {{Artificial Intelligence}} and {{Statistics}}},
+  author = {McNamara, Declan and Loper, Jackson and Regier, Jeffrey},
+  date = {2024-04-18},
+  pages = {4312--4320},
+  publisher = {PMLR},
+  issn = {2640-3498},
+  url = {https://proceedings.mlr.press/v238/mcnamara24a.html},
+  urldate = {2026-01-31},
+  abstract = {For training an encoder network to perform amortized variational inference, the Kullback-Leibler (KL) divergence from the exact posterior to its approximation, known as the inclusive or forward KL, is an increasingly popular choice of variational objective due to the mass-covering property of its minimizer. However, minimizing this objective is challenging. A popular existing approach, Reweighted Wake-Sleep (RWS), suffers from heavily biased gradients and a circular pathology that results in highly concentrated variational distributions. As an alternative, we propose SMC-Wake, a procedure for fitting an amortized variational approximation that uses likelihood-tempered sequential Monte Carlo samplers to estimate the gradient of the inclusive KL divergence. We propose three gradient estimators, all of which are asymptotically unbiased in the number of iterations and two of which are strongly consistent. Our method interleaves stochastic gradient updates, SMC samplers, and iterative improvement to an estimate of the normalizing constant to reduce bias from self-normalization. In experiments with both simulated and real datasets, SMC-Wake fits variational distributions that approximate the posterior more accurately than existing methods.},
+  eventtitle = {International {{Conference}} on {{Artificial Intelligence}} and {{Statistics}}},
+  langid = {english},
+  file = {/Users/v/Zotfiles/mcnamara.d2024 Sequential Monte Carlo for Inclusive KL.pdf}
+}
+
 @article{meehl.p:1957,
   title = {When Shall We Use Our Heads Instead of the Formula?},
   author = {Meehl, Paul E.},
@@ -12613,6 +13072,14 @@
   file = {~/Zotfiles/merkx.d2021 Human sentence processing Recurrence or.pdf}
 }
 
+@report{meta.:2024,
+  title = {Llama 3 Model Card},
+  author = {{AI @ Meta}},
+  date = {2024},
+  institution = {Meta},
+  url = {https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md}
+}
+
 @article{metropolis.n:1949,
   title = {The {{Monte Carlo}} Method},
   author = {Metropolis, Nicholas and Ulam, S.},
@@ -12755,7 +13222,7 @@
   location = {San Diego, California},
   url = {https://media.proquest.com/media/hms/PFT/2/yHDzZ?_a=ChgyMDI0MTAyMzE1MjczOTI0MDo1ODI2MDgSBjEwMTI3MxoKT05FX1NFQVJDSCIONzEuMTE3LjE5MC4xNTYqBTE4NzUwMgozMTA3OTExNTg4Og1Eb2N1bWVudEltYWdlQgEwUgZPbmxpbmVaAkZUYgNQRlRqCjIwMjQvMDEvMDFyCjIwMjQvMTIvMzF6AIIBJVAtMTAxMDI2OC0xMjMzOS1DVVNUT01FUi1udWxsLTcwOTY3NzCSAQZPbmxpbmXKAXVNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMF8xNV83KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTMwLjAuMC4wIFNhZmFyaS81MzcuMzbSARZEaXNzZXJ0YXRpb25zICYgVGhlc2VzmgIHUHJlUGFpZKoCK09TOkVNUy1NZWRpYUxpbmtzU2VydmljZS1nZXRNZWRpYVVybEZvckl0ZW3KAhNEaXNzZXJ0YXRpb24vVGhlc2lz0gIBWfICAPoCAU6CAwNXZWKKAxxDSUQ6MjAyNDEwMjMxNTI3MzkyNDA6MzY1MDM0&_s=JghHP5LaUoFDA0An7JLd%2Bd57QSY%3D},
   abstract = {In recent years, converging evidence has suggested that prediction plays a role in language comprehension, as it appears to do in information processing in a range of cognitive domains. Much of the evidence for this comes from the N400, a neural index of the processing of meaningful stimuli which has been argued to index the extent to which a word was predicted before it was encountered. The main aim of this thesis is to investigate the extent to which this prediction can be explained as arising from the statistics of the linguistic inputs we receive over the course of our lives, in line with predictive processing in other cognitive domains. To do this, I turn to language models—computational systems that can calculate the probability of a word given its context based on the statistics of language—and investigate how well their predictions correlate with the N400. The results show that probabilities calculated using language models are highly correlated with N400 amplitude, in many cases better than human-derived metrics such as cloze probability and plausibility, previously the best predictors of the N400. I also show that language model probabilities are able to qualitatively model a wide range of effects, showing significant differences based on the same experimental manipulations that lead to significant differences in N400 amplitude. In addition, the results show that language models that are better able to predict the next word in a sequence are better able to model N400 amplitude in both of these ways, showing both a closer fit to the data and more of the qualitative effects. Taken together, these results show a high degree of correlation between the N400 and predictions based on the statistics of language, consistent with the idea that the predictions indexed by the N400 are at least partly based on language statistics.},
-  isbn = {9798384424857},
+  isbn = {979-8-3844-2485-7},
   langid = {english},
   pagetotal = {438},
   keywords = {Artificial intelligence,Cloze probability,Cognitive psychology,Experimental manipulations,Language comprehension,Language statistics,Linguistic inputs,Linguistics,Neurosciences},
@@ -12913,6 +13380,17 @@
   langid = {english},
   keywords = {expectation propogation},
   file = {~/Zotfiles/minka.t2001phd A family of algorithms for approximate B.pdf}
+}
+
+@report{minka2005divergence,
+  type = {Technical report},
+  title = {Divergence Measures and Message Passing},
+  author = {Minka, Tom},
+  date = {2005-01},
+  number = {MSR-TR-2005-173},
+  pages = {17},
+  url = {https://www.microsoft.com/en-us/research/publication/divergence-measures-and-message-passing/},
+  abstract = {This paper presents a unifying view of message-passing algorithms, as methods to approximate a complex Bayesian network by a simpler network with minimum information divergence. In this view, the difference between mean-field methods and belief propagation is not the amount of structure they model, but only the measure of loss they minimize (`exclusive' versus `inclusive' Kullback-Leibler divergence). In each case, message-passing arises by minimizing a localized version of the divergence, local to each factor. By examining these divergence measures, we can intuit the types of solution they prefer (symmetry-breaking, for example) and their suitability for different tasks. Furthermore, by considering a wider variety of divergence measures (such as alpha-divergences), we can achieve different complexity and performance goals.}
 }
 
 @incollection{mitchell.d:1984,
@@ -13608,7 +14086,7 @@
   journaltitle = {ProQuest LLC},
   institution = {ProQuest LLC},
   abstract = {In this thesis, I use a combination of simulations and empirical data to demonstrate that a small set of structural and functional principles - the basic tenets of predictive coding theory - succinctly accounts for a very wide range of properties in the language processing system. Predictive coding approximates hierarchical Bayesian inference via a biologically plausible mechanism of competition whose unique properties (i) allow it to capture important asymmetries in bottom-up and top-down processing and (ii) offer a critical insight into the functional relationship between behavioral and neural measures of word processing. In addition to accounting for well-known properties of the language processing system, this mechanism of competition allows us to formulate and test a novel empirical prediction - that N400 attenuation can be observed in the presence of behavioral interference - which challenges a widely held assumption that N400 attenuation is essentially synonymous with facilitated processing. Importantly, the computational model that we used to simulate the above psycholinguistic phenomena was tightly constrained by predictive coding principles and the particular class of algorithm we employed (PC/BC-DIM; Spratling, De Meyer, \& Kompass 2009), emphasizing how a fundamental, biologically plausible perceptual mechanism that is shared across the cortex can also give rise to psycholinguistic phenomena. [The dissertation citations contained here are published with the permission of ProQuest LLC. Further reproduction is prohibited without permission. Copies of dissertations may be obtained by Telephone (800) 1-800-521-0600. Web page: http://www.proquest.com/en-US/products/dissertations/individuals.shtml.]},
-  isbn = {9798382750095},
+  isbn = {979-8-3827-5009-5},
   langid = {english},
   keywords = {Bayesian Statistics,Brain Hemisphere Functions,Computational Linguistics,Correlation,Interference (Language),Language Processing,Linguistic Theory,Prediction,predictive coding,Psycholinguistics,Semantics,Simulation,Vocabulary},
   annotation = {ERIC Number: ED653848},
@@ -13875,6 +14353,23 @@
   file = {~/Zotfiles/ontario2011 Native Languages A Support Document for.pdf}
 }
 
+@article{oostendorp.h:1990,
+  title = {Failing to Notice Errors in Sentences},
+  author = {family=Oostendorp, given=Herre, prefix=van, useprefix=true and Kok, Ineke},
+  date = {1990-04-01},
+  journaltitle = {Language and Cognitive Processes},
+  volume = {5},
+  number = {2},
+  pages = {105--113},
+  publisher = {Routledge},
+  issn = {0169-0965},
+  doi = {10.1080/01690969008402100},
+  url = {https://doi.org/10.1080/01690969008402100},
+  urldate = {2024-05-28},
+  abstract = {The purpose of the present study was to investigate the role of conceptual relatedness of proper names in failure to notice errors in sentences. We hypothesised that sentences with highly related, but inaccurate proper names may lead to less complete processing than sentences with less related proper names, and hence to failure to notice factual inaccuracies. This hypothesis was investigated in two ways: first, by using inaccurate proper names varying in degree of overlap in attributes with target names; and, secondly, by using a paired-associate learning task in order to strengthen relations. The results indicate that greater overlap between proper names and stronger relations lead to more frequent failures to notice errors in sentences.},
+  file = {~/Zotfiles/vanoostendorp.h1990 Failing to notice errors in sentences.pdf}
+}
+
 @inproceedings{opedal.a:2024,
   title = {On the {{Role}} of {{Context}} in {{Reading Time Prediction}}},
   booktitle = {Proceedings of the 2024 {{Conference}} on {{Empirical Methods}} in {{Natural Language Processing}}},
@@ -13993,6 +14488,27 @@
   venue = {York, England},
   annotation = {link-abstract: https://oxford-abstracts.s3.amazonaws.com/2dbcb575-3c17-4635-a1b8-24e1e8b44d3d.pdf\\
 link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-daa834276886.pdf}
+}
+
+@inproceedings{ouyang.l:2022InstructGPT,
+  title = {Training Language Models to Follow Instructions with Human Feedback},
+  booktitle = {Proceedings of the 36th International Conference on Neural Information Processing Systems},
+  author = {Ouyang, Long and Wu, Jeff and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll L. and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul and Leike, Jan and Lowe, Ryan},
+  date = {2022},
+  series = {Nips '22},
+  publisher = {Curran Associates Inc.},
+  location = {New Orleans, LA, USA},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract-Conference.html},
+  abstract = {Making language models bigger does not inherently make them better at following a user's intent. For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. In other words, these models are not aligned with their users. In this paper, we show an avenue for aligning language models with user intent on a wide range of tasks by fine-tuning with human feedback. Starting with a set of labeler-written prompts and prompts submitted through a language model API, we collect a dataset of labeler demonstrations of the desired model behavior, which we use to fine-tune GPT-3 using supervised learning. We then collect a dataset of rankings of model outputs, which we use to further fine-tune this supervised model using reinforcement learning from human feedback. We call the resulting models InstructGPT. In human evaluations on our prompt distribution, outputs from the 1.3B parameter InstructGPT model are preferred to outputs from the 175B GPT-3, despite having 100x fewer parameters. Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent.},
+  isbn = {978-1-7138-7108-8},
+  file = {/Users/v/Zotfiles/ouyang.l2022InstructGPT Training language models to follow instr.pdf}
+}
+
+@book{owen.a:2013book,
+  title = {Monte {{Carlo}} Theory, Methods and Examples},
+  author = {Owen, Art B.},
+  date = {2013},
+  url = {https://artowen.su.domains/mc/}
 }
 
 @article{owsley.c:2011,
@@ -14243,7 +14759,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {https://www.proquest.com/docview/2459231889/abstract/2D8FDD4353574D95PQ/1},
   urldate = {2022-05-31},
   abstract = {Robust documentation is a major goal of documentary linguistics. Recognizing spoken language as a multimodal phenomenon, researchers working in this field broadly agree that video is an improvement over audio-only recording. At the same time, video is limited by the format’s frame, which permits only a relatively small portion of the visual field to be recorded at any given time. This results in much data being lost, as the documenter must decide where to aim their camera, necessarily leaving out more than they record. In this dissertation, I apply 360º video to language documentation for the first time. 360º video, which is one variety of virtual reality, improves upon traditional video by drastically expanding the frame, recording in all directions surrounding the camera. In this way, a maximum of visual data is recorded, and there is no need for the camera to be redirected as participants take turns speaking or move around the space. I recorded over 10 hours of 360º video with ambisonic audio, containing mostly naturalistic conversation in the Akwesasne variety of Kanien’kéha (Mohawk), an endangered Northern Iroquoian language spoken in New York State, Ontario, and Quebec. Most of the existing documentation of Kanien’kéha outside of this corpus is formal or non-naturalistic. The resulting corpus thus serves a dual purpose: it is both a demonstration of the capabilities of 360º video for language documentation, and a contribution to the documentation of Kanien’kéha. This dissertation includes a brief grammatical description of Kanien’kéha phonology and morphology, a discussion of the interplay between technology and language documentation throughout North American history, an exploration of the significance of 360º video to documentary linguistics, a brief analysis of gesture and intonation in the present corpus, and an assessment of the suitability of ambisonic audio for linguistic analysis. Directions for potential future research are indicated throughout.},
-  isbn = {9798678110015},
+  isbn = {979-8-6781-1001-5},
   langid = {english},
   pagetotal = {240},
   keywords = {Akwesasne,Documentary linguistics,Iroquoian,Language documentation,Virtual reality},
@@ -14318,6 +14834,23 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   date-modified = {2021-02-05 12:03:58 -0500}
 }
 
+@inproceedings{peters.j:2007,
+  title = {Reinforcement Learning by Reward-Weighted Regression for Operational Space Control},
+  booktitle = {Proceedings of the 24th International Conference on {{Machine}} Learning},
+  author = {Peters, Jan and Schaal, Stefan},
+  date = {2007-06-20},
+  series = {{{ICML}} '07},
+  pages = {745--750},
+  publisher = {Association for Computing Machinery},
+  location = {New York, NY, USA},
+  doi = {10.1145/1273496.1273590},
+  url = {https://dl.acm.org/doi/10.1145/1273496.1273590},
+  urldate = {2025-09-26},
+  abstract = {Many robot control problems of practical importance, including operational space control, can be reformulated as immediate reward reinforcement learning problems. However, few of the known optimization or reinforcement learning algorithms can be used in online learning control for robots, as they are either prohibitively slow, do not scale to interesting domains of complex robots, or require trying out policies generated by random search, which are infeasible for a physical system. Using a generalization of the EM-base reinforcement learning framework suggested by Dayan \&amp; Hinton, we reduce the problem of learning with immediate rewards to a reward-weighted regression problem with an adaptive, integrated reward transformation for faster convergence. The resulting algorithm is efficient, learns smoothly without dangerous jumps in solution space, and works well in applications of complex high degree-of-freedom robots.},
+  isbn = {978-1-59593-793-3},
+  file = {/Users/v/Zotfiles/peters.j2007 Reinforcement learning by reward-weighte.pdf}
+}
+
 @inproceedings{peters.m:2018,
   title = {Deep Contextualized Word Representations},
   booktitle = {Proceedings of the 2018 Conference of the North {{American}} Chapter of the Association for Computational Linguistics: {{Human}} Language Technologies, Volume 1 (Long Papers)},
@@ -14356,6 +14889,15 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   abstract = {We demonstrate that log-linear grammars with latent variables can be practically trained using discriminative methods. Central to efficient discriminative training is a hierarchical pruning procedure which allows feature expectations to be effi- ciently approximated in a gradient-based procedure. We compare L1 and L2 reg- ularization and show that L1 regularization is superior, requiring fewer iterations to converge, and yielding sparser solutions. On full-scale treebank parsing exper- iments, the discriminative latent models outperform both the comparable genera- tive latent models as well as the discriminative non-latent baselines.},
   keywords = {pruning},
   file = {~/Zotfiles/petrov.s2007 Discriminative log-linear grammars with.pdf}
+}
+
+@inproceedings{phan.d:2023,
+  title = {Training Chain-of-Thought via Latent-Variable Inference},
+  booktitle = {Thirty-Seventh Conference on Neural Information Processing Systems},
+  author = {Phan, Du and Hoffman, Matthew Douglas and Dohan, David and Douglas, Sholto and Le, Tuan Anh and Parisi, Aaron T and Sountsov, Pavel and Sutton, Charles and Vikram, Sharad and Saurous, Rif A.},
+  date = {2023},
+  url = {https://openreview.net/forum?id=a147pIS2Co},
+  file = {/Users/v/Zotfiles/phan.d2023 Training chain-of-thought via latent-var.pdf}
 }
 
 @incollection{phillips.c:2011,
@@ -14702,7 +15244,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   abstract = {We partly replicate von der Malsburg et al. (2020)’s recent experiments investigating the relationship between speaker expectations, gender stereotypes and language use in English on a grammatical gender language: French. The results of our experiment show how the linguistic particularities of the English and French gender marking systems interact with speaker expectations and stereotypes to create different patterns of gender marking production. They also raise a puzzle for current theoretical and computational frameworks that formalize Gricean pragmatics, particularly those in which informativity (Gricean Quantity) is assumed to play a driving role in linguisticproduction.}
 }
 
-@misc{prasad.g:2019a,
+@misc{prasad.g:2019,
   title = {Rapid Syntactic Adaptation in Self-Paced Reading: Detectable, but Requires Many Participants.},
   author = {Prasad, Grusha and Linzen, Tal},
   date = {2019},
@@ -15358,6 +15900,15 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   howpublished = {Ms. UMR 5478, IKER CNRS}
 }
 
+@book{richards.sutton:2018book2,
+  title = {Reinforcement Learning: An Introduction},
+  author = {{Richard S. Sutton} and {Andrew G. Barto}},
+  date = {2018},
+  edition = {2},
+  publisher = {MIT Press},
+  file = {/Users/v/Zotfiles/richards.sutton2018book2 Reinforcement learning an introduction.pdf}
+}
+
 @book{riehl.e:2017book,
   title = {Category Theory in Context},
   author = {Riehl, Emily},
@@ -15499,6 +16050,40 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   date-modified = {2019-06-16 13:55:14 -0400},
   project = {syntactic embedding},
   keywords = {automata,control languages}
+}
+
+@online{rohatgi.d:2025arxiv,
+  title = {Taming {{Imperfect Process Verifiers}}: {{A Sampling Perspective}} on {{Backtracking}}},
+  shorttitle = {Taming {{Imperfect Process Verifiers}}},
+  author = {Rohatgi, Dhruv and Shetty, Abhishek and Saless, Donya and Li, Yuchen and Moitra, Ankur and Risteski, Andrej and Foster, Dylan J.},
+  date = {2025-10-03},
+  eprint = {2510.03149},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2510.03149},
+  url = {http://arxiv.org/abs/2510.03149},
+  urldate = {2025-10-13},
+  abstract = {Test-time algorithms that combine the generative power of language models with process verifiers that assess the quality of partial generations offer a promising lever for eliciting new reasoning capabilities, but the algorithmic design space and computational scaling properties of such approaches are still opaque, and their benefits are far from apparent when one accounts for the cost of learning a high-quality verifier. Our starting point is the observation that seemingly benign errors in a learned verifier can lead to catastrophic failures for standard decoding techniques due to error amplification during the course of generation. We then ask: can this be improved with more sophisticated decoding strategies? We introduce a new process-guided test-time sampling algorithm, VGB, which uses theoretically grounded backtracking to achieve provably better robustness to verifier errors. VGB interprets autoregressive generation as a random walk on a tree of partial generations, with transition probabilities guided by the process verifier and base model; crucially, backtracking occurs probabilistically. This process generalizes the seminal Sinclair-Jerrum random walk (Sinclair \& Jerrum, 1989) from the literature on approximate counting and sampling in theoretical computer science, and a conceptual contribution of our work is to highlight parallels with this literature. Empirically, we demonstrate on both synthetic and real language modeling tasks that VGB outperforms baselines on a variety of metrics.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Data Structures and Algorithms,Computer Science - Machine Learning},
+  file = {/Users/v/Zotero/storage/Z4UIFG2N/rohatgi.d2025arxiv Taming Imperfect Process Verifiers A Sa.pdf;/Users/v/Zotero/storage/UXT8SBK2/2510.html}
+}
+
+@online{rohatgi.d:2025arxiva,
+  title = {Taming {{Imperfect Process Verifiers}}: {{A Sampling Perspective}} on {{Backtracking}}},
+  shorttitle = {Taming {{Imperfect Process Verifiers}}},
+  author = {Rohatgi, Dhruv and Shetty, Abhishek and Saless, Donya and Li, Yuchen and Moitra, Ankur and Risteski, Andrej and Foster, Dylan J.},
+  date = {2025-10-03},
+  eprint = {2510.03149},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2510.03149},
+  url = {http://arxiv.org/abs/2510.03149},
+  urldate = {2025-10-23},
+  abstract = {Test-time algorithms that combine the generative power of language models with process verifiers that assess the quality of partial generations offer a promising lever for eliciting new reasoning capabilities, but the algorithmic design space and computational scaling properties of such approaches are still opaque, and their benefits are far from apparent when one accounts for the cost of learning a high-quality verifier. Our starting point is the observation that seemingly benign errors in a learned verifier can lead to catastrophic failures for standard decoding techniques due to error amplification during the course of generation. We then ask: can this be improved with more sophisticated decoding strategies? We introduce a new process-guided test-time sampling algorithm, VGB, which uses theoretically grounded backtracking to achieve provably better robustness to verifier errors. VGB interprets autoregressive generation as a random walk on a tree of partial generations, with transition probabilities guided by the process verifier and base model; crucially, backtracking occurs probabilistically. This process generalizes the seminal Sinclair-Jerrum random walk (Sinclair \& Jerrum, 1989) from the literature on approximate counting and sampling in theoretical computer science, and a conceptual contribution of our work is to highlight parallels with this literature. Empirically, we demonstrate on both synthetic and real language modeling tasks that VGB outperforms baselines on a variety of metrics.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Data Structures and Algorithms,Computer Science - Machine Learning},
+  file = {/Users/v/Zotfiles/rohatgi.d2025arxiva Taming Imperfect Process Verifiers A Sa.pdf;/Users/v/Zotero/storage/J38A8NWY/2510.html}
 }
 
 @incollection{rohatgi.v:2015,
@@ -16401,6 +16986,22 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   file = {~/Zotfiles/scibior.a2015 Practical probabilistic programming with.pdf}
 }
 
+@online{scibior.a:2021arxiv,
+  title = {Differentiable {{Particle Filtering}} without {{Modifying}} the {{Forward Pass}}},
+  author = {Ścibior, Adam and Wood, Frank},
+  date = {2021-10-19},
+  eprint = {2106.10314},
+  eprinttype = {arXiv},
+  eprintclass = {stat},
+  doi = {10.48550/arXiv.2106.10314},
+  url = {http://arxiv.org/abs/2106.10314},
+  urldate = {2025-09-21},
+  abstract = {Particle filters are not compatible with automatic differentiation due to the presence of discrete resampling steps. While known estimators for the score function, based on Fisher's identity, can be computed using particle filters, up to this point they required manual implementation. In this paper we show that such estimators can be computed using automatic differentiation, after introducing a simple correction to the particle weights. This correction utilizes the stop-gradient operator and does not modify the particle filter operation on the forward pass, while also being cheap and easy to compute. Surprisingly, with the same correction automatic differentiation also produces good estimators for gradients of expectations under the posterior. We can therefore regard our method as a general recipe for making particle filters differentiable. We additionally show that it produces desired estimators for second-order derivatives and how to extend it to further reduce variance at the expense of additional computation.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {/Users/v/Zotero/storage/NL22M7WZ/scibior.a2021arxiv Differentiable Particle Filtering withou.pdf;/Users/v/Zotero/storage/QKP2PDT2/2106.html}
+}
+
 @article{searle.s:1980,
   title = {Population Marginal Means in the Linear Model: An Alternative to Least Squares Means},
   shorttitle = {Population Marginal Means in the Linear Model},
@@ -16581,6 +17182,20 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   file = {~/Zotfiles/shain.c2021CDRNN CDRNN discovering complex dynamics in h.pdf}
 }
 
+@online{shain.c:2022,
+  title = {Large-Scale Evidence for Logarithmic Effects of Word Predictability on Reading Time},
+  author = {Shain, Cory and Meister, Clara and Pimentel, Tiago and Cotterell, Ryan and Levy, Roger Philip},
+  date = {2022-11-25T01:51:06},
+  doi = {10.31234/osf.io/4hyna},
+  url = {https://psyarxiv.com/4hyna/},
+  urldate = {2023-01-26},
+  abstract = {Words which are less predictable in context are harder to process, but theories of language processing diverge in how they explain this fact. Representational theories emphasize the demands of assembling sentence interpretations in memory; these theories predict a linear effect of predictability on processing cost. Inferential theories emphasize the demands of updating a probability distribution over possible sentence interpretations; these theories predict either a logarithmic or a superlogarithmic effect of predictability on processing cost, depending on whether they posit pressures toward a uniform distribution of information over time. The empirical record is currently mixed. Here we revisit this question at scale: we analyze six reading datasets, estimate next-word probabilities with diverse language models, and predict reading times with advanced nonlinear regression methods. Results support a logarithmic effect of word predictability on processing difficulty, which favors probabilistic inference as a key component of human language processing.},
+  langid = {american},
+  pubstate = {prepublished},
+  keywords = {Cognitive Psychology,Language,Naturalistic,Nonlinear regression,Prediction,Psycholinguistics,Sentence processing,Social and Behavioral Sciences,Surprisal},
+  file = {~/Zotfiles/shain.c2022preprint Large-scale evidence for logarithmic eff.pdf}
+}
+
 @online{shain.c:2022arxiv,
   title = {A Deep Learning Approach to Analyzing Continuous-Time Systems},
   author = {Shain, Cory and Schuler, William},
@@ -16604,24 +17219,11 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   file = {~/Zotfiles/shain.c2022draft Large-scale evidence for logarithmic eff.pdf}
 }
 
-@online{shain.c:2022psyarxiv,
-  title = {Large-Scale Evidence for Logarithmic Effects of Word Predictability on Reading Time},
-  author = {Shain, Cory and Meister, Clara and Pimentel, Tiago and Cotterell, Ryan and Levy, Roger Philip},
-  date = {2022-11-25T01:51:06},
-  doi = {10.31234/osf.io/4hyna},
-  url = {https://psyarxiv.com/4hyna/},
-  urldate = {2023-01-26},
-  abstract = {Words which are less predictable in context are harder to process, but theories of language processing diverge in how they explain this fact. Representational theories emphasize the demands of assembling sentence interpretations in memory; these theories predict a linear effect of predictability on processing cost. Inferential theories emphasize the demands of updating a probability distribution over possible sentence interpretations; these theories predict either a logarithmic or a superlogarithmic effect of predictability on processing cost, depending on whether they posit pressures toward a uniform distribution of information over time. The empirical record is currently mixed. Here we revisit this question at scale: we analyze six reading datasets, estimate next-word probabilities with diverse language models, and predict reading times with advanced nonlinear regression methods. Results support a logarithmic effect of word predictability on processing difficulty, which favors probabilistic inference as a key component of human language processing.},
-  langid = {american},
-  pubstate = {prepublished},
-  keywords = {Cognitive Psychology,Language,Naturalistic,Nonlinear regression,Prediction,Psycholinguistics,Sentence processing,Social and Behavioral Sciences,Surprisal},
-  file = {~/Zotfiles/shain.c2022preprint Large-scale evidence for logarithmic eff.pdf}
-}
-
-@online{shain.c:2023psyarxiv,
+@online{shain.c:2023osf,
   title = {Word {{Frequency}} and {{Predictability Dissociate}} in {{Naturalistic Reading}}},
   author = {Shain, Cory},
   date = {2023-07-06},
+  eprinttype = {OSF},
   doi = {10.31234/osf.io/9zdfw},
   url = {https://osf.io/9zdfw},
   urldate = {2024-03-01},
@@ -17257,6 +17859,22 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   abstract = {Predictive coding is a leading theory of how the brain performs probabilistic inference. However, there are a number of distinct algorithms which are described by the term “predictive coding”. This article provides a concise review of these different predictive coding algorithms, highlighting their similarities and differences. Five algorithms are covered: linear predictive coding which has a long and influential history in the signal processing literature; the first neuroscience-related application of predictive coding to explaining the function of the retina; and three versions of predictive coding that have been proposed to model cortical function. While all these algorithms aim to fit a generative model to sensory data, they differ in the type of generative model they employ, in the process used to optimise the fit between the model and sensory data, and in the way that they are related to neurobiology.},
   keywords = {Cortex,Free energy,Neural networks,Predictive coding,Retina,Signal processing},
   file = {~/Zotfiles/spratling.m2017 A review of predictive coding algorithms.pdf}
+}
+
+@online{srivastava.s:2025arxiv,
+  title = {A {{Technical Survey}} of {{Reinforcement Learning Techniques}} for {{Large Language Models}}},
+  author = {Srivastava, Saksham Sahai and Aggarwal, Vaneet},
+  date = {2025-07-05},
+  eprint = {2507.04136},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2507.04136},
+  url = {http://arxiv.org/abs/2507.04136},
+  urldate = {2025-09-18},
+  abstract = {Reinforcement Learning (RL) has emerged as a transformative approach for aligning and enhancing Large Language Models (LLMs), addressing critical challenges in instruction following, ethical alignment, and reasoning capabilities. This survey offers a comprehensive foundation on the integration of RL with language models, highlighting prominent algorithms such as Proximal Policy Optimization (PPO), Q-Learning, and Actor-Critic methods. Additionally, it provides an extensive technical overview of RL techniques specifically tailored for LLMs, including foundational methods like Reinforcement Learning from Human Feedback (RLHF) and AI Feedback (RLAIF), as well as advanced strategies such as Direct Preference Optimization (DPO) and Group Relative Policy Optimization (GRPO). We systematically analyze their applications across domains, i.e., from code generation to tool-augmented reasoning. We also present a comparative taxonomy based on reward modeling, feedback mechanisms, and optimization strategies. Our evaluation highlights key trends. RLHF remains dominant for alignment, and outcome-based RL such as RLVR significantly improves stepwise reasoning. However, persistent challenges such as reward hacking, computational costs, and scalable feedback collection underscore the need for continued innovation. We further discuss emerging directions, including hybrid RL algorithms, verifier-guided training, and multi-objective alignment frameworks. This survey serves as a roadmap for researchers advancing RL-driven LLM development, balancing capability enhancement with safety and scalability.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence},
+  file = {/Users/v/Zotfiles/srivastava.s2025arxiv A Technical Survey of Reinforcement Lear.pdf;/Users/v/Zotero/storage/KXBDN7ES/2507.html}
 }
 
 @article{st.john.m:1990,
@@ -18059,7 +18677,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   file = {~/Zotfiles/tokdar.s2010 Importance sampling a review.pdf}
 }
 
-@online{touvron.h:2023arxiv,
+@online{touvron.h:2023Llama,
   title = {{{LLaMA}}: {{Open}} and Efficient Foundation Language Models},
   shorttitle = {{{LLaMA}}},
   author = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timothée and Rozière, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and Rodriguez, Aurelien and Joulin, Armand and Grave, Edouard and Lample, Guillaume},
@@ -18075,7 +18693,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   keywords = {Computer Science - Computation and Language}
 }
 
-@online{touvron.h:2023arxiva,
+@online{touvron.h:2023Llama2,
   title = {Llama 2: {{Open}} Foundation and Fine-Tuned Chat Models},
   shorttitle = {Llama 2},
   author = {Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and Bikel, Dan and Blecher, Lukas and Ferrer, Cristian Canton and Chen, Moya and Cucurull, Guillem and Esiobu, David and Fernandes, Jude and Fu, Jeremy and Fu, Wenyin and Fuller, Brian and Gao, Cynthia and Goswami, Vedanuj and Goyal, Naman and Hartshorn, Anthony and Hosseini, Saghar and Hou, Rui and Inan, Hakan and Kardas, Marcin and Kerkez, Viktor and Khabsa, Madian and Kloumann, Isabel and Korenev, Artem and Koura, Punit Singh and Lachaux, Marie-Anne and Lavril, Thibaut and Lee, Jenya and Liskovich, Diana and Lu, Yinghai and Mao, Yuning and Martinet, Xavier and Mihaylov, Todor and Mishra, Pushkar and Molybog, Igor and Nie, Yixin and Poulton, Andrew and Reizenstein, Jeremy and Rungta, Rashi and Saladi, Kalyan and Schelten, Alan and Silva, Ruan and Smith, Eric Michael and Subramanian, Ranjan and Tan, Xiaoqing Ellen and Tang, Binh and Taylor, Ross and Williams, Adina and Kuan, Jian Xiang and Xu, Puxin and Yan, Zheng and Zarov, Iliyan and Zhang, Yuchen and Fan, Angela and Kambadur, Melanie and Narang, Sharan and Rodriguez, Aurelien and Stojnic, Robert and Edunov, Sergey and Scialom, Thomas},
@@ -18251,6 +18869,23 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   abstract = {The Uniform Information Density (UID) hypothesis posits that speakers tend to distribute information evenly across linguistic units to achieve efficient communication. Of course, information rate in texts and discourses is not perfectly uniform. While these fluctuations can be viewed as theoretically uninteresting noise on top of a uniform target, another explanation is that UID is not the only functional pressure regulating information content in a language. Speakers may also seek to maintain interest, adhere to writing conventions, and build compelling arguments. In this paper, we propose one such functional pressure; namely that speakers modulate information rate based on location within a hierarchically-structured model of discourse. We term this the Structured Context Hypothesis and test it by predicting the surprisal contours of naturally occurring discourses extracted from large language models using predictors derived from discourse structure. We find that hierarchical predictors are significant predictors of a discourse's information contour and that deeply nested hierarchical predictors are more predictive than shallow ones. This work takes an initial step beyond UID to propose testable hypotheses for why the information rate fluctuates in predictable ways.},
   eventtitle = {{{EMNLP}} 2024},
   file = {~/Zotfiles/tsipidi.e2024 Surprise! Uniform Information Density Is.pdf}
+}
+
+@online{tsividis.p:2021arxiv,
+  title = {Human-Level Reinforcement Learning through Theory-Based Modeling, Exploration, and Planning},
+  author = {Tsividis, Pedro A. and Loula, Joao and Burga, Jake and Foss, Nathan and Campero, Andres and Pouncy, Thomas and Gershman, Samuel J. and Tenenbaum, Joshua B.},
+  date = {2021-07-27},
+  eprint = {2107.12544},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2107.12544},
+  url = {http://arxiv.org/abs/2107.12544},
+  urldate = {2026-01-06},
+  abstract = {Reinforcement learning (RL) studies how an agent comes to achieve reward in an environment through interactions over time. Recent advances in machine RL have surpassed human expertise at the world's oldest board games and many classic video games, but they require vast quantities of experience to learn successfully -- none of today's algorithms account for the human ability to learn so many different tasks, so quickly. Here we propose a new approach to this challenge based on a particularly strong form of model-based RL which we call Theory-Based Reinforcement Learning, because it uses human-like intuitive theories -- rich, abstract, causal models of physical objects, intentional agents, and their interactions -- to explore and model an environment, and plan effectively to achieve task goals. We instantiate the approach in a video game playing agent called EMPA (the Exploring, Modeling, and Planning Agent), which performs Bayesian inference to learn probabilistic generative models expressed as programs for a game-engine simulator, and runs internal simulations over these models to support efficient object-based, relational exploration and heuristic planning. EMPA closely matches human learning efficiency on a suite of 90 challenging Atari-style video games, learning new games in just minutes of game play and generalizing robustly to new game situations and new levels. The model also captures fine-grained structure in people's exploration trajectories and learning dynamics. Its design and behavior suggest a way forward for building more general human-like AI systems.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Computer Science - Artificial Intelligence},
+  file = {/Users/v/Zotfiles/tsividis.p2021arxiv Human-Level Reinforcement Learning throu.pdf;/Users/v/Zotero/storage/F5FUQRM2/2107.html}
 }
 
 @online{tucker.g:2018arxiv,
@@ -18476,23 +19111,6 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   file = {~/Zotfiles/vanoostendorp.h1990a Moses beats Adam A semantic relatedness.pdf}
 }
 
-@article{vanoostendorp.h:1990a,
-  title = {Failing to Notice Errors in Sentences},
-  author = {family=Oostendorp, given=Herre, prefix=van, useprefix=true and Kok, Ineke},
-  date = {1990-04-01},
-  journaltitle = {Language and Cognitive Processes},
-  volume = {5},
-  number = {2},
-  pages = {105--113},
-  publisher = {Routledge},
-  issn = {0169-0965},
-  doi = {10.1080/01690969008402100},
-  url = {https://doi.org/10.1080/01690969008402100},
-  urldate = {2024-05-28},
-  abstract = {The purpose of the present study was to investigate the role of conceptual relatedness of proper names in failure to notice errors in sentences. We hypothesised that sentences with highly related, but inaccurate proper names may lead to less complete processing than sentences with less related proper names, and hence to failure to notice factual inaccuracies. This hypothesis was investigated in two ways: first, by using inaccurate proper names varying in degree of overlap in attributes with target names; and, secondly, by using a paired-associate learning task in order to strengthen relations. The results indicate that greater overlap between proper names and stronger relations lead to more frequent failures to notice errors in sentences.},
-  file = {~/Zotfiles/vanoostendorp.h1990 Failing to notice errors in sentences.pdf}
-}
-
 @inproceedings{varda.a:2023,
   title = {Scaling in {{Cognitive Modelling}}: A {{Multilingual Approach}} to {{Human Reading Times}}},
   shorttitle = {Scaling in {{Cognitive Modelling}}},
@@ -18527,6 +19145,22 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   langid = {english},
   keywords = {Cloze probability,Predictability ratings,Prediction,Surprisal estimates},
   file = {~/Zotfiles/varda.a2024aligned Cloze probability, predictability rating.pdf}
+}
+
+@article{varda.a:2025PNAS,
+  title = {The Cost of Thinking Is Similar between Large Reasoning Models and Humans},
+  author = {family=Varda, given=Andrea Gregor, prefix=de, useprefix=true and D’Elia, Ferdinando Pio and Kean, Hope and Lampinen, Andrew and Fedorenko, Evelina},
+  date = {2025-11-25},
+  journaltitle = {Proceedings of the National Academy of Sciences},
+  volume = {122},
+  number = {47},
+  pages = {e2520077122},
+  publisher = {Proceedings of the National Academy of Sciences},
+  doi = {10.1073/pnas.2520077122},
+  url = {https://www.pnas.org/doi/10.1073/pnas.2520077122},
+  urldate = {2026-01-17},
+  abstract = {Do neural network models capture the cognitive demands of human reasoning? Across seven reasoning tasks, we show that the length of the chain-of-thought generated by large reasoning models predicts human reaction times both within tasks—tracking item-level difficulty—and across tasks—capturing broader differences in cognitive demands. This model-to-human alignment shows that out-of-the-box reasoning models reflect core features underlying problem and task complexity in human cognition, without requiring any built-in symbolic mechanisms.},
+  file = {/Users/v/Zotero/storage/KJTJI7SQ/varda.a2025PNAS The cost of thinking is similar between.pdf}
 }
 
 @inproceedings{vasishth.s:2006,
@@ -18679,7 +19313,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   organization = {Graduate Descent}
 }
 
-@online{vieira.t:2017,
+@online{vieira.t:2017blog,
   type = {Blog},
   title = {Estimating Means in a Finite Universe},
   author = {Vieira, Tim},
@@ -18691,7 +19325,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   keywords = {gumbel-max trick reservoir sampling sampling}
 }
 
-@article{vieira.t:2017a,
+@article{vieira.t:2017tacl,
   title = {Learning to Prune: Exploring the Frontier of Fast and Accurate Parsing},
   author = {Vieira, Tim and Eisner, Jason},
   date = {2017-08},
@@ -18869,26 +19503,6 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   urldate = {2024-10-10},
   abstract = {Which repair strategy does the language system deploy when it gets garden-pathed, and what can regressive eye movements in reading tell us about reanalysis strategies? Several influential eye-tracking studies on syntactic reanalysis (Frazier and Rayner, 1982, Meseguer et al., 2002, Mitchell et al., 2008) have addressed this question by examining scanpaths, i.e., sequential patterns of eye fixations. However, in the absence of a suitable method for analyzing scanpaths, these studies relied on simplified dependent measures that are arguably ambiguous and hard to interpret. We address the theoretical question of repair strategy by developing a new method that quantifies scanpath similarity. Our method reveals several distinct fixation strategies associated with reanalysis that went undetected in a previously published data set (Meseguer et al., 2002). One prevalent pattern suggests re-parsing of the sentence, a strategy that has been discussed in the literature (Frazier \& Rayner, 1982); however, readers differed tremendously in how they orchestrated the various fixation strategies. Our results suggest that the human parsing system non-deterministically adopts different strategies when confronted with the disambiguating material in garden-path sentences.},
   keywords = {Eye movements,Individual differences,Parsing,Reading,Scanpaths,Syntactic reanalysis}
-}
-
-@article{vondermalsburg.t:2020,
-  title = {Implicit Gender Bias in Linguistic Descriptions for Expected Events: The Cases of the 2016 {{United States}} and 2017 {{United Kingdom}} Elections},
-  shorttitle = {Implicit Gender Bias in Linguistic Descriptions for Expected Events},
-  author = {family=Malsburg, given=Titus, prefix=von der, useprefix=true and Poppels, Till and Levy, Roger P.},
-  date = {2020-02-01},
-  journaltitle = {Psychological Science},
-  shortjournal = {Psychol Sci},
-  volume = {31},
-  number = {2},
-  pages = {115--128},
-  publisher = {SAGE Publications Inc},
-  issn = {0956-7976},
-  doi = {10.1177/0956797619890619},
-  url = {https://doi.org/10.1177/0956797619890619},
-  urldate = {2024-10-22},
-  abstract = {Gender stereotypes influence subjective beliefs about the world, and this is reflected in our use of language. But do gender biases in language transparently reflect subjective beliefs? Or is the process of translating thought to language itself biased? During the 2016 United States (N = 24,863) and 2017 United Kingdom (N = 2,609) electoral campaigns, we compared participants’ beliefs about the gender of the next head of government with their use and interpretation of pronouns referring to the next head of government. In the United States, even when the female candidate was expected to win, she pronouns were rarely produced and induced substantial comprehension disruption. In the United Kingdom, where the incumbent female candidate was heavily favored, she pronouns were preferred in production but yielded no comprehension advantage. These and other findings suggest that the language system itself is a source of implicit biases above and beyond previously known biases, such as those measured by the Implicit Association Test.},
-  langid = {english},
-  file = {~/Zotfiles/malsburg.t2020 Implicit Gender Bias in Linguistic Descr 2.pdf;~/Zotfiles/malsburg.t2020 Implicit Gender Bias in Linguistic Descr.pdf}
 }
 
 @thesis{vul.e:2010phd,
@@ -19287,8 +19901,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   urldate = {2025-02-13},
   abstract = {A classic and influential work that laid the theoretical foundations for information theory and a timely text for contemporary informations theorists and p},
   isbn = {978-0-262-35590-2},
-  langid = {english},
-  origpublisher = {Massachusetts Institute of Technology}
+  langid = {english}
 }
 
 @inproceedings{wilcox.e:2020cogsci,
@@ -19749,6 +20362,22 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   keywords = {ultrametric}
 }
 
+@online{wu.l:2025arxiv,
+  title = {Reverse Diffusion Sequential {{Monte Carlo}} Samplers},
+  author = {Wu, Luhuan and Han, Yi and Naesseth, Christian A. and Cunningham, John P.},
+  date = {2025-11-05},
+  eprint = {2508.05926},
+  eprinttype = {arXiv},
+  eprintclass = {stat},
+  doi = {10.48550/arXiv.2508.05926},
+  url = {http://arxiv.org/abs/2508.05926},
+  urldate = {2025-12-04},
+  abstract = {We propose a novel sequential Monte Carlo (SMC) method for sampling from unnormalized target distributions based on a reverse denoising diffusion process. While recent diffusion-based samplers simulate the reverse diffusion using approximate score functions, they can suffer from accumulating errors due to time discretization and imperfect score estimation. In this work, we introduce a principled SMC framework that formalizes diffusion-based samplers as proposals while systematically correcting for their biases. The core idea is to construct informative intermediate target distributions that progressively steer the sampling trajectory toward the final target distribution. Although ideal intermediate targets are intractable, we develop exact approximations using quantities from the score estimation-based proposal, without requiring additional model training or inference overhead. The resulting sampler, termed Reverse Diffusion Sequential Monte Carlo, enables consistent sampling and unbiased estimation of the target's normalization constant under mild conditions. We demonstrate the effectiveness of our method on a range of synthetic targets and real-world Bayesian inference problems.},
+  pubstate = {prepublished},
+  keywords = {Statistics - Computation},
+  file = {/Users/v/Zotfiles/wu.l2025arxiv Reverse Diffusion Sequential Monte Carlo.pdf;/Users/v/Zotero/storage/3EU4XE59/2508.html}
+}
+
 @online{wu.m:2022arxiv,
   title = {Foundation Posteriors for Approximate Probabilistic Inference},
   author = {Wu, Mike and Goodman, Noah},
@@ -20085,6 +20714,52 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   date-modified = {2021-09-21 18:18:28 -0400}
 }
 
+@online{yidou-weng.g:2025arxiv,
+  title = {Learning {{Tractable Distributions Of Language Model Continuations}}},
+  author = {Yidou-Weng, Gwen and Li, Ian and Liu, Anji and Broadrick, Oliver and family=Broeck, given=Guy Van, prefix=den, useprefix=false and Wang, Benjie},
+  date = {2025-11-20},
+  eprint = {2511.16054},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2511.16054},
+  url = {http://arxiv.org/abs/2511.16054},
+  urldate = {2025-11-21},
+  abstract = {Controlled language generation conditions text on sequence-level constraints (for example, syntax, style, or safety). These constraints may depend on future tokens, which makes directly conditioning an autoregressive language model (LM) generally intractable. Prior work uses tractable surrogates such as hidden Markov models (HMMs) to approximate the distribution over continuations and adjust the model's next-token logits at decoding time. However, we find that these surrogates are often weakly context aware, which reduces query quality. We propose Learning to Look Ahead (LTLA), a hybrid approach that pairs the same base language model for rich prefix encoding with a fixed tractable surrogate model that computes exact continuation probabilities. Two efficiency pitfalls arise when adding neural context: (i) naively rescoring the prefix with every candidate next token requires a sweep over the entire vocabulary at each step, and (ii) predicting fresh surrogate parameters for each prefix, although tractable at a single step, forces recomputation of future probabilities for every new prefix and eliminates reuse. LTLA avoids both by using a single batched HMM update to account for all next-token candidates at once, and by conditioning only the surrogate's latent state prior on the LM's hidden representations while keeping the surrogate decoder fixed, so computations can be reused across prefixes. Empirically, LTLA attains higher conditional likelihood than an unconditional HMM, approximates continuation distributions for vision-language models where a standalone HMM cannot encode visual context, and improves constraint satisfaction at comparable fluency on controlled-generation tasks, with minimal inference overhead.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language},
+  file = {/Users/v/Zotfiles/yidou-weng.g2025arxiv Learning Tractable Distributions Of Lang.pdf}
+}
+
+@inproceedings{ying.l:2025LAW,
+  title = {Assessing Adaptive World Models in Machines with Novel Games},
+  author = {Ying, Lance and Collins, Katherine M. and Sharma, Prafull and Colas, Cédric and Zhao, Kaiya Ivy and Weller, Adrian and Tavares, Zenna and Isola, Phillip and Gershman, Samuel J. and Andreas, Jacob and Griffiths, Thomas L. and Chollet, Francois and Allen, Kelsey R. and Tenenbaum, Joshua B.},
+  date = {2025-11-22},
+  url = {https://openreview.net/forum?id=2EdUKZaq6z},
+  urldate = {2026-01-10},
+  abstract = {Human intelligence exhibits a remarkable capacity for rapid adaptation and effective problem-solving in novel and unfamiliar contexts. We argue that this profound adaptability is fundamentally linked to the efficient construction and refinement of internal representations of the environment, commonly referred to as \textbackslash textit\{world models\}, and we refer to this adaptation mechanism as world model induction. However, current understanding and evaluation of world models in artificial intelligence (AI) remains narrow, often focusing on static representations learned from training on massive corpora of data, instead of the efficiency and efficacy in learning these representations through interaction and exploration within a novel environment. In this Perspective, we provide a view of world model induction drawing on decades of research in cognitive science on how humans learn and adapt so efficiently; we then call for a new evaluation framework for assessing adaptive world models in AI. Concretely, we propose a new benchmarking paradigm based on suites of carefully designed games with genuine, deep and continually refreshing novelty in the underlying game structures --- we refer to this class of games as novel games. We detail key desiderata for constructing these games and propose appropriate metrics to explicitly challenge and evaluate the agent's ability for rapid world model induction. We hope that this new evaluation framework will inspire future evaluation efforts on world models in AI and provide a crucial step towards developing AI systems capable of human-like rapid adaptation and robust generalization --- a critical component of artificial general intelligence.},
+  eventtitle = {{{NeurIPS}} 2025 {{Workshop}} on {{Bridging Language}}, {{Agent}}, and {{World Models}} for {{Reasoning}} and {{Planning}}},
+  langid = {english},
+  file = {/Users/v/Zotfiles/ying.l2025 Assessing Adaptive World Models in Machi.pdf}
+}
+
+@inproceedings{ying.l:2025LIRAS,
+  title = {Language-Informed Synthesis of Rational Agent Models for Grounded Theory-of-Mind Reasoning on-the-Fly},
+  booktitle = {Findings of the {{Association}} for {{Computational Linguistics}}: {{EMNLP}} 2025},
+  author = {Ying, Lance and Truong, Ryan and Collins, Katherine M. and Zhang, Cedegao E. and Wei, Megan and BrookeWilson, Tyler and Zhi-Xuan, Tan and Wong, Lionel and Tenenbaum, Joshua B.},
+  editor = {Christodoulopoulos, Christos and Chakraborty, Tanmoy and Rose, Carolyn and Peng, Violet},
+  date = {2025-11},
+  pages = {12217--12235},
+  publisher = {Association for Computational Linguistics},
+  location = {Suzhou, China},
+  doi = {10.18653/v1/2025.findings-emnlp.654},
+  url = {https://aclanthology.org/2025.findings-emnlp.654/},
+  urldate = {2026-01-10},
+  abstract = {Drawing real world social inferences usually requires taking into account information from multiple modalities. Language is a particularly powerful source of information in social settings, especially in novel situations where language can provide both abstract information about the environment dynamics and concrete specifics about an agent that cannot be easily visually observed. In this paper, we propose Language-Informed Rational Agent Synthesis (LIRAS), a framework for drawing context-specific social inferences that integrate linguistic and visual inputs. LIRAS frames multimodal social reasoning as a process of constructing structured but situation-specific agent and environment representations – leveraging multimodal language models to parse language and visual inputs into unified symbolic representations, over which a Bayesian inverse planning engine can be run to produce granular probabilistic judgments. On a range of existing and new social reasoning tasks derived from cognitive science experiments, we find that our model (instantiated with a comparatively lightweight VLM) outperforms ablations and state-of-the-art models in capturing human judgments across all domains.},
+  eventtitle = {Findings 2025},
+  isbn = {979-8-89176-335-7},
+  file = {/Users/v/Zotero/storage/Y9SGF365/ying.l2025 Language-Informed Synthesis of Rational.pdf}
+}
+
 @article{yngve.v:1960,
   title = {A Model and an Hypothesis for Language Structure},
   author = {Yngve, Victor H.},
@@ -20267,7 +20942,7 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   organization = {Open Science Framework}
 }
 
-@online{zeng.a:2022arxiv,
+@online{zeng.a:2022GLM130B,
   title = {{{GLM-130B}}: {{An}} Open Bilingual Pre-Trained Model},
   shorttitle = {Glm-130b},
   author = {Zeng, Aohan and Liu, Xiao and Du, Zhengxiao and Wang, Zihan and Lai, Hanyu and Ding, Ming and Yang, Zhuoyi and Xu, Yifan and Zheng, Wendi and Xia, Xiao and Tam, Weng Lam and Ma, Zixuan and Xue, Yufei and Zhai, Jidong and Chen, Wenguang and Zhang, Peng and Dong, Yuxiao and Tang, Jie},
@@ -20475,6 +21150,22 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   keywords = {information theory,language illusion,language processing,psycholinguistics,rational inference}
 }
 
+@online{zhang.y:2025arxiv,
+  title = {Graded Strength of Comparative Illusions Is Explained by {{Bayesian}} Inference},
+  author = {Zhang, Yuhan and Wang, Erxiao and Shain, Cory},
+  date = {2025-11-18},
+  eprint = {2511.14642},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2511.14642},
+  url = {http://arxiv.org/abs/2511.14642},
+  urldate = {2025-12-08},
+  abstract = {Like visual processing, language processing is susceptible to illusions in which people systematically misperceive stimuli. In one such case--the comparative illusion (CI), e.g., More students have been to Russia than I have--comprehenders tend to judge the sentence as acceptable despite its underlying nonsensical comparison. Prior research has argued that this phenomenon can be explained as Bayesian inference over a noisy channel: the posterior probability of an interpretation of a sentence is proportional to both the prior probability of that interpretation and the likelihood of corruption into the observed (CI) sentence. Initial behavioral work has supported this claim by evaluating a narrow set of alternative interpretations of CI sentences and showing that comprehenders favor interpretations that are more likely to have been corrupted into the illusory sentence. In this study, we replicate and go substantially beyond this earlier work by directly predicting the strength of illusion with a quantitative model of the posterior probability of plausible interpretations, which we derive through a novel synthesis of statistical language models with human behavioral data. Our model explains not only the fine gradations in the strength of CI effects, but also a previously unexplained effect caused by pronominal vs. full noun phrase than-clause subjects. These findings support a noisy-channel theory of sentence comprehension by demonstrating that the theory makes novel predictions about the comparative illusion that bear out empirically. This outcome joins related evidence of noisy channel processing in both illusory and non-illusory contexts to support noisy channel inference as a unified computational-level theory of diverse language processing phenomena.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computation and Language},
+  file = {/Users/v/Zotfiles/zhang.y2025arxiv Graded strength of comparative illusions.pdf}
+}
+
 @inproceedings{zhao.s:2024,
   title = {Probabilistic Inference in Language Models via Twisted Sequential Monte Carlo},
   booktitle = {Proceedings of the 41st {{International Conference}} on {{Machine Learning}}},
@@ -20535,6 +21226,22 @@ link-poster: https://oxford-abstracts.s3.amazonaws.com/0e28630c-2678-413b-bb42-d
   url = {https://www.aclweb.org/anthology/P19-1230},
   bdsk-url-2 = {https://doi.org/10.18653/v1/P19-1230},
   file = {~/Zotfiles/zhou.j2019 Head-Driven Phrase Structure Grammar par.pdf}
+}
+
+@online{zhou.x:2025arxiv,
+  title = {Variational {{Reasoning}} for {{Language Models}}},
+  author = {Zhou, Xiangxin and Liu, Zichen and Wang, Haonan and Du, Chao and Lin, Min and Li, Chongxuan and Wang, Liang and Pang, Tianyu},
+  date = {2025-09-26},
+  eprint = {2509.22637},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2509.22637},
+  url = {http://arxiv.org/abs/2509.22637},
+  urldate = {2025-10-01},
+  abstract = {We introduce a variational reasoning framework for language models that treats thinking traces as latent variables and optimizes them through variational inference. Starting from the evidence lower bound (ELBO), we extend it to a multi-trace objective for tighter bounds and propose a forward-KL formulation that stabilizes the training of the variational posterior. We further show that rejection sampling finetuning and binary-reward RL, including GRPO, can be interpreted as local forward-KL objectives, where an implicit weighting by model accuracy naturally arises from the derivation and reveals a previously unnoticed bias toward easier questions. We empirically validate our method on the Qwen 2.5 and Qwen 3 model families across a wide range of reasoning tasks. Overall, our work provides a principled probabilistic perspective that unifies variational inference with RL-style methods and yields stable objectives for improving the reasoning ability of language models. Our code is available at https://github.com/sail-sg/variational-reasoning.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/Users/v/Zotfiles/zhou.x2025arxiv Variational Reasoning for Language Model.pdf;/Users/v/Zotero/storage/EFH8YWV2/2509.html}
 }
 
 @article{zhu.j:2020,
